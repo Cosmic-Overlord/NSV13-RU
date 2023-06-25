@@ -6,6 +6,9 @@ GLOBAL_LIST_INIT(valid_keys, list(
 	"F13" = 1, "F14" = 1, "F15" = 1, "F16" = 1, "F17" = 1, "F18" = 1, "F19" = 1, "F20" = 1, "F21" = 1, "F22" = 1, "F23" = 1, "F24" = 1,
 	"A" = 1, "B" = 1, "C" = 1, "D" = 1, "E" = 1, "F" = 1, "G" = 1, "H" = 1, "I" = 1, "J" = 1, "K" = 1, "L" = 1, "M" = 1,
 	"N" = 1, "O" = 1, "P" = 1, "Q" = 1, "R" = 1, "S" = 1, "T" = 1, "U" = 1, "V" = 1, "W" = 1, "X" = 1, "Y" = 1, "Z" = 1,
+	"А" = 1, "Б" = 1, "В" = 1, "Г" = 1, "Д" = 1, "Е" = 1, "Ё" = 1, "Ж" = 1, "З" = 1, "И" = 1, "К" = 1, "Л" = 1,
+	"М" = 1, "Н" = 1, "О" = 1, "П" = 1, "Р" = 1, "С" = 1, "Т" = 1, "У" = 1, "Ф" = 1, "Х" = 1, "Ц" = 1, "Щ" = 1,
+	"Ъ" = 1, "Ы" = 1, "Ь" = 1, "Э" = 1, "Ю" = 1, "Я" = 1,
 	"0" = 1, "1" = 1, "2" = 1, "3" = 1, "4" = 1, "5" = 1, "6" = 1, "7" = 1, "8" = 1, "9" = 1,
 	"-" = 1, "=" = 1, "+" = 1, "\[" = 1, "\]" = 1, "\\" = 1, "." = 1, "," = 1, "<" = 1, ">" = 1, "/" = 1, "`" = 1, "Capslock" = 1,
 	"Numpad0" = 1, "Numpad1" = 1, "Numpad2" = 1, "Numpad3" = 1, "Numpad4" = 1, "Numpad5" = 1, "Numpad6" = 1, "Numpad7" = 1, "Numpad8" = 1, "Numpad9" = 1,
@@ -57,6 +60,21 @@ GLOBAL_LIST_INIT(valid_keys, list(
 	var/CtrlMod = keys_held["Ctrl"] ? "Ctrl-" : ""
 	var/ShiftMod = keys_held["Shift"] ? "Shift-" : ""
 	var/full_key = "[_key]"
+
+	switch(_key)
+		if("O") // Screenshot. Hold shift to choose a name and location to save in
+			ooc_wrapper()
+			return
+		if("T")
+			mob.say_wrapper()
+			return
+		if("M")
+			mob.me_wrapper()
+			return
+		if("L")
+			looc_wrapper()
+			return
+
 	if (!(_key in list("Alt", "Ctrl", "Shift")))
 		full_key = "[AltMod][CtrlMod][ShiftMod][_key]"
 

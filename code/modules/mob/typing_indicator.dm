@@ -48,22 +48,30 @@ Both the say/me wrappers and cancel_typing remove the typing indicator.
 ////Wrappers////
 //Keybindings were updated to change to use these wrappers. If you ever remove this file, revert those keybind changes
 
-/mob/verb/say_wrapper(message as text)
+/mob/verb/say_wrapper()
 	set name = ".Say"
-	set hidden = 1
-	set instant = 1
+	set hidden = TRUE
+
+	create_typing_indicator()
+
+	var/message = input("", "Say \"text\"") as null|text
 
 	remove_typing_indicator()
-	if(message)
+
+	if (message)
 		say_verb(message)
 
-/mob/verb/me_wrapper(message as text)
-	set name = ".Me"
-	set hidden = 1
-	set instant = 1
+/mob/verb/me_wrapper()
+	set name = ".me"
+	set hidden = TRUE
+
+	create_typing_indicator()
+
+	var/message = input("", "Me \"text\"") as null|text
 
 	remove_typing_indicator()
-	if(message)
+
+	if (message)
 		me_verb(message)
 
 ///Human Typing Indicators///
