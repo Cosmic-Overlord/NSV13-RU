@@ -2226,3 +2226,5 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 /datum/species/oozeling/check_roundstart_eligible()
 	return FALSE
 
+/datum/species/apid/check_roundstart_eligible()
+	return FALSE
