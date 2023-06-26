@@ -76,11 +76,11 @@
   */
 /proc/slur(phrase)
 	phrase = html_decode(phrase)
-	var/leng = length_char(phrase)
+	var/leng = length(phrase)
 	. = ""
 	var/newletter = ""
 	var/rawchar = ""
-	for(var/i = 1, i <= leng, i += length_char(rawchar))
+	for(var/i = 1, i <= leng, i += length(rawchar))
 		rawchar = newletter = phrase[i]
 		if(rand(1, 3) == 3)
 			var/lowerletter = lowertext(newletter)
@@ -94,6 +94,18 @@
 				newletter = "oo"
 			else if(lowerletter == "c")
 				newletter = "k"
+			else if(lowerletter == "о")
+				newletter ="у"
+			else if(lowerletter =="с")
+				newletter ="ч"
+			else if(lowerletter == "а")
+				newletter ="ах"
+			else if(lowerletter == "ц")
+				newletter ="к"
+			else if(lowerletter == "э")
+				newletter ="о"
+			else if(lowerletter == "г")
+				newletter ="х"
 		if(rand(1, 20) == 20)
 			if(newletter == " ")
 				newletter = "...huuuhhh..."
