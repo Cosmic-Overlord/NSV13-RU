@@ -20,9 +20,9 @@ SUBSYSTEM_DEF(fail2topic)
 
 	DropFirewallRule() // Clear the old bans if any still remain
 
-	if (world.system_type == UNIX && enabled)
-		enabled = FALSE
-		WARNING("Fail2topic subsystem disabled. UNIX is not supported.")
+//	if (world.system_type == UNIX && enabled)
+//		enabled = FALSE
+//		WARNING("Fail2topic subsystem disabled. UNIX is not supported.")
 
 
 	if (!enabled)
