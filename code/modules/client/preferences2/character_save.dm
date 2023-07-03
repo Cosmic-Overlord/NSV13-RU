@@ -77,6 +77,8 @@
 	var/preferred_pilot_role = PILOT_COMBAT
 	//NSV13 - Added Flavor Text
 	var/flavor_text = ""
+	//Nsv13 - lizard hiss style pref
+	var/lizard_hiss_style = LIZARD_HISS_EXPANDED
 
 /datum/character_save/New()
 	real_name = get_default_name()
@@ -163,6 +165,9 @@
 
 	//NSV13 flavor text
 	SAFE_READ_QUERY(34, flavor_text)
+
+	//NSV13 lizard hiss style
+	SAFE_READ_QUERY(35, lizard_hiss_style)
 
 	//Sanitize. Please dont put query reads below this point. Please.
 
@@ -278,12 +283,7 @@
 	if(!parent)
 		CRASH("Someone called update_preview_icon() without passing a client.")
 	// Determine what job is marked as 'High' priority, and dress them up as such.
-	var/datum/job/previewJob
-	var/highest_pref = 0
-	for(var/job in job_preferences)
-		if(job_preferences[job] > highest_pref)
-			previewJob = SSjob.GetJob(job)
-			highest_pref = job_preferences[job]
+	var/datum/job/previewJob = get_highest_job() //NSV13 - Moved this stuff to a new proc
 
 	if(previewJob)
 		// Silicons only need a very basic preview since there is no customization for them.
@@ -350,7 +350,8 @@
 			equipped_gear,
 			preferred_squad,
 			preferred_pilot_role,
-			flavor_text
+			flavor_text,
+			lizard_hiss_style
 		) VALUES (
 			:slot,
 			:ckey,
@@ -386,7 +387,8 @@
 			:equipped_gear,
 			:preferred_squad,
 			:preferred_pilot_role,
-			:flavor_text
+			:flavor_text,
+			:lizard_hiss_style
 		)
 	"}, list(
 		// Now for the above but in a fucking monsterous list
@@ -424,7 +426,8 @@
 		"equipped_gear" = json_encode(equipped_gear),
 		"preferred_squad" = preferred_squad,
 		"preferred_pilot_role" = preferred_pilot_role,
-		"flavor_text" = flavor_text
+		"flavor_text" = flavor_text,
+		"lizard_hiss_style" = lizard_hiss_style
 	))
 
 	if(!insert_query.warn_execute())
@@ -509,3 +512,13 @@
 		character.update_body_parts(TRUE)
 
 	character.dna.update_body_size()
+
+//NSV13 - AI Custom Holographic Form
+/datum/character_save/proc/get_highest_job()
+	var/highest_pref = 0
+	var/datum/job/highest_job
+	for(var/job in job_preferences)
+		if(job_preferences[job] > highest_pref)
+			highest_job = SSjob.GetJob(job)
+			highest_pref = job_preferences[job]
+	return highest_job

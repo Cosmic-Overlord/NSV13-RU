@@ -99,6 +99,11 @@
                 prefix = "LOOC"
             to_chat(C,"<span class='looc'>[ADMIN_FLW(usr)]<span class='prefix'>[prefix]:</span> <EM>[src.key]/[src.mob.name]:</EM> <span class='message'>[msg]</span></span>")
 
+/client/verb/looc_wrapper()
+	set hidden = TRUE
+	var/message = input("", "LOOC \"text\"") as null|text
+	looc(message)
+
 /proc/toggle_looc(toggle = null) //nsv13 - adds a toggle for looc
     if(toggle != null) //if we're specifically en/disabling looc
         if(toggle != GLOB.looc_allowed)

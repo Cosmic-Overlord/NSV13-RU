@@ -3672,6 +3672,7 @@
 /area/hallway/nsv/deck1/hallway)
 "rj" = (
 /obj/structure/extinguisher_cabinet/east,
+/mob/living/simple_animal/hostile/retaliate/bat/sgt_araneus,
 /turf/open/floor/carpet/red,
 /area/crew_quarters/heads/hos)
 "rk" = (
@@ -4927,7 +4928,7 @@
 	name = "Executive requests console";
 	pixel_y = -32
 	},
-/obj/machinery/vending/cart{
+/obj/machinery/vending/job_disk{
 	density = 0;
 	pixel_x = 23
 	},

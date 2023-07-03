@@ -31,9 +31,6 @@ SUBSYSTEM_DEF(input)
 	default_macro_sets = list(
 		"default" = list(
 			"Tab" = "\".winset \\\"input.focus=true?map.focus=true input.background-color=[COLOR_INPUT_DISABLED]:input.focus=true input.background-color=[COLOR_INPUT_ENABLED]\\\"\"",
-			"O" = "ooc",
-			"T" = "\".winset \\\"command=\\\".start_typing say\\\";command=.init_say;saywindow.is-visible=true;saywindow.input.focus=true\\\"\"",
-			"M" = "\".winset \\\"command=\\\".start_typing me\\\";command=.init_me;mewindow.is-visible=true;mewindow.input.focus=true\\\"\"",
 			"Back" = "\".winset \\\"input.text=\\\"\\\"\\\"\"", // This makes it so backspace can remove default inputs
 			"Any" = "\"KeyDown \[\[*\]\]\"",
 			"Any+UP" = "\"KeyUp \[\[*\]\]\"",
@@ -41,13 +38,9 @@ SUBSYSTEM_DEF(input)
 		"old_default" = list(
 			"Tab" = "\".winset \\\"mainwindow.macro=old_hotkeys map.focus=true input.background-color=[COLOR_INPUT_DISABLED]\\\"\"",
 			"Ctrl+T" = "\".winset \\\"command=\\\".start_typing say\\\";command=.init_say;saywindow.is-visible=true;saywindow.input.focus=true\\\"\"",
-			"Ctrl+O" = "ooc",
 			),
 		"old_hotkeys" = list(
 			"Tab" = "\".winset \\\"mainwindow.macro=old_default input.focus=true input.background-color=[COLOR_INPUT_ENABLED]\\\"\"",
-			"O" = "ooc",
-			"T" = "\".winset \\\"command=\\\".start_typing say\\\";command=.init_say;saywindow.is-visible=true;saywindow.input.focus=true\\\"\"",
-			"M" = "\".winset \\\"command=\\\".start_typing me\\\";command=.init_me;mewindow.is-visible=true;mewindow.input.focus=true\\\"\"",
 			"Back" = "\".winset \\\"input.text=\\\"\\\"\\\"\"", // This makes it so backspace can remove default inputs
 			"Any" = "\"KeyDown \[\[*\]\]\"",
 			"Any+UP" = "\"KeyUp \[\[*\]\]\"",
@@ -60,7 +53,7 @@ SUBSYSTEM_DEF(input)
 	var/list/static/oldmode_keys = list(
 		"North", "East", "South", "West",
 		"Northeast", "Southeast", "Northwest", "Southwest",
-		"Insert", "Delete", "Ctrl", "Alt",
+		"Insert", "Delete", "Ctrl", "Alt", "Shift",
 		"F1", "F2", "F3", "F4", "F5", "F6", "F7", "F8", "F9", "F10", "F11", "F12",
 		)
 
@@ -82,6 +75,10 @@ SUBSYSTEM_DEF(input)
 		"X" = "X", // switch hands
 		"Y" = "Y", // activate item
 		"Z" = "Z", // activate item
+		"T" = "T", // say, whisper
+		"M" = "M", // me
+		"O" = "O", // ooc
+		"L" = "L", // looc
 		)
 
 	for(var/i in 1 to oldmode_ctrl_override_keys.len)

@@ -60,10 +60,10 @@
 	if(probability <= 0)
 		return phrase
 	phrase = html_decode(phrase)
-	var/leng = length(phrase)
+	var/leng = length_char(phrase)
 	. = ""
 	var/char = ""
-	for(var/i = 1, i <= leng, i += length(char))
+	for(var/i = 1, i <= leng, i += length_char(char))
 		char = phrase[i]
 		if(char == " " || !prob(probability))
 			. += char
@@ -94,6 +94,18 @@
 				newletter = "oo"
 			else if(lowerletter == "c")
 				newletter = "k"
+			else if(lowerletter == "о")
+				newletter ="у"
+			else if(lowerletter =="с")
+				newletter ="ч"
+			else if(lowerletter == "а")
+				newletter ="ах"
+			else if(lowerletter == "ц")
+				newletter ="к"
+			else if(lowerletter == "э")
+				newletter ="о"
+			else if(lowerletter == "г")
+				newletter ="х"
 		if(rand(1, 20) == 20)
 			if(newletter == " ")
 				newletter = "...huuuhhh..."
@@ -114,11 +126,11 @@
 /// Makes you talk like you got cult stunned, which is slurring but with some dark messages
 /proc/cultslur(phrase) // Inflicted on victims of a stun talisman
 	phrase = html_decode(phrase)
-	var/leng = length(phrase)
+	var/leng = length_char(phrase)
 	. = ""
 	var/newletter = ""
 	var/rawchar = ""
-	for(var/i = 1, i <= leng, i += length(rawchar))
+	for(var/i = 1, i <= leng, i += length_char(rawchar))
 		rawchar = newletter = phrase[i]
 		if(rand(1, 2) == 2)
 			var/lowerletter = lowertext(newletter)
@@ -158,11 +170,11 @@
 
 /proc/clockslur(phrase) // cultslur but for clock
 	phrase = html_decode(phrase)
-	var/leng = length(phrase)
+	var/leng = length_char(phrase)
 	. = ""
 	var/newletter = ""
 	var/rawchar = ""
-	for(var/i = 1, i <= leng, i += length(rawchar))
+	for(var/i = 1, i <= leng, i += length_char(rawchar))
 		rawchar = newletter = phrase[i]
 		if(rand(1, 2) == 2)
 			var/lowerletter = lowertext(newletter)
@@ -203,11 +215,11 @@
 ///Adds stuttering to the message passed in
 /proc/stutter(phrase)
 	phrase = html_decode(phrase)
-	var/leng = length(phrase)
+	var/leng = length_char(phrase)
 	. = ""
 	var/newletter = ""
 	var/rawchar
-	for(var/i = 1, i <= leng, i += length(rawchar))
+	for(var/i = 1, i <= leng, i += length_char(rawchar))
 		rawchar = newletter = phrase[i]
 		if(prob(80) && !(lowertext(newletter) in list("a", "e", "i", "o", "u", " ")))
 			if(prob(10))
@@ -250,8 +262,8 @@
 	. = ""
 	var/rawchar = ""
 	var/letter = ""
-	var/lentext = length(text)
-	for(var/i = 1, i <= lentext, i += length(rawchar))
+	var/lentext = length_char(text)
+	for(var/i = 1, i <= lentext, i += length_char(rawchar))
 		rawchar = letter = text[i]
 		if(prob(chance))
 			if(replace_characters)

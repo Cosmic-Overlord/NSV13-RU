@@ -98,6 +98,11 @@ GLOBAL_VAR_INIT(normal_ooc_colour, "#002eb8")
 	else
 		discordsendmsg("ooc", "**[key]:** [msg]")
 
+/client/verb/ooc_wrapper()
+	set hidden = TRUE
+	var/message = input("", "OOC \"text\"") as null|text
+	ooc(message)
+
 /proc/toggle_ooc(toggle = null)
 	if(toggle != null) //if we're specifically en/disabling ooc
 		if(toggle != GLOB.ooc_allowed)
