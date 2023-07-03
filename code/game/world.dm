@@ -6,7 +6,7 @@ GLOBAL_VAR(restart_counter)
 //So subsystems globals exist, but are not initialised
 /world/New()
 	//Keep the auxtools stuff at the top
-	AUXTOOLS_CHECK(AUXMOS)
+	// AUXTOOLS_CHECK(AUXMOS)
 
 	log_world("World loaded at [time_stamp()]!")
 	SSmetrics.world_init_time = REALTIMEOFDAY // Important
