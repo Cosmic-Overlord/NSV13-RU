@@ -229,7 +229,7 @@
 	config_entry_value = "https://www.patreon.com/user?u=10639001"
 
 /datum/config_entry/string/discordurl
-	config_entry_value = "https://nsv.beestation13.com/discord"
+	config_entry_value = "https://discord.gg/ru-tgmc"
 //NSV13 changes end
 
 /datum/config_entry/string/roundstatsurl
