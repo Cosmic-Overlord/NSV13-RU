@@ -1,0 +1,43 @@
+{
+    "map_name": "NSV Vulture",
+    "map_link": "Vulture",
+    "map_path": "map_files/Vulture",
+    "map_file": [
+        "vulture.dmm",
+        "vulture2.dmm"
+    ],
+    "traits": [
+        {
+            "Up": 1,
+            "Linkage": "Self"
+        },
+        {
+            "Down": -1,
+            "Linkage": "Self"
+        }
+    ],
+    "space_ruin_levels": -1,
+    "space_empty_levels": 0,
+    "shuttles": {
+        "cargo": "cargo_atlas",
+        "ferry": "ferry_fancy",
+        "emergency": "emergency_donut"
+    },
+    "mine_disable": 1,
+    "ship_type": "/obj/structure/overmap/nanotrasen/light_cruiser/vulture/starter",
+	"starmap_path": "config/starmap/starmap.json",
+
+    "map_description": "Unique vessel, the Vulture design was made to be cheap and robust.",
+    "manufacturer": "ERR_UNKN#",
+	"mapper": "Vulpis",
+    "commission_date": "Feb 26, 2261",
+    "strengths": ["Good firepower", "No complex reactor setup", "So simple"],
+    "weaknesses": ["Somewhat cramped", "Vulnerable to breaches and sabotage", "small departments"],
+	"equipment": [
+		"2 M4-15 'Hood' deck turrets",
+		"2 NT-BSG gauss turrets",
+		"3 M4-B torpedo tube",
+		"2 light fighters",
+		"3 M.R.S.P.A.C.M.A.N.-type portable generators"
+	]
+}
