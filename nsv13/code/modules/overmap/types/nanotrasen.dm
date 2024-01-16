@@ -18,6 +18,20 @@
 	icon_state = "default"
 	faction = "nanotrasen"
 
+/obj/structure/overmap/nanotrasen/custom
+	name = "vulture class custom fighter"
+	icon = 'nsv13/icons/overmap/new/nanotrasen/frigate.dmi'
+	icon_state = "vulture"
+	mass = MASS_SMALL
+	sprite_size = 48
+	damage_states = FALSE
+	bound_height = 32
+	bound_width = 32
+	obj_integrity = 350
+	max_integrity = 350
+	integrity_failure = 350
+	armor = list("overmap_light" = 40, "overmap_medium" = 25, "overmap_heavy" = 35)
+
 /obj/structure/overmap/nanotrasen/light_cruiser
 	name = "raptor class light frigate"
 	icon = 'nsv13/icons/overmap/new/nanotrasen/frigate.dmi'
@@ -31,7 +45,6 @@
 	max_integrity = 300
 	integrity_failure = 300
 	armor = list("overmap_light" = 30, "overmap_medium" = 20, "overmap_heavy" = 30)
-
 
 /obj/structure/overmap/nanotrasen/patrol_cruiser
 	name = "lupine class patrol cruiser"
@@ -184,6 +197,16 @@
 	weapon_types[FIRE_MODE_GAUSS] = new /datum/ship_weapon/gauss(src)
 	weapon_types[FIRE_MODE_PDC] = new /datum/ship_weapon/pdc_mount(src)
 	weapon_types[FIRE_MODE_HYBRID_RAIL] = new /datum/ship_weapon/hybrid_railgun(src)
+
+/obj/structure/overmap/nanotrasen/custom/starter //Currently assigned to Vulture
+	role = MAIN_OVERMAP
+	obj_integrity = 1600
+	max_integrity = 1600 //Max health
+	integrity_failure = 1600
+	starting_system = "Staging" //Required for all player ships
+	armor = list("overmap_light" = 95, "overmap_medium" = 50, "overmap_heavy" = 10)
+	overmap_deletion_traits = DAMAGE_STARTS_COUNTDOWN
+
 
 /obj/structure/overmap/nanotrasen/frigate/starter //Currently assigned to Jeppison and Atlas
 	role = MAIN_OVERMAP
