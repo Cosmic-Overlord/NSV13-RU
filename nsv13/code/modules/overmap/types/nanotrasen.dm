@@ -190,7 +190,7 @@
 	armor = list("overmap_light" = 95, "overmap_medium" = 50, "overmap_heavy" = 10)
 	overmap_deletion_traits = DAMAGE_STARTS_COUNTDOWN
 
-/obj/structure/overmap/nanotrasen/frigate/starter/shrike //TEMP UNTIL WE DIVERSIFY TYPES MORE
+/obj/structure/overmap/nanotrasen/frigate/starter/shrike //TEMP UNTIL WE DIVERSIFY TYPES MORE, currently assigned to shrike
 	icon_state = "shrike"
 
 /obj/structure/overmap/nanotrasen/frigate/starter/shrike/apply_weapons()
