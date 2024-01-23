@@ -24,15 +24,15 @@
         "emergency": "emergency_donut"
     },
     "mine_disable": 1,
-    "ship_type": "/obj/structure/overmap/nanotrasen/light_cruiser/vulture/starter",
+    "ship_type": "/obj/structure/overmap/nanotrasen/custom/starter",
 	"starmap_path": "config/starmap/starmap.json",
 
-    "map_description": "Unique vessel, the Vulture design was made to be cheap and robust.",
+    "map_description": "Unique vessel, the Vulture design for special order was made to be cheap and robust. The ship is assotiated with NT exclusively by a contract for the provision of services concluded with its captain, The ship's crew does not obey the NT, only the ship's captain.",
     "manufacturer": "ERR_UNKN#",
-	"mapper": "Vulpis",
+	"mapper": "IFF_Falcon",
     "commission_date": "Feb 26, 2261",
-    "strengths": ["Good firepower", "No complex reactor setup", "So simple"],
-    "weaknesses": ["Somewhat cramped", "Vulnerable to breaches and sabotage", "small departments"],
+    "strengths": ["Good firepower", "No complex reactor setup","Strong for its size" , "So simple"],
+    "weaknesses": ["Almost departments not allowned or cramped", "Vulnerable to breaches and sabotage", "small cargo storage"],
 	"equipment": [
 		"2 M4-15 'Hood' deck turrets",
 		"2 NT-BSG gauss turrets",
