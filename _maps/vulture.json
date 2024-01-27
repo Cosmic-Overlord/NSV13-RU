@@ -21,7 +21,7 @@
     "shuttles": {
         "cargo": "cargo_atlas",
         "ferry": "ferry_fancy",
-        "emergency": "emergency_donut"
+        "emergency": "emergency_void"
     },
     "mine_disable": 1,
     "ship_type": "/obj/structure/overmap/nanotrasen/custom/starter",
