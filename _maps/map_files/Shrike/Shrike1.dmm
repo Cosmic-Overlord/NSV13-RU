@@ -81,6 +81,7 @@
 /obj/machinery/light{
 	dir = 4
 	},
+/obj/machinery/portable_atmospherics/canister/oxygen,
 /turf/open/floor/plating,
 /area/vacant_room)
 "ax" = (
@@ -101,6 +102,10 @@
 /obj/structure/reagent_dispensers/foamtank/hull_repair_juice,
 /turf/open/floor/monotile/dark/airless,
 /area/space/nearstation)
+"aC" = (
+/obj/machinery/portable_atmospherics/canister/toxins,
+/turf/open/floor/plating,
+/area/vacant_room)
 "aH" = (
 /obj/docking_port/stationary{
 	dwidth = 6;
@@ -416,9 +421,10 @@
 /turf/open/floor/monotile/steel,
 /area/maintenance/department/cargo)
 "cc" = (
-/obj/structure/grille,
+/obj/machinery/portable_atmospherics/canister/toxins,
+/obj/machinery/portable_atmospherics/canister/toxins,
 /turf/open/floor/plating,
-/area/maintenance/department/cargo)
+/area/vacant_room)
 "ce" = (
 /obj/structure/cable/white{
 	icon_state = "1-2"
@@ -838,6 +844,11 @@
 /obj/structure/plasticflaps,
 /turf/open/floor/plasteel/techmaint,
 /area/quartermaster/miningdock)
+"dO" = (
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer2,
+/obj/machinery/portable_atmospherics/canister/nitrogen,
+/turf/open/floor/plating,
+/area/vacant_room)
 "dS" = (
 /obj/machinery/door/airlock/ship/public,
 /obj/effect/landmark/patrol_node{
@@ -1701,6 +1712,10 @@
 	},
 /turf/open/floor/plasteel/white/side,
 /area/medical/medbay/zone2)
+"hE" = (
+/obj/machinery/portable_atmospherics/canister/oxygen,
+/turf/open/floor/plating,
+/area/vacant_room)
 "hG" = (
 /obj/effect/turf_decal/guideline/guideline_out_arrow_con_alt/yellow{
 	dir = 8
@@ -1841,12 +1856,10 @@
 /turf/open/floor/plating/rusty_techgrid,
 /area/maintenance/department/cargo)
 "in" = (
-/obj/structure/grille,
-/obj/structure/barricade/wooden/crude{
-	max_integrity = 500
-	},
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4,
+/obj/machinery/portable_atmospherics/canister/oxygen,
 /turf/open/floor/plating,
-/area/maintenance/department/cargo)
+/area/vacant_room)
 "io" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
 	dir = 1
@@ -1917,7 +1930,7 @@
 /obj/machinery/light{
 	dir = 8
 	},
-/turf/open/openspace,
+/turf/open/floor/glass/reinforced,
 /area/engine/stormdrive/monitor)
 "iF" = (
 /obj/structure/sign/ship/deck{
@@ -2177,6 +2190,7 @@
 /obj/machinery/light{
 	dir = 8
 	},
+/obj/machinery/portable_atmospherics/canister/toxins,
 /turf/open/floor/plating,
 /area/vacant_room)
 "jS" = (
@@ -3448,6 +3462,7 @@
 /obj/structure/fluff/support_beam{
 	dir = 1
 	},
+/obj/machinery/portable_atmospherics/canister/toxins,
 /turf/open/floor/plating,
 /area/vacant_room)
 "qo" = (
@@ -4172,7 +4187,7 @@
 	dir = 6
 	},
 /obj/machinery/camera/autoname,
-/turf/open/openspace,
+/turf/open/floor/glass/reinforced,
 /area/engine/stormdrive/monitor)
 "tK" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
@@ -4459,7 +4474,7 @@
 /obj/machinery/light{
 	dir = 4
 	},
-/turf/open/openspace,
+/turf/open/floor/glass/reinforced,
 /area/engine/stormdrive/monitor)
 "va" = (
 /obj/machinery/firealarm/directional/west,
@@ -5460,7 +5475,7 @@
 /obj/machinery/camera/autoname{
 	dir = 4
 	},
-/turf/open/openspace,
+/turf/open/floor/glass/reinforced,
 /area/engine/stormdrive/monitor)
 "zF" = (
 /obj/machinery/portable_atmospherics/pump,
@@ -5539,7 +5554,7 @@
 /obj/structure/railing{
 	dir = 4
 	},
-/turf/open/openspace,
+/turf/open/floor/glass/reinforced,
 /area/engine/stormdrive/monitor)
 "Ad" = (
 /obj/machinery/space_heater,
@@ -6048,6 +6063,7 @@
 /area/engine/armour_pump)
 "CL" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2,
+/obj/machinery/portable_atmospherics/canister/toxins,
 /turf/open/floor/plating,
 /area/vacant_room)
 "CN" = (
@@ -6865,6 +6881,7 @@
 /obj/structure/fluff/support_beam{
 	dir = 1
 	},
+/obj/machinery/portable_atmospherics/canister/toxins,
 /turf/open/floor/plating/rusty_techgrid,
 /area/vacant_room)
 "GA" = (
@@ -6943,6 +6960,13 @@
 	lighting_colour_night = "#c1e1ff";
 	lighting_colour_tube = "#c1e1ff"
 	})
+"GW" = (
+/obj/structure/fluff/support_beam{
+	dir = 4
+	},
+/obj/machinery/portable_atmospherics/canister/oxygen,
+/turf/open/floor/plating,
+/area/vacant_room)
 "GX" = (
 /obj/structure/cable/yellow{
 	icon_state = "1-2"
@@ -7497,7 +7521,7 @@
 /obj/structure/railing{
 	dir = 5
 	},
-/turf/open/openspace,
+/turf/open/floor/glass/reinforced,
 /area/engine/stormdrive/monitor)
 "Jk" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
@@ -7831,7 +7855,7 @@
 /obj/machinery/camera/autoname{
 	dir = 8
 	},
-/turf/open/openspace,
+/turf/open/floor/glass/reinforced,
 /area/engine/stormdrive/monitor)
 "KO" = (
 /obj/structure/grille,
@@ -7994,6 +8018,10 @@
 /obj/machinery/light/runway,
 /turf/open/floor/monotile/dark/airless,
 /area/space/nearstation)
+"Lo" = (
+/obj/machinery/portable_atmospherics/canister/nitrogen,
+/turf/open/floor/plating,
+/area/vacant_room)
 "Lq" = (
 /obj/machinery/light/small{
 	dir = 4
@@ -8270,6 +8298,7 @@
 /area/maintenance/nsv/bridge)
 "MA" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4,
+/obj/machinery/portable_atmospherics/canister/toxins,
 /turf/open/floor/plating,
 /area/vacant_room)
 "MB" = (
@@ -8804,7 +8833,7 @@
 /obj/structure/railing{
 	dir = 1
 	},
-/turf/open/openspace,
+/turf/open/floor/glass/reinforced,
 /area/engine/stormdrive/monitor)
 "OF" = (
 /obj/machinery/camera/autoname{
@@ -8826,13 +8855,13 @@
 /obj/structure/railing{
 	dir = 6
 	},
-/turf/open/openspace,
+/turf/open/floor/glass/reinforced,
 /area/engine/stormdrive/monitor)
 "OK" = (
 /obj/structure/railing{
 	dir = 10
 	},
-/turf/open/openspace,
+/turf/open/floor/glass/reinforced,
 /area/engine/stormdrive/monitor)
 "OM" = (
 /obj/structure/hull_plate{
@@ -9116,7 +9145,7 @@
 /obj/structure/railing{
 	dir = 9
 	},
-/turf/open/openspace,
+/turf/open/floor/glass/reinforced,
 /area/engine/stormdrive/monitor)
 "PE" = (
 /obj/machinery/squad_vendor,
@@ -9506,7 +9535,7 @@
 /obj/structure/railing{
 	dir = 10
 	},
-/turf/open/openspace,
+/turf/open/floor/glass/reinforced,
 /area/engine/stormdrive/monitor)
 "QX" = (
 /obj/structure/railing{
@@ -9540,7 +9569,7 @@
 /obj/machinery/light{
 	dir = 4
 	},
-/turf/open/openspace,
+/turf/open/floor/glass/reinforced,
 /area/engine/stormdrive/monitor)
 "Re" = (
 /obj/structure/disposalpipe/segment,
@@ -9876,7 +9905,7 @@
 /turf/open/floor/plating/rusty_techgrid,
 /area/maintenance/nsv/bridge)
 "St" = (
-/turf/open/openspace,
+/turf/open/floor/glass/reinforced,
 /area/engine/stormdrive/monitor)
 "Su" = (
 /obj/structure/closet/secure_closet/hop{
@@ -9992,7 +10021,7 @@
 /area/ai_monitored/records)
 "SR" = (
 /obj/structure/railing,
-/turf/open/openspace,
+/turf/open/floor/glass/reinforced,
 /area/engine/stormdrive/monitor)
 "ST" = (
 /obj/machinery/telecomms/bus/preset_two,
@@ -10154,7 +10183,7 @@
 /obj/structure/railing{
 	dir = 8
 	},
-/turf/open/openspace,
+/turf/open/floor/glass/reinforced,
 /area/engine/stormdrive/monitor)
 "TS" = (
 /obj/structure/cable/white{
@@ -10544,7 +10573,7 @@
 /obj/machinery/light{
 	dir = 8
 	},
-/turf/open/openspace,
+/turf/open/floor/glass/reinforced,
 /area/engine/stormdrive/monitor)
 "UZ" = (
 /obj/structure/disposalpipe/segment{
@@ -42734,10 +42763,10 @@ Jb
 hV
 kj
 AA
-We
-We
-We
-We
+aC
+aC
+aC
+cc
 CL
 yt
 AA
@@ -42991,10 +43020,10 @@ FY
 wL
 pV
 AA
-We
-We
-We
-We
+aC
+aC
+aC
+cc
 MA
 sJ
 AO
@@ -43248,11 +43277,11 @@ QA
 AJ
 DB
 AA
-We
-We
-We
-We
-We
+aC
+aC
+aC
+aC
+aC
 ze
 AA
 bw
@@ -43505,11 +43534,11 @@ sd
 hV
 LS
 AA
-We
-We
-We
-We
-We
+Lo
+Lo
+Lo
+Lo
+Lo
 zq
 AA
 MR
@@ -43762,11 +43791,11 @@ vj
 mw
 Rw
 AA
-We
-We
-We
-We
-CL
+Lo
+Lo
+Lo
+Lo
+dO
 SN
 AA
 lB
@@ -44019,11 +44048,11 @@ FW
 Nn
 FW
 AA
-We
-We
-We
-We
-MA
+hE
+hE
+hE
+hE
+in
 zG
 AA
 On
@@ -44222,7 +44251,7 @@ Bh
 Bh
 li
 Rx
-cc
+cv
 Rx
 dv
 eJ
@@ -44276,11 +44305,11 @@ Uy
 qg
 BH
 AA
-Wk
+GW
 aq
-Wk
+GW
 aq
-Wk
+GW
 We
 AA
 bw
@@ -44480,7 +44509,7 @@ Bh
 li
 Rx
 cv
-in
+cv
 IM
 eY
 gF
