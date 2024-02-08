@@ -81,7 +81,6 @@
 /obj/machinery/light{
 	dir = 4
 	},
-/obj/machinery/portable_atmospherics/canister/oxygen,
 /turf/open/floor/plating,
 /area/vacant_room)
 "ax" = (
@@ -102,10 +101,6 @@
 /obj/structure/reagent_dispensers/foamtank/hull_repair_juice,
 /turf/open/floor/monotile/dark/airless,
 /area/space/nearstation)
-"aC" = (
-/obj/machinery/portable_atmospherics/canister/toxins,
-/turf/open/floor/plating,
-/area/vacant_room)
 "aH" = (
 /obj/docking_port/stationary{
 	dwidth = 6;
@@ -420,11 +415,6 @@
 	},
 /turf/open/floor/monotile/steel,
 /area/maintenance/department/cargo)
-"cc" = (
-/obj/machinery/portable_atmospherics/canister/toxins,
-/obj/machinery/portable_atmospherics/canister/toxins,
-/turf/open/floor/plating,
-/area/vacant_room)
 "ce" = (
 /obj/structure/cable/white{
 	icon_state = "1-2"
@@ -846,7 +836,6 @@
 /area/quartermaster/miningdock)
 "dO" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2,
-/obj/machinery/portable_atmospherics/canister/nitrogen,
 /turf/open/floor/plating,
 /area/vacant_room)
 "dS" = (
@@ -1415,18 +1404,12 @@
 /turf/open/floor/plasteel/dark,
 /area/ai_monitored/security/armory)
 "gt" = (
-/obj/structure/table/reinforced,
 /obj/structure/window/reinforced/spawner/west,
 /obj/structure/window/reinforced/spawner/east,
-/obj/machinery/door/window,
 /obj/machinery/light{
 	dir = 1
 	},
-/obj/item/storage/firstaid/brute{
-	pixel_x = 4;
-	pixel_y = 4
-	},
-/obj/item/storage/firstaid/advanced,
+/obj/machinery/chem_dispenser,
 /turf/open/floor/plasteel/white/side{
 	dir = 8
 	},
@@ -1712,10 +1695,6 @@
 	},
 /turf/open/floor/plasteel/white/side,
 /area/medical/medbay/zone2)
-"hE" = (
-/obj/machinery/portable_atmospherics/canister/oxygen,
-/turf/open/floor/plating,
-/area/vacant_room)
 "hG" = (
 /obj/effect/turf_decal/guideline/guideline_out_arrow_con_alt/yellow{
 	dir = 8
@@ -1855,11 +1834,6 @@
 	},
 /turf/open/floor/plating/rusty_techgrid,
 /area/maintenance/department/cargo)
-"in" = (
-/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4,
-/obj/machinery/portable_atmospherics/canister/oxygen,
-/turf/open/floor/plating,
-/area/vacant_room)
 "io" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
 	dir = 1
@@ -2190,7 +2164,6 @@
 /obj/machinery/light{
 	dir = 8
 	},
-/obj/machinery/portable_atmospherics/canister/toxins,
 /turf/open/floor/plating,
 /area/vacant_room)
 "jS" = (
@@ -3462,7 +3435,6 @@
 /obj/structure/fluff/support_beam{
 	dir = 1
 	},
-/obj/machinery/portable_atmospherics/canister/toxins,
 /turf/open/floor/plating,
 /area/vacant_room)
 "qo" = (
@@ -6061,11 +6033,6 @@
 /obj/effect/turf_decal/stripes/line,
 /turf/open/floor/mineral/plastitanium,
 /area/engine/armour_pump)
-"CL" = (
-/obj/machinery/atmospherics/components/unary/vent_pump/on/layer2,
-/obj/machinery/portable_atmospherics/canister/toxins,
-/turf/open/floor/plating,
-/area/vacant_room)
 "CN" = (
 /obj/structure/extinguisher_cabinet/east,
 /obj/machinery/camera/motion{
@@ -6881,7 +6848,7 @@
 /obj/structure/fluff/support_beam{
 	dir = 1
 	},
-/obj/machinery/portable_atmospherics/canister/toxins,
+/obj/effect/spawner/room/fivexfour,
 /turf/open/floor/plating/rusty_techgrid,
 /area/vacant_room)
 "GA" = (
@@ -6960,13 +6927,6 @@
 	lighting_colour_night = "#c1e1ff";
 	lighting_colour_tube = "#c1e1ff"
 	})
-"GW" = (
-/obj/structure/fluff/support_beam{
-	dir = 4
-	},
-/obj/machinery/portable_atmospherics/canister/oxygen,
-/turf/open/floor/plating,
-/area/vacant_room)
 "GX" = (
 /obj/structure/cable/yellow{
 	icon_state = "1-2"
@@ -8019,7 +7979,7 @@
 /turf/open/floor/monotile/dark/airless,
 /area/space/nearstation)
 "Lo" = (
-/obj/machinery/portable_atmospherics/canister/nitrogen,
+/obj/effect/spawner/room/fivexfour,
 /turf/open/floor/plating,
 /area/vacant_room)
 "Lq" = (
@@ -8298,7 +8258,6 @@
 /area/maintenance/nsv/bridge)
 "MA" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4,
-/obj/machinery/portable_atmospherics/canister/toxins,
 /turf/open/floor/plating,
 /area/vacant_room)
 "MB" = (
@@ -9004,6 +8963,11 @@
 	pixel_y = 4
 	},
 /obj/item/storage/firstaid/regular,
+/obj/item/storage/firstaid/advanced,
+/obj/item/storage/firstaid/brute{
+	pixel_x = 4;
+	pixel_y = 4
+	},
 /turf/open/floor/plasteel/white,
 /area/medical/storage)
 "Pi" = (
@@ -42763,11 +42727,11 @@ Jb
 hV
 kj
 AA
-aC
-aC
-aC
-cc
-CL
+We
+We
+We
+We
+dO
 yt
 AA
 Bj
@@ -43020,10 +42984,10 @@ FY
 wL
 pV
 AA
-aC
-aC
-aC
-cc
+We
+We
+We
+We
 MA
 sJ
 AO
@@ -43277,11 +43241,11 @@ QA
 AJ
 DB
 AA
-aC
-aC
-aC
-aC
-aC
+We
+We
+We
+We
+We
 ze
 AA
 bw
@@ -43534,10 +43498,10 @@ sd
 hV
 LS
 AA
-Lo
-Lo
-Lo
-Lo
+We
+We
+We
+We
 Lo
 zq
 AA
@@ -43791,10 +43755,10 @@ vj
 mw
 Rw
 AA
-Lo
-Lo
-Lo
-Lo
+We
+We
+We
+We
 dO
 SN
 AA
@@ -44048,11 +44012,11 @@ FW
 Nn
 FW
 AA
-hE
-hE
-hE
-hE
-in
+We
+We
+We
+We
+MA
 zG
 AA
 On
@@ -44305,11 +44269,11 @@ Uy
 qg
 BH
 AA
-GW
+Wk
 aq
-GW
+Wk
 aq
-GW
+Wk
 We
 AA
 bw
