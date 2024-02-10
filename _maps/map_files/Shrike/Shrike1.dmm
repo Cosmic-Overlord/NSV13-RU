@@ -89,14 +89,6 @@
 	},
 /turf/open/floor/plating/rusty_techgrid,
 /area/medical/genetics/cloning)
-"ay" = (
-/obj/structure/hull_plate/end{
-	dir = 1;
-	icon_state = "tgmc_outerhull_dir25";
-	obj_integrity = 100
-	},
-/turf/open/floor/engine/airless,
-/area/space/nearstation)
 "aA" = (
 /obj/structure/reagent_dispensers/foamtank/hull_repair_juice,
 /turf/open/floor/monotile/dark/airless,
@@ -269,11 +261,8 @@
 /turf/open/floor/plating/rusty_techgrid,
 /area/vacant_room)
 "bu" = (
-/obj/structure/hull_plate{
-	icon_state = "tgmc_outerhull75";
-	obj_integrity = 150
-	},
 /obj/machinery/light/runway,
+/obj/structure/hull_plate,
 /turf/open/floor/engine/airless,
 /area/space/nearstation)
 "bv" = (
@@ -862,8 +851,10 @@
 /turf/open/floor/plasteel/techmaint,
 /area/quartermaster/miningdock)
 "dV" = (
-/obj/structure/rack,
-/turf/open/floor/plating/foam,
+/obj/structure/closet/crate/medical,
+/obj/item/storage/firstaid,
+/obj/item/storage/firstaid/tactical,
+/turf/open/floor/plating,
 /area/maintenance/nsv/deck1/starboard)
 "ea" = (
 /obj/structure/hull_plate/end{
@@ -895,13 +886,6 @@
 	lighting_colour_night = "#c1e1ff";
 	lighting_colour_tube = "#c1e1ff"
 	})
-"ee" = (
-/obj/structure/hull_plate{
-	icon_state = "tgmc_outerhull0";
-	obj_integrity = 0
-	},
-/turf/open/floor/engine/airless,
-/area/space/nearstation)
 "ef" = (
 /obj/effect/spawner/lootdrop/grille_or_trash,
 /obj/structure/fluff/support_beam{
@@ -1078,17 +1062,6 @@
 	},
 /turf/open/floor/plating,
 /area/maintenance/nsv/deck1/port)
-"fb" = (
-/obj/structure/hull_plate{
-	icon_state = "tgmc_outerhull0";
-	obj_integrity = 0
-	},
-/obj/structure/hull_plate{
-	icon_state = "tgmc_outerhull0";
-	obj_integrity = 0
-	},
-/turf/open/floor/engine/airless,
-/area/space/nearstation)
 "fd" = (
 /obj/machinery/mineral/processing_unit_console{
 	density = 0;
@@ -2253,10 +2226,6 @@
 	},
 /turf/open/floor/plating/rusty_techgrid,
 /area/medical/storage)
-"kq" = (
-/obj/effect/spawner/lootdrop/grille_or_trash,
-/turf/open/floor/plating/foam,
-/area/maintenance/nsv/deck1/starboard)
 "kr" = (
 /obj/item/kirbyplants/random,
 /obj/machinery/power/apc/auto_name/north,
@@ -2449,13 +2418,6 @@
 /obj/machinery/atmospherics/pipe/multiz/layer2,
 /turf/open/openspace,
 /area/maintenance/nsv/deck1/starboard)
-"lE" = (
-/obj/structure/hull_plate{
-	icon_state = "tgmc_outerhull25";
-	obj_integrity = 50
-	},
-/turf/open/floor/engine/airless,
-/area/space/nearstation)
 "lF" = (
 /obj/structure/cable/white{
 	icon_state = "4-8"
@@ -3372,7 +3334,7 @@
 /area/engine/storage)
 "pZ" = (
 /obj/structure/reagent_dispensers/fueltank,
-/turf/open/floor/plating/foam,
+/turf/open/floor/plating,
 /area/maintenance/nsv/deck1/starboard)
 "qb" = (
 /turf/open/floor/plasteel/white/corner{
@@ -3599,9 +3561,6 @@
 /obj/machinery/ntnet_relay,
 /turf/open/floor/circuit/telecomms/mainframe,
 /area/tcommsat/server)
-"rt" = (
-/turf/open/floor/plating/foam,
-/area/maintenance/nsv/deck1/starboard)
 "ry" = (
 /obj/structure/rack,
 /obj/item/clothing/suit/armor/riot,
@@ -4802,12 +4761,6 @@
 	},
 /turf/open/floor/durasteel/padded,
 /area/medical/chemistry)
-"wS" = (
-/obj/structure/fluff/support_beam{
-	dir = 1
-	},
-/turf/open/floor/plating/foam,
-/area/maintenance/nsv/deck1/starboard)
 "wV" = (
 /obj/machinery/atmospherics/pipe/simple/supply/visible/layer2,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
@@ -5344,9 +5297,10 @@
 /turf/open/floor/plating,
 /area/engine/stormdrive/monitor)
 "yU" = (
-/obj/structure/rack,
-/obj/effect/spawner/lootdrop/maintenance/two,
-/turf/open/floor/plating/foam,
+/obj/item/storage/firstaid/ancient,
+/obj/item/storage/firstaid/ancient,
+/obj/structure/closet/crate/medical,
+/turf/open/floor/plating,
 /area/maintenance/nsv/deck1/starboard)
 "yY" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
@@ -6367,10 +6321,6 @@
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2,
 /turf/open/floor/plating,
 /area/engine/storage)
-"Ep" = (
-/obj/structure/foamedmetal,
-/turf/open/floor/plating/foam,
-/area/maintenance/nsv/deck1/starboard)
 "Er" = (
 /obj/structure/cable/white{
 	icon_state = "4-8"
@@ -8344,13 +8294,6 @@
 	initial_gas_mix = "TEMP=2.7"
 	},
 /area/space/nearstation)
-"Nc" = (
-/obj/structure/hull_plate{
-	icon_state = "tgmc_outerhull50";
-	obj_integrity = 100
-	},
-/turf/open/floor/engine/airless,
-/area/space/nearstation)
 "Nd" = (
 /obj/docking_port/stationary{
 	dir = 4;
@@ -8823,12 +8766,9 @@
 /turf/open/floor/glass/reinforced,
 /area/engine/stormdrive/monitor)
 "OM" = (
-/obj/structure/hull_plate{
-	icon_state = "tgmc_outerhull75";
-	obj_integrity = 150
-	},
-/turf/open/floor/engine/airless,
-/area/space/nearstation)
+/obj/structure/closet/radiation,
+/turf/open/floor/plating,
+/area/maintenance/nsv/deck1/starboard)
 "OP" = (
 /obj/structure/ladder,
 /obj/structure/lattice/catwalk,
@@ -11143,14 +11083,6 @@
 	lighting_colour_night = "#c1e1ff";
 	lighting_colour_tube = "#c1e1ff"
 	})
-"WZ" = (
-/obj/structure/hull_plate/end{
-	dir = 4;
-	icon_state = "tgmc_outerhull_dir25";
-	obj_integrity = 100
-	},
-/turf/open/floor/engine/airless,
-/area/space/nearstation)
 "Xa" = (
 /obj/structure/cable/green{
 	icon_state = "4-8"
@@ -41462,9 +41394,9 @@ qQ
 vG
 vG
 bw
-Ep
-Ep
-Ep
+bw
+bw
+bw
 iL
 cF
 li
@@ -41718,10 +41650,10 @@ vG
 ez
 vG
 jf
-wS
-rt
+BH
+jf
 yU
-Ep
+bw
 iL
 cF
 li
@@ -41976,9 +41908,9 @@ uq
 iU
 NX
 El
-rt
+jf
 dV
-Ep
+bw
 iL
 cF
 li
@@ -42231,11 +42163,11 @@ cn
 fz
 fK
 HV
-jf
+OM
 WA
-rt
-kq
-Ep
+jf
+ck
+bw
 iL
 cF
 li
@@ -42490,9 +42422,9 @@ Sg
 HV
 ck
 WA
-rt
+jf
 pZ
-Ep
+bw
 iL
 li
 li
@@ -42747,7 +42679,7 @@ Vj
 HV
 kW
 WA
-rt
+jf
 LZ
 bw
 iL
@@ -43004,7 +42936,7 @@ Tx
 HV
 CU
 WA
-rt
+jf
 bw
 bw
 xX
@@ -43770,10 +43702,10 @@ jf
 jf
 ng
 ZV
-kq
-rt
-rt
-Ep
+jf
+jf
+jf
+jf
 AD
 NX
 NX
@@ -49611,7 +49543,7 @@ IH
 Bh
 Bh
 Bh
-ay
+aU
 bu
 Wm
 Wm
@@ -49868,12 +49800,12 @@ IH
 Bh
 Bh
 Bh
-ay
-Nc
-Nc
-OM
-OM
-Nc
+aU
+Wm
+Wm
+Wm
+Wm
+Wm
 Wm
 TA
 Bh
@@ -50126,10 +50058,10 @@ Bh
 Bh
 aN
 Wm
-OM
-Nc
-Nc
-Nc
+Wm
+Wm
+Wm
+Wm
 Wm
 Wm
 TA
@@ -50383,11 +50315,11 @@ Bh
 Bh
 aU
 Wm
-OM
-ee
-lE
-Nc
-OM
+Wm
+Wm
+Wm
+Wm
+Wm
 Wm
 TA
 Bh
@@ -50641,10 +50573,10 @@ Bh
 aU
 Wm
 Wm
-OM
-fb
-lE
-OM
+Wm
+Wm
+Wm
+Wm
 Wm
 TA
 Bh
@@ -50898,9 +50830,9 @@ Bh
 aU
 Wm
 Wm
-OM
-ee
-OM
+Wm
+Wm
+Wm
 Wm
 Wm
 TA
@@ -51156,9 +51088,9 @@ aU
 Wm
 Wm
 Wm
-OM
-Nc
-OM
+Wm
+Wm
+Wm
 Wm
 TA
 Bh
@@ -51415,7 +51347,7 @@ Wm
 dg
 XS
 fQ
-OM
+Wm
 Wm
 TA
 Bh
@@ -52959,7 +52891,7 @@ hK
 fS
 Wm
 Wm
-OM
+Wm
 ir
 Bh
 Bh
@@ -53214,8 +53146,8 @@ aU
 Wm
 ea
 Wm
-Nc
-lE
+Wm
+Wm
 Wm
 cP
 Bh
@@ -53472,7 +53404,7 @@ LY
 LY
 LY
 LY
-WZ
+LY
 LY
 IO
 Bh

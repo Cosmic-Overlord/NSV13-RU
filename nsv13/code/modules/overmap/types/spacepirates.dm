@@ -157,9 +157,9 @@
 	damage_states = FALSE
 	bound_width = 160
 	bound_height = 160
-	obj_integrity = 5000
-	max_integrity = 5000
-	integrity_failure = 5000
+	obj_integrity = 3000
+	max_integrity = 3000
+	integrity_failure = 3000
 	shots_left = 35
 	torpedoes = 35
 	armor = list("overmap_light" = 95, "overmap_medium" = 80, "overmap_heavy" = 45)
