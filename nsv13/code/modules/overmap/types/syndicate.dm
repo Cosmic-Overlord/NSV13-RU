@@ -487,9 +487,9 @@
 	bound_height = 128
 	damage_states = FALSE
 	max_weapon_range = 85
-	obj_integrity = 5000
-	max_integrity = 5000
-	integrity_failure = 5000
+	obj_integrity = 7000
+	max_integrity = 7000
+	integrity_failure = 7000
 	speed_limit = 16
 	flak_battery_amount = 3
 	max_tracking_range = 90
