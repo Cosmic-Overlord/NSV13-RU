@@ -288,7 +288,7 @@ Misc projectile types, effects, think of this as the special FX file.
 	icon_state = "mac"
 	name = "tungsten slug"
 	icon = 'nsv13/icons/obj/projectiles_nsv.dmi'
-	damage = 150
+	damage = 300
 	speed = 1
 	homing_turn_speed = 2
 	flag = "overmap_heavy"
@@ -296,7 +296,7 @@ Misc projectile types, effects, think of this as the special FX file.
 
 /obj/item/projectile/bullet/railgun_slug/uranium //Heavier version
 	name = "uranium slug"
-	damage = 185
+	damage = 375
 	armour_penetration = 10
 
 // I think the idea is that they course-correct slightly, but only once? -Corvid
