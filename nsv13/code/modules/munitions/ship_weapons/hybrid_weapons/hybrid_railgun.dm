@@ -13,7 +13,7 @@
 	pixel_y = -64
 	fire_mode = FIRE_MODE_HYBRID_RAIL
 	ammo_type = /obj/item/ship_weapon/ammunition/railgun_ammo //preset to slug
-	max_ammo = 5 //preset to slug
+	max_ammo = 6 //preset to slug
 	semi_auto = TRUE
 
 	var/slug_shell = 0 //Use Slugs = 0. Use Shells = 1
@@ -81,15 +81,15 @@
 	if(slug_shell == 0)	//change to using Shells
 		slug_shell = 1
 		ammo_type = /obj/item/ship_weapon/ammunition/naval_artillery
-		max_ammo = 1
-		projectile_velo = 2.5 //Not so great at handling shells
+		max_ammo = 3
+		projectile_velo = 3 //Not so great at handling shells
 		capacitor_max_charge = 1000000 //1MW
 		say("Cycling complete: Configuration - 800mm Shell Selected")
 
 	else if(slug_shell == 1)	//change to using Slugs
 		slug_shell = 0
 		ammo_type = /obj/item/ship_weapon/ammunition/railgun_ammo
-		max_ammo = 5
+		max_ammo = 6
 		projectile_velo = 5 //Designed for slugs
 		capacitor_max_charge = 400000 //400kW
 		say("Cycling complete: Configuration - 400mm Slug Selected")
