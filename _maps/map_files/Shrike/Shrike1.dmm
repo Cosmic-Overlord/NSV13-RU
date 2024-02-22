@@ -12303,6 +12303,10 @@
 	lighting_colour_night = "#c1e1ff";
 	lighting_colour_tube = "#c1e1ff"
 	})
+"XK" = (
+/obj/structure/fluff/vls_hatch,
+/turf/open/floor/engine/airless,
+/area/space/nearstation)
 "XL" = (
 /obj/structure/ladder,
 /obj/structure/lattice/catwalk,
@@ -50110,10 +50114,10 @@ ps
 Er
 RI
 lm
-Wm
-Wm
-Wm
-Wm
+XK
+XK
+XK
+XK
 cP
 Bh
 Bh
@@ -50367,10 +50371,10 @@ eX
 Xy
 ED
 ED
-Wm
-Wm
-Wm
-Wm
+XK
+XK
+XK
+XK
 cP
 Bh
 Bh
