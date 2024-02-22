@@ -24,7 +24,7 @@ map atlas
 endmap
 
 map aetherwhisp
-	minplayers 12
+	minplayers 18
 	voteweight 0.5
 	votable
 endmap
@@ -35,7 +35,7 @@ map eclipse
 endmap
 
 map galactica
-	minplayers 27
+	minplayers 50
 	votable
 endmap
 
@@ -54,7 +54,7 @@ map serendipity
 endmap
 
 map shrike
-	maxplayers 24
+	minplayers 99
 	votable
 endmap
 

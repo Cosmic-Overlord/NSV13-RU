@@ -18,6 +18,16 @@
 "ad" = (
 /turf/open/floor/plasteel/dark,
 /area/nsv/weapons)
+"ae" = (
+/obj/structure/disposalpipe/segment{
+	dir = 10
+	},
+/turf/closed/wall/ship,
+/area/nsv/weapons/access_corridor{
+	lighting_colour_bulb = "#c1e1ff";
+	lighting_colour_night = "#c1e1ff";
+	lighting_colour_tube = "#c1e1ff"
+	})
 "af" = (
 /obj/structure/shuttle/engine/large{
 	dir = 1
@@ -119,6 +129,9 @@
 	},
 /obj/structure/cable/white{
 	icon_state = "1-6"
+	},
+/obj/structure/cable/yellow{
+	icon_state = "2-5"
 	},
 /turf/open/floor/plating/rusty_techgrid,
 /area/engine/stormdrive)
@@ -306,11 +319,11 @@
 	lighting_colour_tube = "#c1e1ff"
 	})
 "aU" = (
-/obj/structure/frame/computer{
-	dir = 1
+/obj/machinery/missile_builder/screwdriver{
+	dir = 4
 	},
-/turf/open/floor/plasteel/ridged/steel,
-/area/maintenance/nsv/weapons)
+/turf/open/floor/engine,
+/area/nsv/weapons)
 "aV" = (
 /obj/structure/table/glass,
 /obj/item/storage/firstaid/o2,
@@ -345,6 +358,9 @@
 /area/janitor)
 "bd" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4,
+/obj/structure/cable/yellow{
+	icon_state = "4-8"
+	},
 /turf/open/floor/plasteel/dark,
 /area/nsv/weapons)
 "bf" = (
@@ -427,6 +443,7 @@
 /obj/effect/turf_decal/guideline/guideline_in/red{
 	dir = 8
 	},
+/obj/structure/disposalpipe/segment,
 /turf/open/floor/monofloor{
 	dir = 4
 	},
@@ -436,19 +453,14 @@
 	lighting_colour_tube = "#c1e1ff"
 	})
 "bp" = (
-/obj/effect/turf_decal/tile/orange,
-/obj/machinery/conveyor{
-	dir = 8;
-	id = "railgun_conveyor"
-	},
-/turf/open/floor/plasteel/dark/corner{
+/obj/structure/disposalpipe/trunk{
 	dir = 1
 	},
-/area/nsv/weapons/fore{
-	lighting_colour_bulb = "#FF3232";
-	lighting_colour_night = "#FF3232";
-	lighting_colour_tube = "#FF3232"
-	})
+/obj/machinery/disposal/deliveryChute{
+	name = "Missile Factory Output"
+	},
+/turf/open/floor/holofloor,
+/area/nsv/weapons)
 "bs" = (
 /obj/effect/turf_decal/guideline/guideline_out_alt/yellow{
 	dir = 8
@@ -487,6 +499,7 @@
 	color = "#FF7F00";
 	dir = 4
 	},
+/obj/structure/disposalpipe/segment,
 /turf/open/floor/monofloor/corner{
 	dir = 5
 	},
@@ -494,6 +507,21 @@
 	lighting_colour_bulb = "#c1e1ff";
 	lighting_colour_night = "#c1e1ff";
 	lighting_colour_tube = "#c1e1ff"
+	})
+"bz" = (
+/obj/structure/disposalpipe/trunk,
+/obj/machinery/disposal/deliveryChute{
+	dir = 4;
+	name = "Munitions - Torpedoes"
+	},
+/obj/structure/fluff/support_beam{
+	dir = 1
+	},
+/turf/open/floor/plating/rusty_techgrid,
+/area/nsv/weapons/fore{
+	lighting_colour_bulb = "#FF3232";
+	lighting_colour_night = "#FF3232";
+	lighting_colour_tube = "#FF3232"
 	})
 "bA" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
@@ -1323,6 +1351,19 @@
 	dir = 1
 	},
 /area/medical/nsv)
+"dT" = (
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 4
+	},
+/obj/machinery/light,
+/turf/open/floor/plasteel/techmaint,
+/area/science/lab)
 "dW" = (
 /obj/machinery/atmospherics/pipe/simple/supply/visible/layer2{
 	dir = 1
@@ -1574,10 +1615,7 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 5
 	},
-/obj/structure/disposalpipe/segment{
-	dir = 5
-	},
-/turf/open/floor/plating/rusty_techgrid,
+/turf/open/floor/plasteel/dark/side,
 /area/maintenance/nsv/weapons)
 "eP" = (
 /turf/closed/wall/ship,
@@ -1620,10 +1658,11 @@
 	lighting_colour_tube = "#FF3232"
 	})
 "eU" = (
-/obj/structure/table,
-/obj/effect/spawner/lootdrop/maintenance,
-/turf/open/floor/plating,
-/area/maintenance/nsv/weapons)
+/obj/structure/disposalpipe/segment{
+	dir = 6
+	},
+/turf/closed/wall/ship,
+/area/nsv/weapons)
 "eV" = (
 /turf/closed/wall/ship,
 /area/engine/gravity_generator)
@@ -1701,6 +1740,9 @@
 	color = "#FF7F00";
 	dir = 10
 	},
+/obj/structure/disposalpipe/segment{
+	dir = 5
+	},
 /turf/open/floor/monofloor{
 	dir = 4
 	},
@@ -1727,6 +1769,27 @@
 	lighting_colour_night = "#c1e1ff";
 	lighting_colour_tube = "#c1e1ff"
 	})
+"fo" = (
+/obj/machinery/missile_builder/assembler{
+	dir = 4
+	},
+/obj/item/ship_weapon/parts/missile/guidance_system,
+/obj/item/ship_weapon/parts/missile/guidance_system,
+/obj/item/ship_weapon/parts/missile/guidance_system,
+/obj/item/ship_weapon/parts/missile/guidance_system,
+/obj/item/ship_weapon/parts/missile/guidance_system,
+/obj/item/ship_weapon/parts/missile/guidance_system,
+/obj/item/ship_weapon/parts/missile/guidance_system,
+/obj/item/ship_weapon/parts/missile/guidance_system,
+/obj/item/ship_weapon/parts/missile/guidance_system,
+/obj/item/ship_weapon/parts/missile/guidance_system,
+/obj/item/ship_weapon/parts/missile/guidance_system,
+/obj/item/ship_weapon/parts/missile/guidance_system,
+/obj/item/ship_weapon/parts/missile/guidance_system,
+/obj/item/ship_weapon/parts/missile/guidance_system,
+/obj/item/ship_weapon/parts/missile/guidance_system,
+/turf/open/floor/engine,
+/area/nsv/weapons)
 "fq" = (
 /obj/structure/disposalpipe/segment,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
@@ -1943,9 +2006,6 @@
 /turf/open/floor/plasteel/techmaint,
 /area/science/lab)
 "fW" = (
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
 /obj/structure/cable/white{
 	icon_state = "4-8"
 	},
@@ -1955,7 +2015,7 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 4
 	},
-/turf/open/floor/plating/rusty_techgrid,
+/turf/open/floor/plasteel/dark/side,
 /area/maintenance/nsv/weapons)
 "fZ" = (
 /obj/machinery/atmospherics/pipe/heat_exchanging/simple{
@@ -2018,7 +2078,12 @@
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
 	dir = 8
 	},
-/turf/open/floor/engine,
+/obj/machinery/computer/ship/munitions_computer/west{
+	pixel_x = -8
+	},
+/turf/open/floor/monofloor{
+	dir = 8
+	},
 /area/nsv/weapons/starboard{
 	lighting_colour_bulb = "#FF3232";
 	lighting_colour_night = "#FF3232";
@@ -2029,6 +2094,19 @@
 /area/space)
 "gj" = (
 /obj/machinery/airalarm/directional/east,
+/obj/machinery/light{
+	dir = 4
+	},
+/obj/item/ship_weapon/ammunition/torpedo{
+	pixel_y = 4
+	},
+/obj/item/ship_weapon/ammunition/torpedo{
+	pixel_y = 8
+	},
+/obj/item/ship_weapon/ammunition/torpedo,
+/obj/item/ship_weapon/ammunition/torpedo,
+/obj/item/ship_weapon/ammunition/torpedo,
+/obj/item/ship_weapon/ammunition/torpedo,
 /turf/open/floor/plasteel/dark/side{
 	dir = 8
 	},
@@ -2177,6 +2255,9 @@
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
 	dir = 4
 	},
+/obj/machinery/light{
+	dir = 1
+	},
 /turf/open/floor/plasteel/dark/side{
 	dir = 5
 	},
@@ -2282,6 +2363,16 @@
 	lighting_colour_night = "#FF3232";
 	lighting_colour_tube = "#FF3232"
 	})
+"gT" = (
+/obj/structure/cable/yellow{
+	icon_state = "4-8"
+	},
+/turf/closed/wall/r_wall/ship,
+/area/nsv/weapons/fore{
+	lighting_colour_bulb = "#FF3232";
+	lighting_colour_night = "#FF3232";
+	lighting_colour_tube = "#FF3232"
+	})
 "gU" = (
 /obj/structure/cable{
 	icon_state = "1-8"
@@ -2300,12 +2391,8 @@
 	lighting_colour_tube = "#FF3232"
 	})
 "gW" = (
-/obj/machinery/power/apc/auto_name/east,
-/obj/structure/cable/white{
-	icon_state = "0-8"
-	},
-/turf/open/floor/plating/rusty_techgrid,
-/area/maintenance/nsv/weapons)
+/turf/open/floor/holofloor,
+/area/nsv/weapons)
 "hb" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4,
 /obj/effect/turf_decal/ship/borderfloor{
@@ -2319,11 +2406,9 @@
 /turf/open/floor/plasteel/dark,
 /area/security)
 "hc" = (
-/obj/structure/fluff/support_beam{
-	dir = 4
+/turf/open/floor/plasteel/dark/side{
+	dir = 1
 	},
-/obj/structure/reagent_dispensers/watertank,
-/turf/open/floor/plating,
 /area/maintenance/nsv/weapons)
 "hd" = (
 /obj/structure/stairs{
@@ -2651,6 +2736,30 @@
 	lighting_colour_night = "#FF3232";
 	lighting_colour_tube = "#FF3232"
 	})
+"iB" = (
+/obj/structure/cable/white{
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/visible/layer2{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 4
+	},
+/obj/machinery/door/airlock/ship/maintenance{
+	dir = 4;
+	name = "Munitions Maintenance";
+	req_one_access_txt = "12"
+	},
+/turf/open/floor/plating/rusty_techgrid,
+/area/maintenance/nsv/weapons)
+"iC" = (
+/obj/machinery/conveyor/slow{
+	id = "atlas_torp"
+	},
+/obj/item/ship_weapon/ammunition/missile,
+/turf/open/floor/plating,
+/area/nsv/weapons)
 "iG" = (
 /obj/machinery/airalarm/directional/south,
 /obj/machinery/camera/autoname{
@@ -2685,6 +2794,13 @@
 	initial_gas_mix = "o2=2644;n2=10580;TEMP=293.15"
 	},
 /area/engine/atmos/starboard_atmos)
+"iK" = (
+/obj/machinery/conveyor/slow{
+	dir = 8;
+	id = "atlas_torp"
+	},
+/turf/open/floor/engine,
+/area/nsv/weapons)
 "iM" = (
 /turf/open/floor/monofloor/corner{
 	dir = 10
@@ -2893,12 +3009,12 @@
 /turf/open/floor/plating/rusty_techgrid,
 /area/engine/stormdrive)
 "jv" = (
-/obj/structure/fluff/support_beam{
-	dir = 4
+/obj/machinery/computer/ammo_sorter{
+	dir = 8;
+	id = "atlas_missilebay"
 	},
-/obj/effect/spawner/lootdrop/grille_or_trash,
-/turf/open/floor/plating,
-/area/maintenance/nsv/weapons)
+/turf/open/floor/engine,
+/area/nsv/weapons)
 "jw" = (
 /obj/machinery/camera/autoname,
 /obj/effect/turf_decal/guideline/guideline_out/blue{
@@ -2940,11 +3056,9 @@
 	lighting_colour_tube = "#FF3232"
 	})
 "jz" = (
-/obj/structure/cable/yellow{
-	icon_state = "0-8"
+/turf/open/floor/monofloor/corner{
+	dir = 1
 	},
-/obj/machinery/ship_weapon/energy/beam,
-/turf/open/floor/engine,
 /area/nsv/weapons/starboard{
 	lighting_colour_bulb = "#FF3232";
 	lighting_colour_night = "#FF3232";
@@ -3031,6 +3145,19 @@
 	},
 /turf/open/floor/monofloor,
 /area/crew_quarters/bar/mess_hall)
+"jK" = (
+/obj/machinery/light{
+	color = "#FF3232";
+	dir = 1
+	},
+/obj/machinery/ship_weapon/pdc_mount/north,
+/obj/machinery/ship_weapon/pdc_mount/north,
+/turf/open/floor/plating/rusty_techgrid,
+/area/nsv/weapons/fore{
+	lighting_colour_bulb = "#FF3232";
+	lighting_colour_night = "#FF3232";
+	lighting_colour_tube = "#FF3232"
+	})
 "jL" = (
 /obj/structure/cable/yellow{
 	icon_state = "1-2"
@@ -3091,6 +3218,9 @@
 /obj/effect/landmark/zebra_interlock_point,
 /obj/structure/cable/white{
 	icon_state = "0-8"
+	},
+/obj/structure/cable/yellow{
+	icon_state = "6-9"
 	},
 /turf/open/floor/plating/rusty_techgrid,
 /area/nsv/weapons/access_corridor{
@@ -3173,11 +3303,8 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 4
 	},
-/obj/structure/disposalpipe/junction/yjunction{
-	dir = 1
-	},
-/obj/structure/cable/white{
-	icon_state = "1-8"
+/obj/structure/disposalpipe/segment{
+	dir = 9
 	},
 /turf/open/floor/plating/rusty_techgrid,
 /area/maintenance/nsv/weapons)
@@ -3247,6 +3374,9 @@
 	},
 /obj/effect/turf_decal/guideline/guideline_in_alt/red{
 	dir = 1
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 5
 	},
 /turf/open/floor/monofloor/corner{
 	dir = 5
@@ -3323,9 +3453,18 @@
 	lighting_colour_tube = "#FF3232"
 	})
 "kA" = (
-/obj/machinery/conveyor{
-	id = "railgun_conveyor"
+/obj/structure/disposalpipe/segment,
+/obj/machinery/door/firedoor/border_only/directional/south,
+/obj/machinery/door/firedoor/border_only/directional/north,
+/obj/structure/cable/yellow{
+	icon_state = "1-2"
 	},
+/obj/machinery/door/airlock/ship/hatch{
+	name = "Munitions";
+	req_one_access_txt = "31;69"
+	},
+/obj/structure/fluff/support_beam,
+/obj/effect/landmark/zebra_interlock_point,
 /turf/open/floor/plasteel/dark/side{
 	dir = 8
 	},
@@ -3438,6 +3577,13 @@
 /obj/machinery/door/firedoor/border_only/directional/east,
 /turf/open/floor/monotile/steel,
 /area/quartermaster/storage)
+"kQ" = (
+/obj/structure/disposalpipe/segment,
+/obj/structure/cable/yellow{
+	icon_state = "1-4"
+	},
+/turf/open/floor/plating/rusty_techgrid,
+/area/maintenance/nsv/weapons)
 "kR" = (
 /obj/machinery/power/smes/engineering,
 /obj/structure/cable/green{
@@ -3460,8 +3606,25 @@
 /obj/structure/cable/yellow{
 	icon_state = "5-9"
 	},
-/turf/closed/wall/ship,
-/area/maintenance/nsv/weapons)
+/obj/machinery/airalarm/directional/west,
+/obj/item/ship_weapon/ammunition/missile,
+/obj/item/ship_weapon/ammunition/missile{
+	pixel_y = 10
+	},
+/obj/item/ship_weapon/ammunition/missile{
+	pixel_y = 6
+	},
+/obj/item/ship_weapon/ammunition/missile{
+	pixel_y = 4
+	},
+/obj/item/ship_weapon/ammunition/missile{
+	pixel_y = 2
+	},
+/obj/item/ship_weapon/ammunition/missile{
+	pixel_y = 8
+	},
+/turf/open/floor/holofloor,
+/area/nsv/weapons)
 "kW" = (
 /obj/structure/disposalpipe/sorting/mail{
 	dir = 1;
@@ -3473,6 +3636,9 @@
 /obj/structure/lattice/catwalk/over/ship,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 5
+	},
+/obj/structure/cable/yellow{
+	icon_state = "2-8"
 	},
 /turf/open/floor/plating/rusty_techgrid,
 /area/nsv/weapons/access_corridor{
@@ -3544,6 +3710,23 @@
 "lk" = (
 /turf/open/floor/carpet/red,
 /area/crew_quarters/theatre)
+"lm" = (
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
+/obj/structure/disposalpipe/segment,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
+/obj/structure/lattice/catwalk/over/ship,
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/turf/open/floor/plating/rusty_techgrid,
+/area/hallway/nsv/deck2/frame1/port{
+	lighting_colour_bulb = "#c1e1ff";
+	lighting_colour_night = "#c1e1ff";
+	lighting_colour_tube = "#c1e1ff"
+	})
 "ln" = (
 /obj/machinery/atmospherics/components/binary/pump{
 	dir = 4;
@@ -3558,19 +3741,18 @@
 /obj/structure/cable/yellow{
 	icon_state = "4-10"
 	},
-/turf/open/floor/plating,
-/area/maintenance/nsv/weapons)
+/turf/open/floor/engine,
+/area/nsv/weapons)
 "lq" = (
 /obj/structure/cable/white{
 	icon_state = "1-2"
 	},
-/obj/machinery/door/airlock/ship/maintenance{
-	name = "Munitions Maintenance";
-	req_one_access_txt = "12"
-	},
 /obj/machinery/door/firedoor/border_only/directional/north,
 /obj/machinery/door/firedoor/border_only/directional/south,
-/turf/open/floor/plating/rusty_techgrid,
+/obj/effect/landmark/zebra_interlock_point,
+/turf/open/floor/plasteel/dark/side{
+	dir = 1
+	},
 /area/maintenance/nsv/weapons)
 "lr" = (
 /obj/machinery/atmospherics/pipe/simple/supply/visible/layer2{
@@ -3595,6 +3777,13 @@
 /obj/machinery/airalarm/directional/south,
 /turf/open/floor/plating/rusty_techgrid,
 /area/science/robotics)
+"lu" = (
+/obj/machinery/disposal/deliveryChute{
+	name = "Missile Factory Output"
+	},
+/obj/structure/disposalpipe/trunk,
+/turf/open/floor/engine,
+/area/nsv/weapons)
 "lz" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
 	dir = 1
@@ -3642,6 +3831,18 @@
 	},
 /turf/open/floor/plating/rusty_techgrid,
 /area/maintenance/nsv/weapons)
+"lL" = (
+/obj/machinery/computer/ship/munitions_computer/west{
+	pixel_x = -8
+	},
+/turf/open/floor/monofloor{
+	dir = 8
+	},
+/area/nsv/weapons/starboard{
+	lighting_colour_bulb = "#FF3232";
+	lighting_colour_night = "#FF3232";
+	lighting_colour_tube = "#FF3232"
+	})
 "lM" = (
 /obj/machinery/computer/atmos_control/tank/oxygen_tank{
 	dir = 1
@@ -3679,9 +3880,27 @@
 /turf/open/floor/plasteel/checker,
 /area/crew_quarters/kitchen)
 "lT" = (
-/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4,
-/turf/open/floor/carpet,
-/area/maintenance/nsv/weapons)
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
+/obj/machinery/missile_builder/assembler{
+	dir = 4
+	},
+/obj/item/ship_weapon/parts/missile/propulsion_system,
+/obj/item/ship_weapon/parts/missile/propulsion_system,
+/obj/item/ship_weapon/parts/missile/propulsion_system,
+/obj/item/ship_weapon/parts/missile/propulsion_system,
+/obj/item/ship_weapon/parts/missile/propulsion_system,
+/obj/item/ship_weapon/parts/missile/propulsion_system,
+/obj/item/ship_weapon/parts/missile/propulsion_system,
+/obj/item/ship_weapon/parts/missile/propulsion_system,
+/obj/item/ship_weapon/parts/missile/propulsion_system,
+/obj/item/ship_weapon/parts/missile/propulsion_system,
+/obj/item/ship_weapon/parts/missile/propulsion_system,
+/obj/item/ship_weapon/parts/missile/propulsion_system,
+/obj/item/ship_weapon/parts/missile/propulsion_system,
+/obj/item/ship_weapon/parts/missile/propulsion_system,
+/obj/item/ship_weapon/parts/missile/propulsion_system,
+/turf/open/floor/engine,
+/area/nsv/weapons)
 "lU" = (
 /obj/structure/cable/white{
 	icon_state = "1-2"
@@ -3766,6 +3985,7 @@
 	color = "#c1e1ff";
 	dir = 4
 	},
+/obj/structure/disposalpipe/segment,
 /turf/open/floor/monofloor{
 	dir = 4
 	},
@@ -3928,15 +4148,15 @@
 /turf/open/floor/plasteel/dark,
 /area/security)
 "nb" = (
-/obj/structure/chair/fancy/sofa/mono/left{
-	color = "#ff0000";
-	dir = 8
-	},
 /obj/structure/cable/yellow{
 	icon_state = "6-10"
 	},
-/turf/open/floor/carpet,
-/area/maintenance/nsv/weapons)
+/obj/machinery/conveyor/slow{
+	dir = 1;
+	id = "atlas_torp"
+	},
+/turf/open/floor/engine,
+/area/nsv/weapons)
 "nc" = (
 /obj/machinery/atmospherics/pipe/simple/supply/visible/layer2{
 	dir = 1
@@ -4386,6 +4606,27 @@
 /obj/structure/closet/crate/mail,
 /turf/open/floor/plating,
 /area/quartermaster/sorting)
+"oE" = (
+/obj/item/ship_weapon/parts/missile/iff_card,
+/obj/item/ship_weapon/parts/missile/iff_card,
+/obj/item/ship_weapon/parts/missile/iff_card,
+/obj/item/ship_weapon/parts/missile/iff_card,
+/obj/item/ship_weapon/parts/missile/iff_card,
+/obj/item/ship_weapon/parts/missile/iff_card,
+/obj/item/ship_weapon/parts/missile/iff_card,
+/obj/item/ship_weapon/parts/missile/iff_card,
+/obj/item/ship_weapon/parts/missile/iff_card,
+/obj/item/ship_weapon/parts/missile/iff_card,
+/obj/item/ship_weapon/parts/missile/iff_card,
+/obj/item/ship_weapon/parts/missile/iff_card,
+/obj/item/ship_weapon/parts/missile/iff_card,
+/obj/item/ship_weapon/parts/missile/iff_card,
+/obj/item/ship_weapon/parts/missile/iff_card,
+/obj/machinery/missile_builder/assembler{
+	dir = 4
+	},
+/turf/open/floor/engine,
+/area/nsv/weapons)
 "oF" = (
 /obj/machinery/door/airlock/ship/external/glass{
 	name = "Arrivals"
@@ -4443,29 +4684,12 @@
 /turf/open/floor/monotile/steel,
 /area/quartermaster/storage)
 "oM" = (
-/obj/machinery/ammo_sorter/upgraded{
-	name = "Railgun Slug Rack I"
+/obj/structure/cable/yellow{
+	icon_state = "4-8"
 	},
-/obj/item/ship_weapon/ammunition/railgun_ammo,
-/obj/item/ship_weapon/ammunition/railgun_ammo,
-/obj/item/ship_weapon/ammunition/railgun_ammo,
-/obj/item/ship_weapon/ammunition/railgun_ammo,
-/obj/item/ship_weapon/ammunition/railgun_ammo,
-/obj/item/ship_weapon/ammunition/railgun_ammo,
-/obj/item/ship_weapon/ammunition/railgun_ammo,
-/obj/item/ship_weapon/ammunition/railgun_ammo,
-/obj/item/ship_weapon/ammunition/railgun_ammo,
-/obj/item/ship_weapon/ammunition/railgun_ammo,
-/obj/item/ship_weapon/ammunition/railgun_ammo,
-/obj/item/ship_weapon/ammunition/railgun_ammo,
-/obj/item/ship_weapon/ammunition/railgun_ammo,
-/obj/item/ship_weapon/ammunition/railgun_ammo,
-/obj/item/ship_weapon/ammunition/railgun_ammo,
-/obj/item/ship_weapon/ammunition/railgun_ammo,
-/obj/item/ship_weapon/ammunition/railgun_ammo,
-/obj/item/ship_weapon/ammunition/railgun_ammo,
-/obj/item/ship_weapon/ammunition/railgun_ammo,
-/obj/item/ship_weapon/ammunition/railgun_ammo,
+/obj/structure/fluff/support_beam{
+	dir = 4
+	},
 /turf/open/floor/plasteel/dark,
 /area/nsv/weapons/fore{
 	lighting_colour_bulb = "#FF3232";
@@ -4616,6 +4840,17 @@
 	},
 /turf/open/floor/plating/rusty_techgrid,
 /area/quartermaster/storage)
+"pt" = (
+/obj/structure/fluff/support_beam{
+	dir = 1
+	},
+/obj/structure/munitions_trolley,
+/turf/open/floor/plating/rusty_techgrid,
+/area/nsv/weapons/fore{
+	lighting_colour_bulb = "#FF3232";
+	lighting_colour_night = "#FF3232";
+	lighting_colour_tube = "#FF3232"
+	})
 "pv" = (
 /obj/effect/landmark/start/cargo_technician,
 /turf/open/floor/monotile/steel,
@@ -4647,7 +4882,10 @@
 /obj/machinery/camera/autoname{
 	dir = 8
 	},
-/turf/open/floor/plasteel/ridged/steel,
+/obj/machinery/computer/ship/munitions_computer/west{
+	dir = 4
+	},
+/turf/open/floor/monofloor/corner,
 /area/nsv/weapons/starboard{
 	lighting_colour_bulb = "#FF3232";
 	lighting_colour_night = "#FF3232";
@@ -4666,15 +4904,9 @@
 /turf/open/floor/plating/rusty_techgrid,
 /area/engine/stormdrive)
 "pE" = (
-/obj/effect/turf_decal/tile/orange{
-	dir = 4
-	},
 /obj/structure/extinguisher_cabinet/north,
-/obj/structure/cable/yellow{
-	icon_state = "4-8"
-	},
-/turf/open/floor/plasteel/dark/corner{
-	dir = 8
+/turf/open/floor/monofloor{
+	dir = 1
 	},
 /area/nsv/weapons/starboard{
 	lighting_colour_bulb = "#FF3232";
@@ -4727,11 +4959,8 @@
 /turf/open/floor/plating/rusty_techgrid,
 /area/maintenance/department/crew_quarters/bar)
 "pM" = (
-/obj/structure/cable/white{
-	icon_state = "0-8"
-	},
-/obj/machinery/ship_weapon/hybrid_rail{
-	dir = 4
+/obj/structure/fluff/support_beam{
+	dir = 1
 	},
 /turf/open/floor/plating/rusty_techgrid,
 /area/nsv/weapons/fore{
@@ -4976,7 +5205,7 @@
 /obj/structure/cable/white{
 	icon_state = "8-16"
 	},
-/turf/open/floor/plating/rusty_techgrid,
+/turf/open/floor/plasteel/dark/side,
 /area/maintenance/nsv/weapons)
 "qy" = (
 /obj/machinery/atmospherics/pipe/simple/supply/visible/layer2{
@@ -5000,6 +5229,19 @@
 /obj/effect/landmark/zebra_interlock_point,
 /turf/open/space/basic,
 /area/space/nearstation)
+"qA" = (
+/obj/structure/disposalpipe/segment,
+/obj/structure/cable/yellow{
+	icon_state = "1-2"
+	},
+/turf/open/floor/plasteel/dark/side{
+	dir = 8
+	},
+/area/nsv/weapons/fore{
+	lighting_colour_bulb = "#FF3232";
+	lighting_colour_night = "#FF3232";
+	lighting_colour_tube = "#FF3232"
+	})
 "qC" = (
 /obj/machinery/door/airlock/ship/station{
 	dir = 4;
@@ -5037,10 +5279,23 @@
 "qI" = (
 /turf/open/floor/plating,
 /area/maintenance/department/crew_quarters/bar)
+"qJ" = (
+/obj/effect/turf_decal/tile/red{
+	dir = 8
+	},
+/turf/open/floor/plasteel/dark/side,
+/area/nsv/weapons/fore{
+	lighting_colour_bulb = "#FF3232";
+	lighting_colour_night = "#FF3232";
+	lighting_colour_tube = "#FF3232"
+	})
 "qK" = (
-/obj/structure/filingcabinet,
-/turf/open/floor/plasteel/ridged/steel,
-/area/maintenance/nsv/weapons)
+/obj/machinery/conveyor/slow{
+	id = "atlas_torp"
+	},
+/obj/item/ship_weapon/ammunition/torpedo/hellfire,
+/turf/open/floor/plating,
+/area/nsv/weapons)
 "qM" = (
 /turf/open/floor/monofloor{
 	dir = 1
@@ -5107,9 +5362,23 @@
 	},
 /turf/open/floor/plating/rusty_techgrid,
 /area/nsv/weapons)
+"qV" = (
+/obj/machinery/ship_weapon/torpedo_launcher/east,
+/obj/machinery/computer/ship/munitions_computer/west{
+	pixel_x = -8
+	},
+/turf/open/floor/engine,
+/area/nsv/weapons/fore{
+	lighting_colour_bulb = "#FF3232";
+	lighting_colour_night = "#FF3232";
+	lighting_colour_tube = "#FF3232"
+	})
 "qW" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
+	},
+/obj/structure/cable/yellow{
+	icon_state = "1-2"
 	},
 /turf/open/floor/plating/rusty_techgrid,
 /area/engine/stormdrive)
@@ -5128,6 +5397,11 @@
 /obj/structure/cable/yellow{
 	icon_state = "4-8"
 	},
+/obj/structure/disposalpipe/segment,
+/obj/structure/fluff/support_beam{
+	dir = 1
+	},
+/obj/effect/landmark/zebra_interlock_point,
 /turf/open/floor/plating/rusty_techgrid,
 /area/nsv/weapons/fore{
 	lighting_colour_bulb = "#FF3232";
@@ -5223,6 +5497,21 @@
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer4,
 /turf/open/floor/plating/rusty_techgrid,
 /area/nsv/weapons/gauss/battery/deck2/starboard{
+	lighting_colour_bulb = "#FF3232";
+	lighting_colour_night = "#FF3232";
+	lighting_colour_tube = "#FF3232"
+	})
+"ro" = (
+/obj/effect/turf_decal/tile/red{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/red{
+	dir = 8
+	},
+/turf/open/floor/plasteel/dark/side{
+	dir = 1
+	},
+/area/nsv/weapons/fore{
 	lighting_colour_bulb = "#FF3232";
 	lighting_colour_night = "#FF3232";
 	lighting_colour_tube = "#FF3232"
@@ -5348,18 +5637,12 @@
 /turf/open/floor/monotile/dark,
 /area/quartermaster/storage)
 "rK" = (
-/obj/machinery/door/firedoor/border_only/directional/west,
-/obj/machinery/door/firedoor/border_only/directional/east,
 /obj/structure/cable/yellow{
 	icon_state = "6-10"
 	},
-/obj/machinery/door/airlock/ship/maintenance{
-	dir = 4;
-	name = "Munitions Maintenance";
-	req_one_access_txt = "12"
-	},
-/turf/open/floor/plating,
-/area/maintenance/nsv/weapons)
+/obj/structure/disposalpipe/segment,
+/turf/open/floor/engine,
+/area/nsv/weapons)
 "rL" = (
 /obj/structure/closet/secure_closet/evidence,
 /turf/open/floor/durasteel/techfloor_grid,
@@ -5423,13 +5706,15 @@
 	lighting_colour_tube = "#c1e1ff"
 	})
 "rT" = (
-/obj/effect/landmark/event_spawn,
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2,
 /obj/structure/cable/yellow{
 	icon_state = "6-8"
 	},
-/turf/open/floor/carpet,
-/area/maintenance/nsv/weapons)
+/obj/structure/fluff/support_beam{
+	dir = 4
+	},
+/turf/open/floor/engine,
+/area/nsv/weapons)
 "rU" = (
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -5592,16 +5877,33 @@
 /obj/item/hand_labeler,
 /turf/open/floor/plating/rusty_techgrid,
 /area/quartermaster/sorting)
-"sm" = (
-/obj/structure/table/wood,
-/obj/item/paper_bin{
-	pixel_x = 5
-	},
-/obj/item/pen/fountain{
-	pixel_x = 5
-	},
-/turf/open/floor/plasteel/ridged/steel,
+"si" = (
+/obj/structure/disposalpipe/segment,
+/turf/closed/wall/ship,
 /area/maintenance/nsv/weapons)
+"sm" = (
+/obj/structure/munitions_trolley,
+/turf/open/floor/engine,
+/area/nsv/weapons)
+"sq" = (
+/obj/machinery/light{
+	dir = 4
+	},
+/obj/item/ship_weapon/ammunition/torpedo{
+	pixel_y = 4
+	},
+/obj/item/ship_weapon/ammunition/torpedo{
+	pixel_y = 8
+	},
+/obj/item/ship_weapon/ammunition/torpedo,
+/turf/open/floor/plasteel/dark/side{
+	dir = 8
+	},
+/area/nsv/weapons/fore{
+	lighting_colour_bulb = "#FF3232";
+	lighting_colour_night = "#FF3232";
+	lighting_colour_tube = "#FF3232"
+	})
 "sr" = (
 /obj/structure/disposalpipe/segment{
 	dir = 9
@@ -5617,6 +5919,14 @@
 /obj/machinery/airalarm/directional/south,
 /turf/open/floor/plating,
 /area/quartermaster/sorting)
+"sv" = (
+/obj/item/radio/intercom/directional/south,
+/obj/machinery/atmospherics/components/unary/portables_connector/visible{
+	dir = 1
+	},
+/obj/machinery/portable_atmospherics/canister/pluoxium,
+/turf/open/floor/plating,
+/area/engine/stormdrive)
 "sx" = (
 /obj/structure/cable/green{
 	icon_state = "1-2"
@@ -5653,6 +5963,16 @@
 	dir = 8
 	},
 /area/crew_quarters/bar/mess_hall)
+"sF" = (
+/obj/machinery/door/airlock/ship/maintenance{
+	dir = 4;
+	name = "Munitions Maintenance";
+	req_one_access_txt = "12"
+	},
+/obj/machinery/door/firedoor/border_only/directional/west,
+/obj/machinery/door/firedoor/border_only/directional/east,
+/turf/open/floor/plating,
+/area/nsv/weapons)
 "sH" = (
 /obj/machinery/requests_console{
 	department = "Science";
@@ -5723,6 +6043,10 @@
 	dir = 8
 	},
 /obj/structure/closet/bombcloset,
+/obj/machinery/airalarm/directional/south,
+/obj/machinery/camera/autoname{
+	dir = 1
+	},
 /turf/open/floor/plasteel/dark/corner{
 	dir = 4
 	},
@@ -5819,6 +6143,9 @@
 	color = "#FF7F00";
 	dir = 8
 	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
 /turf/open/floor/monofloor{
 	dir = 8
 	},
@@ -5841,6 +6168,9 @@
 	},
 /obj/effect/turf_decal/guideline/guideline_in_alt/red{
 	dir = 4
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 10
 	},
 /turf/open/floor/monofloor/corner{
 	dir = 6
@@ -5907,6 +6237,9 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 9
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
 	},
 /turf/open/floor/plating/rusty_techgrid,
 /area/quartermaster/storage)
@@ -6024,6 +6357,24 @@
 /obj/structure/plasticflaps,
 /turf/open/floor/plating/rusty_techgrid,
 /area/quartermaster/sorting)
+"tK" = (
+/obj/machinery/camera/autoname{
+	dir = 1
+	},
+/obj/structure/cable/yellow{
+	icon_state = "4-8"
+	},
+/obj/structure/fluff/support_beam{
+	dir = 4
+	},
+/turf/open/floor/plasteel/dark/side{
+	dir = 1
+	},
+/area/nsv/weapons/fore{
+	lighting_colour_bulb = "#FF3232";
+	lighting_colour_night = "#FF3232";
+	lighting_colour_tube = "#FF3232"
+	})
 "tL" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
 	dir = 1
@@ -6041,29 +6392,9 @@
 	lighting_colour_tube = "#c1e1ff"
 	})
 "tM" = (
-/obj/item/ship_weapon/ammunition/railgun_ammo,
-/obj/item/ship_weapon/ammunition/railgun_ammo,
-/obj/item/ship_weapon/ammunition/railgun_ammo,
-/obj/item/ship_weapon/ammunition/railgun_ammo,
-/obj/item/ship_weapon/ammunition/railgun_ammo,
-/obj/item/ship_weapon/ammunition/railgun_ammo,
-/obj/item/ship_weapon/ammunition/railgun_ammo,
-/obj/item/ship_weapon/ammunition/railgun_ammo,
-/obj/item/ship_weapon/ammunition/railgun_ammo,
-/obj/item/ship_weapon/ammunition/railgun_ammo,
-/obj/item/ship_weapon/ammunition/railgun_ammo,
-/obj/item/ship_weapon/ammunition/railgun_ammo,
-/obj/item/ship_weapon/ammunition/railgun_ammo,
-/obj/item/ship_weapon/ammunition/railgun_ammo,
-/obj/item/ship_weapon/ammunition/railgun_ammo,
-/obj/item/ship_weapon/ammunition/railgun_ammo,
-/obj/item/ship_weapon/ammunition/railgun_ammo,
-/obj/item/ship_weapon/ammunition/railgun_ammo,
-/obj/item/ship_weapon/ammunition/railgun_ammo,
-/obj/item/ship_weapon/ammunition/railgun_ammo,
-/obj/machinery/ammo_sorter/upgraded{
-	name = "Railgun Slug Rack III"
-	},
+/obj/structure/window/reinforced/spawner,
+/obj/structure/window/reinforced/spawner/north,
+/obj/structure/window/reinforced/spawner/east,
 /turf/open/floor/plasteel/dark/side{
 	dir = 8
 	},
@@ -6106,15 +6437,9 @@
 /turf/closed/wall/ship,
 /area/quartermaster/storage)
 "tY" = (
-/obj/machinery/door/firedoor/border_only/directional/west,
-/obj/machinery/door/firedoor/border_only/directional/east,
-/obj/machinery/door/airlock/ship/maintenance{
-	dir = 4;
-	name = "Munitions Maintenance";
-	req_one_access_txt = "12"
-	},
-/turf/open/floor/plating,
-/area/maintenance/nsv/weapons)
+/obj/structure/disposalpipe/segment,
+/turf/open/floor/engine,
+/area/nsv/weapons)
 "ua" = (
 /turf/open/floor/monofloor/corner{
 	dir = 4
@@ -6238,6 +6563,10 @@
 /obj/machinery/light/small{
 	dir = 1
 	},
+/obj/item/disk/design_disk/hybrid_rail_slugs{
+	pixel_x = 5;
+	pixel_y = 2
+	},
 /turf/open/floor/plating,
 /area/maintenance/nsv/weapons)
 "ur" = (
@@ -6329,6 +6658,17 @@
 	icon_state = "4-10"
 	},
 /obj/machinery/firealarm/directional/south,
+/obj/effect/turf_decal/box/red,
+/obj/structure/disposalpipe/trunk{
+	dir = 4
+	},
+/obj/machinery/disposal/deliveryChute{
+	dir = 4;
+	name = "Munitions - Torpedoes"
+	},
+/obj/structure/window/reinforced/spawner/north,
+/obj/structure/window/reinforced/spawner/west,
+/obj/structure/window/reinforced/spawner,
 /turf/open/floor/plating/rusty_techgrid,
 /area/quartermaster/storage)
 "uQ" = (
@@ -6357,6 +6697,9 @@
 	},
 /obj/machinery/atmospherics/pipe/manifold/supply/visible/layer2,
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/visible/layer4,
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
 /turf/open/floor/plating/rusty_techgrid,
 /area/quartermaster/storage)
 "uW" = (
@@ -6372,29 +6715,17 @@
 /turf/open/floor/plating/rusty_techgrid,
 /area/engine/stormdrive)
 "uY" = (
-/obj/structure/disposalpipe/segment,
 /obj/machinery/atmospherics/pipe/simple/supply/visible/layer2,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
-/turf/open/floor/plating/rusty_techgrid,
-/area/maintenance/nsv/weapons)
+/obj/structure/disposalpipe/segment,
+/turf/open/floor/plasteel/dark/side{
+	dir = 1
+	},
+/area/nsv/weapons)
 "va" = (
 /obj/effect/turf_decal/tile/orange{
 	dir = 8
 	},
-/obj/structure/rack,
-/obj/item/reagent_containers/glass/bottle{
-	list_reagents = list(/datum/reagent/oil=30);
-	name = "oil bottle";
-	pixel_x = -3;
-	pixel_y = -2
-	},
-/obj/item/reagent_containers/glass/bottle{
-	list_reagents = list(/datum/reagent/oil=30);
-	name = "oil bottle";
-	pixel_x = 1;
-	pixel_y = 4
-	},
-/obj/structure/extinguisher_cabinet/west,
 /turf/open/floor/plasteel/dark/corner{
 	dir = 4
 	},
@@ -6443,6 +6774,9 @@
 	dir = 8
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 4
+	},
+/obj/structure/disposalpipe/segment{
 	dir = 4
 	},
 /turf/open/floor/plating/rusty_techgrid,
@@ -6537,6 +6871,7 @@
 	},
 /obj/machinery/door/firedoor/border_only/directional/east,
 /obj/machinery/door/firedoor/border_only/directional/west,
+/obj/effect/landmark/zebra_interlock_point,
 /turf/open/floor/plasteel/dark/side{
 	dir = 1
 	},
@@ -6559,16 +6894,17 @@
 "vJ" = (
 /obj/machinery/door/firedoor/border_only/directional/north,
 /obj/machinery/door/firedoor/border_only/directional/south,
-/obj/structure/cable/yellow{
-	icon_state = "1-8"
-	},
-/obj/structure/cable/yellow{
-	icon_state = "2-8"
-	},
 /obj/machinery/door/airlock/ship/hatch{
 	name = "Fore Weapons Bay";
 	req_one_access_txt = "69"
 	},
+/obj/structure/cable/yellow{
+	icon_state = "1-8"
+	},
+/obj/structure/fluff/support_beam{
+	dir = 4
+	},
+/obj/effect/landmark/zebra_interlock_point,
 /turf/open/floor/plasteel/dark/side{
 	dir = 8
 	},
@@ -6602,6 +6938,9 @@
 /obj/structure/cable{
 	icon_state = "1-8"
 	},
+/obj/machinery/light{
+	dir = 1
+	},
 /turf/open/floor/plasteel/techmaint,
 /area/science/lab)
 "vN" = (
@@ -6631,6 +6970,9 @@
 /obj/item/storage/belt/utility/full,
 /obj/item/mmi,
 /obj/effect/turf_decal/box/white,
+/obj/machinery/light{
+	dir = 1
+	},
 /turf/open/floor/monotile/dark,
 /area/science/lab)
 "vP" = (
@@ -6683,12 +7025,17 @@
 /turf/open/floor/engine,
 /area/engine/stormdrive)
 "wa" = (
-/obj/machinery/airalarm/directional/west,
 /obj/structure/cable/yellow{
 	icon_state = "5-9"
 	},
-/turf/open/floor/plating,
-/area/maintenance/nsv/weapons)
+/obj/machinery/conveyor/slow{
+	id = "atlas_torp"
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/turf/open/floor/engine,
+/area/nsv/weapons)
 "wh" = (
 /obj/structure/cable/green{
 	icon_state = "1-2"
@@ -6714,10 +7061,9 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 10
 	},
-/obj/structure/disposalpipe/segment{
-	dir = 10
+/turf/open/floor/plasteel/dark/side{
+	dir = 1
 	},
-/turf/open/floor/plating/rusty_techgrid,
 /area/maintenance/nsv/weapons)
 "wk" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
@@ -6805,6 +7151,12 @@
 /obj/machinery/camera/autoname,
 /turf/open/floor/plasteel/dark,
 /area/security)
+"wy" = (
+/obj/structure/disposalpipe/segment{
+	dir = 9
+	},
+/turf/closed/wall/ship,
+/area/nsv/weapons)
 "wA" = (
 /obj/machinery/disposal/bin,
 /obj/structure/disposalpipe/trunk{
@@ -6880,18 +7232,12 @@
 /turf/open/floor/plating,
 /area/maintenance/nsv/deck2/port)
 "wP" = (
-/obj/structure/cable/white{
-	icon_state = "4-8"
-	},
+/obj/structure/disposalpipe/segment,
 /obj/structure/cable/yellow{
-	icon_state = "1-8"
+	icon_state = "1-2"
 	},
 /turf/open/floor/plating/rusty_techgrid,
-/area/nsv/weapons/fore{
-	lighting_colour_bulb = "#FF3232";
-	lighting_colour_night = "#FF3232";
-	lighting_colour_tube = "#FF3232"
-	})
+/area/maintenance/nsv/weapons)
 "wQ" = (
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -7055,6 +7401,21 @@
 	},
 /turf/open/floor/plating/rusty_techgrid,
 /area/medical/nsv)
+"xp" = (
+/obj/structure/cable/white{
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/visible/layer2{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 4
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/turf/open/floor/plasteel/dark/side,
+/area/nsv/weapons)
 "xr" = (
 /obj/machinery/atmospherics/pipe/heat_exchanging/junction{
 	dir = 1
@@ -7173,6 +7534,7 @@
 	},
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer4,
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2,
+/obj/machinery/light,
 /turf/open/floor/plasteel/techmaint,
 /area/science/lab)
 "xK" = (
@@ -7298,6 +7660,7 @@
 /obj/effect/turf_decal/guideline/guideline_in_arrow_con_alt/red{
 	dir = 1
 	},
+/obj/structure/disposalpipe/segment,
 /turf/open/floor/monofloor{
 	dir = 4
 	},
@@ -7403,6 +7766,19 @@
 	},
 /turf/open/floor/plating/rusty_techgrid,
 /area/maintenance/nsv/central_substation)
+"yn" = (
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/obj/structure/cable/yellow{
+	icon_state = "4-8"
+	},
+/turf/open/floor/plasteel/dark,
+/area/nsv/weapons/fore{
+	lighting_colour_bulb = "#FF3232";
+	lighting_colour_night = "#FF3232";
+	lighting_colour_tube = "#FF3232"
+	})
 "yo" = (
 /obj/effect/turf_decal/guideline/guideline_out_alt/blue{
 	dir = 8
@@ -7458,10 +7834,11 @@
 /obj/machinery/atmospherics/pipe/simple/supply/visible/layer2{
 	dir = 5
 	},
-/obj/machinery/light/small,
-/obj/item/radio/intercom/directional/south,
-/turf/open/floor/plating/rusty_techgrid,
-/area/maintenance/nsv/weapons)
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/turf/open/floor/engine,
+/area/nsv/weapons)
 "yA" = (
 /obj/structure/cable/green{
 	icon_state = "4-8"
@@ -7505,8 +7882,14 @@
 /turf/open/floor/durasteel,
 /area/maintenance/nsv/deck2/port)
 "yF" = (
+/obj/structure/disposalpipe/segment{
+	dir = 9
+	},
 /obj/structure/cable/yellow{
-	icon_state = "2-4"
+	icon_state = "1-2"
+	},
+/obj/structure/fluff/support_beam{
+	dir = 4
 	},
 /turf/open/floor/plating/rusty_techgrid,
 /area/nsv/weapons/fore{
@@ -7546,6 +7929,9 @@
 	node1_concentration = 0.26;
 	node2_concentration = 0.74;
 	target_pressure = 300
+	},
+/obj/structure/cable/yellow{
+	icon_state = "5-6"
 	},
 /turf/open/floor/plating,
 /area/engine/atmos/port_atmos)
@@ -7730,7 +8116,10 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 4
 	},
-/turf/open/floor/plating/rusty_techgrid,
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/turf/open/floor/plasteel/dark/side,
 /area/nsv/weapons/starboard{
 	lighting_colour_bulb = "#FF3232";
 	lighting_colour_night = "#FF3232";
@@ -7779,13 +8168,13 @@
 /obj/structure/cable/white{
 	icon_state = "4-8"
 	},
-/obj/structure/disposalpipe/segment{
-	dir = 9
-	},
 /obj/machinery/atmospherics/pipe/manifold/supply/visible/layer2,
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/visible/layer4,
-/turf/open/floor/plating/rusty_techgrid,
-/area/maintenance/nsv/weapons)
+/obj/structure/disposalpipe/segment{
+	dir = 5
+	},
+/turf/open/floor/plasteel/dark/side,
+/area/nsv/weapons)
 "zl" = (
 /obj/machinery/atmospherics/components/trinary/filter/flipped/on{
 	dir = 4;
@@ -7807,6 +8196,9 @@
 "zq" = (
 /obj/structure/table,
 /obj/effect/spawner/lootdrop/maintenance,
+/obj/structure/cable/yellow{
+	icon_state = "6-10"
+	},
 /turf/open/floor/plating,
 /area/nsv/weapons/access_corridor{
 	lighting_colour_bulb = "#c1e1ff";
@@ -7881,6 +8273,15 @@
 	dir = 1
 	},
 /area/medical/nsv)
+"zC" = (
+/obj/structure/closet/secure_closet/munitions_technician,
+/obj/structure/cable/yellow{
+	icon_state = "4-8"
+	},
+/turf/open/floor/plasteel/dark/side{
+	dir = 4
+	},
+/area/nsv/weapons)
 "zE" = (
 /obj/structure/cable/white{
 	icon_state = "4-8"
@@ -8025,6 +8426,9 @@
 	color = "#FF7F00";
 	dir = 1
 	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
 /turf/open/floor/plating,
 /area/quartermaster/storage)
 "zT" = (
@@ -8037,12 +8441,22 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 9
 	},
-/turf/open/floor/plating/rusty_techgrid,
+/obj/structure/disposalpipe/segment{
+	dir = 9
+	},
+/turf/open/floor/plasteel/dark/side,
 /area/nsv/weapons/starboard{
 	lighting_colour_bulb = "#FF3232";
 	lighting_colour_night = "#FF3232";
 	lighting_colour_tube = "#FF3232"
 	})
+"zV" = (
+/obj/machinery/atmospherics/pipe/simple/green/visible{
+	dir = 10
+	},
+/obj/machinery/portable_atmospherics/canister/pluoxium,
+/turf/open/floor/plating,
+/area/engine/stormdrive)
 "zW" = (
 /obj/machinery/atmospherics/pipe/simple/green/visible,
 /turf/open/floor/plating/rusty_techgrid,
@@ -8194,21 +8608,10 @@
 	lighting_colour_tube = "#c1e1ff"
 	})
 "Ar" = (
-/obj/machinery/conveyor{
-	dir = 4;
-	id = "railgun_conveyor"
-	},
-/obj/structure/cable/yellow{
-	icon_state = "1-2"
-	},
-/turf/open/floor/plasteel/dark/side{
-	dir = 4
-	},
-/area/nsv/weapons/fore{
-	lighting_colour_bulb = "#FF3232";
-	lighting_colour_night = "#FF3232";
-	lighting_colour_tube = "#FF3232"
-	})
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4,
+/obj/structure/fluff/support_beam,
+/turf/open/floor/engine,
+/area/nsv/weapons)
 "At" = (
 /obj/machinery/atmospherics/components/binary/dp_vent_pump/layer2,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
@@ -8231,6 +8634,12 @@
 	dir = 1
 	},
 /area/medical/nsv)
+"Aw" = (
+/obj/machinery/atmospherics/components/binary/pump{
+	dir = 8
+	},
+/turf/open/floor/plating,
+/area/engine/stormdrive)
 "Ax" = (
 /obj/structure/window/reinforced/spawner/north,
 /obj/structure/window/reinforced/spawner/west,
@@ -8242,9 +8651,6 @@
 /turf/open/floor/mineral/plastitanium/airless,
 /area/engine/atmos/port_atmos)
 "Az" = (
-/obj/structure/disposalpipe/segment{
-	dir = 6
-	},
 /obj/machinery/atmospherics/pipe/simple/supply/visible/layer2{
 	dir = 10
 	},
@@ -8252,8 +8658,16 @@
 /obj/structure/cable/yellow{
 	icon_state = "5-9"
 	},
-/turf/open/floor/plating/rusty_techgrid,
-/area/maintenance/nsv/weapons)
+/obj/machinery/conveyor_switch/oneway{
+	dir = 8;
+	id = "atlas_torp";
+	name = "Missile Factory"
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 10
+	},
+/turf/open/floor/engine,
+/area/nsv/weapons)
 "AA" = (
 /obj/machinery/portable_atmospherics/canister/oxygen,
 /obj/structure/window/reinforced/spawner/north,
@@ -8283,6 +8697,12 @@
 	},
 /turf/open/floor/plating/rusty_techgrid,
 /area/engine/stormdrive)
+"AF" = (
+/obj/machinery/missile_builder/wirer{
+	dir = 8
+	},
+/turf/open/floor/engine,
+/area/nsv/weapons)
 "AH" = (
 /obj/machinery/camera/autoname{
 	dir = 8
@@ -8313,6 +8733,14 @@
 	initial_gas_mix = "n2=100000;TEMP=293.15"
 	},
 /area/engine/atmos/port_atmos)
+"AK" = (
+/obj/machinery/conveyor/slow{
+	dir = 6;
+	id = "atlas_torp";
+	verted = -1
+	},
+/turf/open/floor/engine,
+/area/nsv/weapons)
 "AL" = (
 /obj/machinery/atmospherics/pipe/simple/green/visible{
 	dir = 4
@@ -8330,6 +8758,7 @@
 	dir = 8
 	},
 /obj/machinery/firealarm/directional/east,
+/obj/structure/disposalpipe/segment,
 /turf/open/floor/monofloor{
 	dir = 4
 	},
@@ -8366,6 +8795,15 @@
 	},
 /turf/open/floor/plating,
 /area/maintenance/nsv/deck2/port)
+"AX" = (
+/obj/machinery/door/airlock/ship/hatch{
+	name = "Munitions";
+	req_one_access_txt = "31;69"
+	},
+/obj/structure/fluff/support_beam,
+/obj/effect/landmark/zebra_interlock_point,
+/turf/open/floor/plating/rusty_techgrid,
+/area/nsv/weapons)
 "Ba" = (
 /obj/structure/chair{
 	dir = 8
@@ -8495,6 +8933,12 @@
 	lighting_colour_night = "#c1e1ff";
 	lighting_colour_tube = "#c1e1ff"
 	})
+"Bw" = (
+/obj/structure/disposalpipe/segment{
+	dir = 5
+	},
+/turf/open/floor/engine,
+/area/nsv/weapons)
 "Bx" = (
 /obj/structure/cable/green{
 	icon_state = "1-4"
@@ -8624,10 +9068,7 @@
 /obj/structure/disposalpipe/segment{
 	dir = 10
 	},
-/obj/structure/sign/warning/explosives{
-	pixel_y = 32
-	},
-/turf/open/floor/plating/rusty_techgrid,
+/turf/closed/wall/r_wall/ship,
 /area/nsv/weapons/fore{
 	lighting_colour_bulb = "#FF3232";
 	lighting_colour_night = "#FF3232";
@@ -8716,14 +9157,11 @@
 /area/medical/surgery/aux)
 "Cg" = (
 /obj/structure/disposalpipe/segment,
-/obj/structure/cable/white{
-	icon_state = "1-2"
-	},
 /obj/structure/cable/yellow{
 	icon_state = "6-8"
 	},
-/turf/open/floor/plating/rusty_techgrid,
-/area/maintenance/nsv/weapons)
+/turf/closed/wall/ship,
+/area/nsv/weapons)
 "Cj" = (
 /obj/structure/shuttle/engine/large{
 	dir = 4
@@ -8757,12 +9195,11 @@
 /turf/open/floor/plating/rusty_techgrid,
 /area/maintenance/nsv/deck2/port)
 "Cn" = (
-/obj/effect/turf_decal/tile/orange{
+/obj/item/radio/intercom/directional/west,
+/obj/structure/fluff/support_beam{
 	dir = 1
 	},
-/obj/structure/table/reinforced,
-/obj/item/radio/intercom/directional/west,
-/turf/open/floor/plasteel/dark/corner,
+/turf/open/floor/plasteel/dark/side,
 /area/nsv/weapons/starboard{
 	lighting_colour_bulb = "#FF3232";
 	lighting_colour_night = "#FF3232";
@@ -8821,6 +9258,22 @@
 	},
 /turf/open/floor/plating/rusty_techgrid,
 /area/maintenance/nsv/deck2/port)
+"CA" = (
+/obj/machinery/ship_weapon/energy/beam,
+/obj/structure/cable/yellow{
+	icon_state = "0-8"
+	},
+/obj/structure/fluff/support_beam,
+/obj/structure/window/reinforced/spawner,
+/obj/structure/window/reinforced/spawner/north,
+/turf/open/floor/plasteel/dark/side{
+	dir = 1
+	},
+/area/nsv/weapons/fore{
+	lighting_colour_bulb = "#FF3232";
+	lighting_colour_night = "#FF3232";
+	lighting_colour_tube = "#FF3232"
+	})
 "CB" = (
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -8897,7 +9350,9 @@
 /area/security)
 "CO" = (
 /obj/machinery/light/small,
-/turf/open/floor/plating,
+/turf/open/floor/plasteel/dark/side{
+	dir = 1
+	},
 /area/maintenance/nsv/weapons)
 "CU" = (
 /obj/structure/cable/green{
@@ -8923,6 +9378,9 @@
 	id = "atmos_shutters"
 	},
 /obj/effect/landmark/zebra_interlock_point,
+/obj/structure/cable/yellow{
+	icon_state = "6-9"
+	},
 /turf/open/floor/plating/rusty_techgrid,
 /area/engine/stormdrive)
 "CW" = (
@@ -8980,10 +9438,6 @@
 "CZ" = (
 /obj/effect/turf_decal/tile/orange{
 	dir = 4
-	},
-/obj/machinery/conveyor/slow{
-	dir = 4;
-	id = "magazine_conveyor"
 	},
 /turf/open/floor/plasteel/dark/corner{
 	dir = 8
@@ -9398,11 +9852,24 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 4
 	},
-/obj/machinery/atmospherics/pipe/manifold/green/visible{
-	dir = 8
+/obj/machinery/atmospherics/pipe/simple/green/visible{
+	dir = 5
 	},
 /turf/open/floor/plating/rusty_techgrid,
 /area/engine/atmos/port_atmos)
+"Ec" = (
+/obj/machinery/door/airlock/ship/hatch{
+	dir = 4;
+	name = "Starboard Weapons Bay";
+	req_access_txt = "69;12"
+	},
+/obj/structure/fluff/support_beam,
+/turf/open/floor/engine,
+/area/nsv/weapons/fore{
+	lighting_colour_bulb = "#FF3232";
+	lighting_colour_night = "#FF3232";
+	lighting_colour_tube = "#FF3232"
+	})
 "Ee" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
 /obj/structure/disposalpipe/segment,
@@ -9488,6 +9955,7 @@
 	color = "#c1e1ff";
 	dir = 4
 	},
+/obj/structure/disposalpipe/segment,
 /turf/open/floor/monofloor{
 	dir = 4
 	},
@@ -9519,10 +9987,6 @@
 "Eq" = (
 /obj/structure/cable,
 /obj/machinery/power/apc/auto_name/west,
-/obj/machinery/atmospherics/components/binary/pump{
-	dir = 1;
-	name = "Stormdrive Tanks Supply"
-	},
 /turf/open/floor/plating/rusty_techgrid,
 /area/engine/atmos/port_atmos)
 "Er" = (
@@ -9673,11 +10137,14 @@
 /turf/open/floor/plating/rusty_techgrid,
 /area/engine/stormdrive)
 "EO" = (
-/obj/structure/chair/fancy/sofa/mono{
-	color = "#ff0000"
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 10
 	},
-/turf/open/floor/carpet,
-/area/maintenance/nsv/weapons)
+/obj/machinery/missile_builder{
+	dir = 4
+	},
+/turf/open/floor/engine,
+/area/nsv/weapons)
 "ER" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -9717,11 +10184,16 @@
 	},
 /turf/open/floor/plating/rusty_techgrid,
 /area/maintenance/nsv/deck2/starboard)
+"EV" = (
+/obj/structure/grille,
+/obj/structure/disposalpipe/segment,
+/turf/open/floor/plating,
+/area/maintenance/nsv/weapons)
 "EW" = (
 /obj/structure/cable/white{
 	icon_state = "1-4"
 	},
-/turf/open/floor/plating/rusty_techgrid,
+/turf/open/floor/plasteel/dark/side,
 /area/maintenance/nsv/weapons)
 "EX" = (
 /obj/machinery/atmospherics/pipe/heat_exchanging/simple{
@@ -9853,18 +10325,8 @@
 /turf/open/floor/plating/rusty_techgrid,
 /area/maintenance/nsv/port_substation)
 "Fq" = (
-/obj/machinery/light{
-	color = "#FF3232";
-	dir = 1
-	},
-/obj/machinery/conveyor/slow{
-	id = "loader_1"
-	},
-/obj/machinery/conveyor/slow{
-	dir = 4;
-	id = "magazine_conveyor"
-	},
-/turf/open/floor/plasteel/dark/side,
+/obj/machinery/ship_weapon/pdc_mount/north,
+/turf/open/floor/plating/rusty_techgrid,
 /area/nsv/weapons/fore{
 	lighting_colour_bulb = "#FF3232";
 	lighting_colour_night = "#FF3232";
@@ -9878,10 +10340,23 @@
 /turf/open/floor/plating/rusty_techgrid,
 /area/engine/atmos/starboard_atmos)
 "Fs" = (
-/obj/effect/turf_decal/tile/orange,
+/obj/effect/turf_decal/tile/red{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/red,
+/obj/effect/turf_decal/tile/red,
 /turf/open/floor/plasteel/dark/corner{
 	dir = 1
 	},
+/area/nsv/weapons/fore{
+	lighting_colour_bulb = "#FF3232";
+	lighting_colour_night = "#FF3232";
+	lighting_colour_tube = "#FF3232"
+	})
+"Ft" = (
+/obj/effect/landmark/zebra_interlock_point,
+/obj/machinery/door/firedoor/border_only/directional/west,
+/turf/open/floor/engine,
 /area/nsv/weapons/fore{
 	lighting_colour_bulb = "#FF3232";
 	lighting_colour_night = "#FF3232";
@@ -9898,11 +10373,12 @@
 /turf/open/floor/plating/rusty_techgrid,
 /area/maintenance/nsv/port_substation)
 "Fw" = (
-/obj/structure/chair/fancy/sofa/mono/corner/concave{
-	color = "#ff0000"
+/obj/machinery/conveyor/slow{
+	dir = 1;
+	id = "atlas_torp"
 	},
-/turf/open/floor/carpet,
-/area/maintenance/nsv/weapons)
+/turf/open/floor/engine,
+/area/nsv/weapons)
 "Fy" = (
 /obj/structure/table,
 /obj/machinery/firealarm/directional/east,
@@ -10043,14 +10519,7 @@
 /area/quartermaster/storage)
 "Ga" = (
 /obj/machinery/airalarm/directional/west,
-/obj/machinery/requests_console{
-	department = "Atmospherics";
-	departmentType = 3;
-	pixel_y = -30
-	},
-/obj/machinery/atmospherics/components/unary/portables_connector/visible{
-	dir = 1
-	},
+/obj/machinery/portable_atmospherics/canister/pluoxium,
 /turf/open/floor/plating,
 /area/engine/atmos/port_atmos)
 "Gb" = (
@@ -10077,6 +10546,7 @@
 	lighting_colour_tube = "#c1e1ff"
 	})
 "Gd" = (
+/obj/machinery/portable_atmospherics/canister/pluoxium,
 /turf/open/floor/plating,
 /area/engine/atmos/port_atmos)
 "Ge" = (
@@ -10099,12 +10569,28 @@
 	lighting_colour_tube = "#FF3232"
 	})
 "Gj" = (
-/obj/machinery/disposal/bin,
-/obj/structure/disposalpipe/trunk{
-	dir = 8
+/obj/machinery/ammo_sorter{
+	dir = 1;
+	id = "atlas1";
+	name = "Casings"
 	},
-/turf/open/floor/plating/rusty_techgrid,
-/area/maintenance/nsv/weapons)
+/obj/item/ship_weapon/ammunition/missile/missile_casing,
+/obj/item/ship_weapon/ammunition/missile/missile_casing,
+/obj/item/ship_weapon/ammunition/missile/missile_casing,
+/obj/item/ship_weapon/ammunition/missile/missile_casing,
+/obj/item/ship_weapon/ammunition/missile/missile_casing,
+/obj/item/ship_weapon/ammunition/missile/missile_casing,
+/obj/item/ship_weapon/ammunition/missile/missile_casing,
+/obj/item/ship_weapon/ammunition/missile/missile_casing,
+/obj/item/ship_weapon/ammunition/missile/missile_casing,
+/obj/item/ship_weapon/ammunition/missile/missile_casing,
+/obj/item/ship_weapon/ammunition/missile/missile_casing,
+/obj/item/ship_weapon/ammunition/missile/missile_casing,
+/obj/item/ship_weapon/ammunition/missile/missile_casing,
+/obj/item/ship_weapon/ammunition/missile/missile_casing,
+/obj/item/ship_weapon/ammunition/missile/missile_casing,
+/turf/open/floor/engine,
+/area/nsv/weapons)
 "Gk" = (
 /obj/machinery/atmospherics/pipe/manifold4w/purple/visible,
 /obj/structure/cable/yellow{
@@ -10143,6 +10629,7 @@
 /turf/open/floor/plating/rusty_techgrid,
 /area/security)
 "Go" = (
+/obj/structure/disposalpipe/segment,
 /turf/open/floor/monofloor{
 	dir = 1
 	},
@@ -10246,9 +10733,10 @@
 /turf/open/floor/plasteel/dark,
 /area/security)
 "GD" = (
-/obj/structure/reagent_dispensers/fueltank,
-/turf/open/floor/plating,
-/area/maintenance/nsv/weapons)
+/turf/open/floor/plasteel/dark/side{
+	dir = 1
+	},
+/area/nsv/weapons)
 "GE" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
 	dir = 4
@@ -10276,9 +10764,8 @@
 /turf/open/floor/plating/rusty_techgrid,
 /area/maintenance/nsv/port_substation)
 "GJ" = (
-/obj/structure/cable/yellow{
-	icon_state = "2-5"
-	},
+/obj/effect/landmark/zebra_interlock_point,
+/obj/machinery/door/firedoor/border_only/directional/east,
 /turf/open/floor/plasteel/dark/side{
 	dir = 4
 	},
@@ -10295,16 +10782,11 @@
 /turf/open/floor/plating/rusty_techgrid,
 /area/engine/atmos/starboard_atmos)
 "GN" = (
-/obj/structure/disposalpipe/segment,
-/obj/machinery/door/airlock/ship/engineering{
-	name = "Port Atmos";
-	req_one_access_txt = "24"
+/obj/structure/sign/ship/armoury{
+	name = "Munitions Department"
 	},
-/obj/machinery/door/firedoor/border_only/directional/north,
-/obj/machinery/door/firedoor/border_only/directional/south,
-/obj/machinery/atmospherics/pipe/simple/green/visible,
-/turf/open/floor/plating/rusty_techgrid,
-/area/engine/atmos/port_atmos)
+/turf/closed/wall/ship,
+/area/nsv/weapons)
 "GO" = (
 /turf/closed/wall/ship,
 /area/engine/stormdrive)
@@ -10353,6 +10835,9 @@
 	},
 /obj/structure/cable/white{
 	icon_state = "4-8"
+	},
+/obj/structure/cable/yellow{
+	icon_state = "5-10"
 	},
 /turf/open/floor/plating/rusty_techgrid,
 /area/nsv/weapons/access_corridor{
@@ -10452,25 +10937,20 @@
 	lighting_colour_tube = "#c1e1ff"
 	})
 "Hn" = (
-/obj/effect/turf_decal/tile/orange{
-	dir = 4
-	},
-/obj/machinery/light{
-	color = "#FF3232";
+/obj/effect/turf_decal/guideline/guideline_out_arrow_con_alt/blue{
 	dir = 1
 	},
-/obj/machinery/conveyor/slow{
-	id = "loader_4"
+/obj/effect/turf_decal/guideline/guideline_in_arrow_con_alt/red{
+	dir = 1
 	},
-/obj/machinery/conveyor/slow{
-	dir = 4;
-	id = "magazine_conveyor"
+/obj/structure/disposalpipe/segment,
+/turf/open/floor/monofloor{
+	dir = 4
 	},
-/turf/open/floor/plasteel/dark/side,
-/area/nsv/weapons/fore{
-	lighting_colour_bulb = "#FF3232";
-	lighting_colour_night = "#FF3232";
-	lighting_colour_tube = "#FF3232"
+/area/hallway/nsv/deck2/frame1/port{
+	lighting_colour_bulb = "#c1e1ff";
+	lighting_colour_night = "#c1e1ff";
+	lighting_colour_tube = "#c1e1ff"
 	})
 "Hq" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
@@ -10485,18 +10965,11 @@
 /turf/open/floor/monofloor,
 /area/engine/stormdrive)
 "Hs" = (
-/obj/structure/disposalpipe/segment,
 /obj/machinery/atmospherics/pipe/simple/supply/visible/layer2,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
-/obj/machinery/door/airlock/ship/maintenance{
-	name = "Munitions Maintenance";
-	req_one_access_txt = "12"
-	},
-/obj/machinery/door/firedoor/border_only/directional/north,
-/obj/machinery/door/firedoor/border_only/directional/south,
-/obj/structure/barricade/wooden/crude,
-/turf/open/floor/plating/rusty_techgrid,
-/area/maintenance/nsv/weapons)
+/obj/structure/disposalpipe/segment,
+/turf/open/floor/engine,
+/area/nsv/weapons)
 "Ht" = (
 /obj/structure/sign/departments/minsky/security/security{
 	pixel_y = -30
@@ -10522,15 +10995,9 @@
 	lighting_colour_tube = "#FF3232"
 	})
 "Hv" = (
-/obj/machinery/ammo_sorter{
-	name = "Railgun Shell Rack"
+/obj/structure/cable/yellow{
+	icon_state = "2-4"
 	},
-/obj/item/ship_weapon/ammunition/naval_artillery,
-/obj/item/ship_weapon/ammunition/naval_artillery,
-/obj/item/ship_weapon/ammunition/naval_artillery,
-/obj/item/ship_weapon/ammunition/naval_artillery,
-/obj/item/ship_weapon/ammunition/naval_artillery,
-/obj/item/ship_weapon/ammunition/naval_artillery,
 /turf/open/floor/plasteel/dark,
 /area/nsv/weapons/fore{
 	lighting_colour_bulb = "#FF3232";
@@ -10563,6 +11030,9 @@
 	color = "#FF7F00";
 	dir = 5
 	},
+/obj/structure/cable/yellow{
+	icon_state = "4-10"
+	},
 /turf/open/floor/monofloor,
 /area/nsv/weapons/access_corridor{
 	lighting_colour_bulb = "#c1e1ff";
@@ -10573,13 +11043,11 @@
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
 	dir = 4
 	},
-/obj/machinery/computer/ammo_sorter{
-	dir = 4
-	},
 /obj/machinery/light{
 	color = "#FF3232";
 	dir = 8
 	},
+/obj/machinery/rnd/production/techfab/department/munitions,
 /turf/open/floor/plasteel/dark/side{
 	dir = 4
 	},
@@ -10623,6 +11091,9 @@
 /obj/effect/turf_decal/guideline/guideline_in/brown{
 	color = "#FF7F00";
 	dir = 1
+	},
+/obj/structure/cable/yellow{
+	icon_state = "4-8"
 	},
 /turf/open/floor/monofloor,
 /area/nsv/weapons/access_corridor{
@@ -10740,9 +11211,13 @@
 /turf/open/floor/plating/rusty_techgrid,
 /area/engine/atmos/starboard_atmos)
 "Ia" = (
-/obj/structure/cable/yellow{
-	icon_state = "1-2"
+/obj/machinery/ship_weapon/energy/laser_pd{
+	gun_id = 1
 	},
+/obj/structure/cable/yellow{
+	icon_state = "0-8"
+	},
+/obj/structure/fluff/support_beam,
 /turf/open/floor/plasteel/dark/side{
 	dir = 4
 	},
@@ -10765,6 +11240,20 @@
 	},
 /turf/open/floor/plating/rusty_techgrid,
 /area/maintenance/nsv/port_substation)
+"Id" = (
+/obj/effect/turf_decal/tile/red{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/red,
+/obj/effect/turf_decal/tile/red,
+/turf/open/floor/plasteel/dark/side{
+	dir = 8
+	},
+/area/nsv/weapons/fore{
+	lighting_colour_bulb = "#FF3232";
+	lighting_colour_night = "#FF3232";
+	lighting_colour_tube = "#FF3232"
+	})
 "Ie" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
 	dir = 4
@@ -10794,11 +11283,8 @@
 	lighting_colour_tube = "#c1e1ff"
 	})
 "Ik" = (
-/obj/machinery/conveyor/slow{
-	dir = 4;
-	id = "magazine_conveyor"
-	},
-/obj/structure/plasticflaps/opaque,
+/obj/effect/spawner/structure/window/reinforced/ship,
+/obj/effect/landmark/zebra_interlock_point,
 /turf/open/floor/plating/rusty_techgrid,
 /area/nsv/weapons/fore{
 	lighting_colour_bulb = "#FF3232";
@@ -10864,13 +11350,10 @@
 /turf/open/floor/plating/rusty_techgrid,
 /area/maintenance/nsv/port_substation)
 "Ix" = (
-/obj/machinery/door/airlock/ship/external/glass{
-	dir = 4;
-	name = "Maintenance Access";
-	req_one_access_txt = "10;24"
-	},
-/turf/open/floor/plating,
-/area/engine/stormdrive)
+/obj/structure/disposalpipe/segment,
+/obj/machinery/power/apc/auto_name/east,
+/turf/open/floor/plating/rusty_techgrid,
+/area/maintenance/nsv/weapons)
 "Iz" = (
 /obj/structure/closet/crate/freezer{
 	opened = 1
@@ -10903,6 +11386,7 @@
 	},
 /obj/machinery/door/firedoor/border_only/directional/south,
 /obj/machinery/door/firedoor/border_only/directional/north,
+/obj/effect/landmark/zebra_interlock_point,
 /turf/open/floor/plating/rusty_techgrid,
 /area/nsv/weapons)
 "IC" = (
@@ -11063,7 +11547,11 @@
 	},
 /obj/machinery/door/firedoor/border_only/directional/east,
 /obj/machinery/door/firedoor/border_only/directional/west,
-/turf/open/floor/plating/rusty_techgrid,
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/obj/effect/landmark/zebra_interlock_point,
+/turf/open/floor/plasteel/dark/side,
 /area/nsv/weapons/starboard{
 	lighting_colour_bulb = "#FF3232";
 	lighting_colour_night = "#FF3232";
@@ -11111,49 +11599,45 @@
 	color = "#FF7F00";
 	dir = 5
 	},
+/obj/effect/landmark/zebra_interlock_point,
 /turf/open/floor/monofloor/corner,
 /area/nsv/weapons)
 "Jg" = (
-/obj/machinery/conveyor_switch/oneway{
-	id = "loader_1";
-	name = "Railgun Aux Rack Loader";
-	pixel_x = -8;
-	pixel_y = 18
-	},
-/obj/machinery/conveyor_switch/oneway{
-	id = "loader_2";
-	name = "Railgun Shell Rack Loader";
-	pixel_x = 8;
-	pixel_y = 18
-	},
 /obj/machinery/conveyor_switch{
 	id = "magazine_conveyor";
 	name = "magazine feed";
 	pixel_y = 58
-	},
-/obj/machinery/conveyor_switch/oneway{
-	id = "loader_3";
-	name = "Railgun Slug Rack I Loader";
-	pixel_y = 9
-	},
-/obj/machinery/conveyor_switch/oneway{
-	id = "loader_5";
-	name = "Railgun Slug Rack III Loader";
-	pixel_x = 8
-	},
-/obj/machinery/conveyor_switch/oneway{
-	id = "loader_4";
-	name = "Railgun Slug Rack II Loader";
-	pixel_x = -8
 	},
 /turf/open/floor/plasteel/dark/side{
 	dir = 8
 	},
 /area/nsv/weapons)
 "Jh" = (
-/obj/machinery/conveyor/slow{
-	dir = 4;
-	id = "magazine_conveyor"
+/obj/structure/disposalpipe/segment,
+/obj/item/ammo_box/magazine/nsv/pdc,
+/obj/item/ammo_box/magazine/nsv/pdc,
+/obj/item/ammo_box/magazine/nsv/pdc,
+/obj/item/ammo_box/magazine/nsv/pdc{
+	pixel_y = 8
+	},
+/obj/item/ammo_box/magazine/nsv/pdc{
+	pixel_y = 8
+	},
+/obj/item/ammo_box/magazine/nsv/pdc{
+	pixel_y = 8
+	},
+/obj/item/ammo_box/magazine/nsv/pdc{
+	pixel_y = 4
+	},
+/obj/item/ammo_box/magazine/nsv/pdc{
+	pixel_y = 4
+	},
+/obj/item/ammo_box/magazine/nsv/pdc{
+	pixel_y = 4
+	},
+/obj/structure/rack,
+/obj/structure/fluff/support_beam{
+	dir = 1
 	},
 /turf/open/floor/plating/rusty_techgrid,
 /area/nsv/weapons/fore{
@@ -11170,6 +11654,12 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/security/main)
+"Jj" = (
+/obj/machinery/missile_builder/screwdriver{
+	dir = 1
+	},
+/turf/open/floor/engine,
+/area/nsv/weapons)
 "Jl" = (
 /obj/structure/table/reinforced,
 /obj/effect/landmark/zebra_interlock_point,
@@ -11186,33 +11676,12 @@
 /turf/open/floor/plating,
 /area/maintenance/nsv/weapons)
 "Jn" = (
-/obj/effect/turf_decal/tile/orange{
-	dir = 4
+/obj/structure/cable/yellow{
+	icon_state = "4-8"
 	},
-/obj/machinery/conveyor/slow{
-	id = "loader_3"
-	},
-/obj/machinery/conveyor/slow{
-	dir = 4;
-	id = "magazine_conveyor"
-	},
-/turf/open/floor/plasteel/dark/side,
-/area/nsv/weapons/fore{
-	lighting_colour_bulb = "#FF3232";
-	lighting_colour_night = "#FF3232";
-	lighting_colour_tube = "#FF3232"
-	})
+/turf/closed/wall/ship,
+/area/nsv/weapons)
 "Jo" = (
-/obj/effect/turf_decal/tile/orange{
-	dir = 4
-	},
-/obj/machinery/conveyor/slow{
-	id = "loader_5"
-	},
-/obj/machinery/conveyor/slow{
-	dir = 4;
-	id = "magazine_conveyor"
-	},
 /turf/open/floor/plasteel/dark/corner{
 	dir = 8
 	},
@@ -11228,15 +11697,18 @@
 /turf/open/floor/plasteel/dark,
 /area/security)
 "Jr" = (
-/obj/structure/chair/fancy/sofa/mono/right{
-	color = "#ff0000"
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 5
 	},
-/obj/item/storage/briefcase{
-	pixel_x = 2;
-	pixel_y = 2
+/obj/structure/fluff/support_beam,
+/turf/open/floor/engine,
+/area/nsv/weapons)
+"Js" = (
+/obj/machinery/missile_builder{
+	dir = 8
 	},
-/turf/open/floor/carpet,
-/area/maintenance/nsv/weapons)
+/turf/open/floor/engine,
+/area/nsv/weapons)
 "Jv" = (
 /obj/machinery/atmospherics/pipe/simple/green/visible{
 	dir = 4
@@ -11272,7 +11744,8 @@
 /obj/structure/cable/white{
 	icon_state = "1-10"
 	},
-/turf/open/floor/plating/rusty_techgrid,
+/obj/structure/disposalpipe/segment,
+/turf/open/floor/plasteel/dark/side,
 /area/nsv/weapons/starboard{
 	lighting_colour_bulb = "#FF3232";
 	lighting_colour_night = "#FF3232";
@@ -11341,6 +11814,12 @@
 	lighting_colour_night = "#c1e1ff";
 	lighting_colour_tube = "#c1e1ff"
 	})
+"JG" = (
+/obj/machinery/atmospherics/pipe/simple/green/visible{
+	dir = 4
+	},
+/turf/open/floor/plating,
+/area/engine/stormdrive)
 "JJ" = (
 /obj/structure/window/reinforced/spawner,
 /obj/structure/rack,
@@ -11704,9 +12183,17 @@
 /turf/open/floor/plating/rusty_techgrid,
 /area/nsv/weapons)
 "KG" = (
-/obj/machinery/conveyor/slow{
-	dir = 1;
-	id = "magazine_conveyor"
+/obj/structure/disposalpipe/segment,
+/obj/item/ammo_box/magazine/nsv/pdc{
+	pixel_y = 4
+	},
+/obj/item/ammo_box/magazine/nsv/pdc{
+	pixel_y = 8
+	},
+/obj/item/ammo_box/magazine/nsv/pdc,
+/obj/structure/rack,
+/obj/structure/fluff/support_beam{
+	dir = 1
 	},
 /turf/open/floor/plating/rusty_techgrid,
 /area/nsv/weapons/fore{
@@ -11715,10 +12202,15 @@
 	lighting_colour_tube = "#FF3232"
 	})
 "KH" = (
-/obj/machinery/ammo_sorter{
-	name = "Railgun Aux Rack"
+/obj/item/radio/intercom/directional/north,
+/obj/machinery/light{
+	dir = 1
 	},
-/turf/open/floor/plasteel/dark,
+/obj/structure/fluff/support_beam{
+	dir = 1
+	},
+/obj/structure/munitions_trolley,
+/turf/open/floor/plasteel/dark/side,
 /area/nsv/weapons/fore{
 	lighting_colour_bulb = "#FF3232";
 	lighting_colour_night = "#FF3232";
@@ -11735,12 +12227,14 @@
 /turf/open/floor/plating,
 /area/space/nearstation)
 "KK" = (
-/obj/structure/disposalpipe/segment,
-/obj/structure/cable/white{
-	icon_state = "1-2"
+/obj/machinery/conveyor/slow{
+	dir = 5;
+	id = "atlas_torp";
+	verted = -1
 	},
-/turf/open/floor/plating/rusty_techgrid,
-/area/maintenance/nsv/weapons)
+/obj/item/ship_weapon/ammunition/missile,
+/turf/open/floor/engine,
+/area/nsv/weapons)
 "KL" = (
 /obj/structure/lattice/catwalk,
 /obj/machinery/atmospherics/pipe/heat_exchanging/simple/layer2{
@@ -11758,13 +12252,13 @@
 /turf/open/space/basic,
 /area/space/nearstation)
 "KM" = (
-/obj/item/radio/intercom/directional/north,
-/turf/open/floor/plasteel/dark/side,
-/area/nsv/weapons/fore{
-	lighting_colour_bulb = "#FF3232";
-	lighting_colour_night = "#FF3232";
-	lighting_colour_tube = "#FF3232"
-	})
+/obj/machinery/conveyor/slow{
+	dir = 8;
+	id = "atlas_torp"
+	},
+/obj/item/ship_weapon/ammunition/missile,
+/turf/open/floor/engine,
+/area/nsv/weapons)
 "KN" = (
 /obj/structure/lattice/catwalk,
 /obj/machinery/atmospherics/pipe/heat_exchanging/simple/layer2{
@@ -11809,9 +12303,15 @@
 /turf/open/floor/monofloor,
 /area/engine/stormdrive)
 "KT" = (
-/obj/effect/spawner/room/fivexthree,
-/turf/open/floor/plating,
-/area/maintenance/nsv/weapons)
+/obj/structure/cable/yellow{
+	icon_state = "5-9"
+	},
+/turf/closed/wall/ship,
+/area/nsv/weapons/access_corridor{
+	lighting_colour_bulb = "#c1e1ff";
+	lighting_colour_night = "#c1e1ff";
+	lighting_colour_tube = "#c1e1ff"
+	})
 "KV" = (
 /obj/structure/disposalpipe/segment,
 /obj/machinery/door/airlock/ship/maintenance{
@@ -11820,6 +12320,9 @@
 	},
 /obj/machinery/door/firedoor/border_only/directional/south,
 /obj/machinery/door/firedoor/border_only/directional/north,
+/obj/structure/cable/yellow{
+	icon_state = "1-2"
+	},
 /turf/open/floor/plating/rusty_techgrid,
 /area/maintenance/nsv/weapons)
 "KW" = (
@@ -11992,11 +12495,9 @@
 /area/engine/stormdrive)
 "Lq" = (
 /obj/structure/ladder,
-/obj/structure/sign/ship/deck/two{
-	dir = 4;
-	pixel_x = -34
+/turf/open/floor/plasteel/dark/side{
+	dir = 1
 	},
-/turf/open/floor/plating,
 /area/maintenance/nsv/weapons)
 "Lr" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4,
@@ -12055,9 +12556,16 @@
 /obj/structure/cable/white{
 	icon_state = "4-10"
 	},
+/obj/structure/cable/yellow{
+	icon_state = "9-10"
+	},
 /turf/open/floor/plating/rusty_techgrid,
 /area/engine/stormdrive)
 "Lv" = (
+/obj/machinery/computer/laser_pd{
+	gun_id = 2
+	},
+/obj/structure/fluff/support_beam,
 /turf/open/floor/plating/rusty_techgrid,
 /area/nsv/weapons/fore{
 	lighting_colour_bulb = "#FF3232";
@@ -12112,6 +12620,18 @@
 /obj/effect/spawner/lootdrop/maintenance/three,
 /turf/open/floor/durasteel/techfloor_grid,
 /area/security/main)
+"LD" = (
+/obj/structure/window/reinforced/spawner,
+/obj/structure/window/reinforced/spawner/north,
+/obj/structure/window/reinforced/spawner/east,
+/turf/open/floor/plasteel/dark/side{
+	dir = 1
+	},
+/area/nsv/weapons/fore{
+	lighting_colour_bulb = "#FF3232";
+	lighting_colour_night = "#FF3232";
+	lighting_colour_tube = "#FF3232"
+	})
 "LE" = (
 /obj/structure/cable/white{
 	icon_state = "2-4"
@@ -12125,42 +12645,39 @@
 /turf/open/floor/plating/rusty_techgrid,
 /area/engine/stormdrive)
 "LH" = (
-/obj/machinery/conveyor{
-	dir = 4;
-	id = "railgun_conveyor"
+/obj/machinery/missile_builder/assembler{
+	dir = 1
 	},
+/obj/item/ship_weapon/parts/missile/warhead,
+/obj/item/ship_weapon/parts/missile/warhead,
+/obj/item/ship_weapon/parts/missile/warhead,
+/obj/item/ship_weapon/parts/missile/warhead,
+/obj/item/ship_weapon/parts/missile/warhead,
+/obj/item/ship_weapon/parts/missile/warhead,
+/obj/item/ship_weapon/parts/missile/warhead,
+/obj/item/ship_weapon/parts/missile/warhead,
+/obj/item/ship_weapon/parts/missile/warhead,
+/obj/item/ship_weapon/parts/missile/warhead,
+/obj/item/ship_weapon/parts/missile/warhead,
+/obj/item/ship_weapon/parts/missile/warhead,
+/obj/item/ship_weapon/parts/missile/warhead,
+/obj/item/ship_weapon/parts/missile/warhead,
+/obj/item/ship_weapon/parts/missile/warhead,
+/obj/item/ship_weapon/parts/missile/warhead,
+/turf/open/floor/engine,
+/area/nsv/weapons)
+"LJ" = (
 /turf/open/floor/plasteel/dark,
 /area/nsv/weapons/fore{
 	lighting_colour_bulb = "#FF3232";
 	lighting_colour_night = "#FF3232";
 	lighting_colour_tube = "#FF3232"
 	})
-"LJ" = (
-/obj/effect/turf_decal/tile/orange,
-/obj/machinery/camera/autoname{
-	dir = 1
-	},
-/obj/machinery/conveyor{
-	dir = 8;
-	id = "railgun_conveyor"
-	},
-/turf/open/floor/plasteel/dark/side{
-	dir = 1
-	},
-/area/nsv/weapons/fore{
-	lighting_colour_bulb = "#FF3232";
-	lighting_colour_night = "#FF3232";
-	lighting_colour_tube = "#FF3232"
-	})
 "LL" = (
-/obj/effect/turf_decal/tile/orange,
-/obj/machinery/conveyor{
-	dir = 8;
-	id = "railgun_conveyor"
-	},
-/turf/open/floor/plasteel/dark/side{
+/obj/structure/fluff/support_beam{
 	dir = 1
 	},
+/turf/open/floor/engine,
 /area/nsv/weapons/fore{
 	lighting_colour_bulb = "#FF3232";
 	lighting_colour_night = "#FF3232";
@@ -12226,6 +12743,9 @@
 	lighting_colour_night = "#c1e1ff";
 	lighting_colour_tube = "#c1e1ff"
 	})
+"LS" = (
+/turf/closed/wall/r_wall/ship,
+/area/nsv/weapons)
 "LT" = (
 /obj/machinery/atmospherics/pipe/simple/supply/visible/layer2,
 /obj/structure/cable/white{
@@ -12234,7 +12754,10 @@
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/visible/layer4{
 	dir = 8
 	},
-/turf/open/floor/plating/rusty_techgrid,
+/obj/structure/disposalpipe/segment,
+/turf/open/floor/plasteel/dark/side{
+	dir = 1
+	},
 /area/nsv/weapons/starboard{
 	lighting_colour_bulb = "#FF3232";
 	lighting_colour_night = "#FF3232";
@@ -12367,9 +12890,8 @@
 	lighting_colour_tube = "#c1e1ff"
 	})
 "Mq" = (
-/obj/machinery/conveyor{
-	dir = 4;
-	id = "railgun_conveyor"
+/obj/effect/turf_decal/tile/red{
+	dir = 8
 	},
 /turf/open/floor/engine,
 /area/nsv/weapons/fore{
@@ -12429,6 +12951,9 @@
 	},
 /obj/structure/cable/white{
 	icon_state = "1-5"
+	},
+/obj/structure/cable/yellow{
+	icon_state = "5-6"
 	},
 /turf/open/floor/plating/rusty_techgrid,
 /area/engine/stormdrive)
@@ -12502,6 +13027,20 @@
 /obj/structure/fluff/support_beam,
 /turf/open/floor/plating/rusty_techgrid,
 /area/maintenance/nsv/port_substation)
+"MN" = (
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/green/visible{
+	dir = 4
+	},
+/obj/machinery/requests_console{
+	department = "Atmospherics";
+	departmentType = 3;
+	pixel_y = -30
+	},
+/turf/open/floor/plating/rusty_techgrid,
+/area/maintenance/nsv/port_substation)
 "MO" = (
 /obj/machinery/holopad,
 /turf/open/floor/plasteel/dark,
@@ -12517,6 +13056,9 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
 /obj/structure/disposalpipe/segment,
 /obj/effect/landmark/start/munitions_tech,
+/obj/structure/cable/yellow{
+	icon_state = "4-8"
+	},
 /turf/open/floor/plating/rusty_techgrid,
 /area/nsv/weapons)
 "MR" = (
@@ -12591,6 +13133,9 @@
 	icon_state = "6-8"
 	},
 /obj/machinery/meter,
+/obj/structure/cable/yellow{
+	icon_state = "1-8"
+	},
 /turf/open/floor/plating/rusty_techgrid,
 /area/engine/stormdrive)
 "Ne" = (
@@ -12613,29 +13158,13 @@
 /turf/open/floor/plating/rusty_techgrid,
 /area/nsv/engine/engine_room/auxiliary)
 "Ni" = (
-/obj/item/ship_weapon/ammunition/railgun_ammo,
-/obj/item/ship_weapon/ammunition/railgun_ammo,
-/obj/item/ship_weapon/ammunition/railgun_ammo,
-/obj/item/ship_weapon/ammunition/railgun_ammo,
-/obj/item/ship_weapon/ammunition/railgun_ammo,
-/obj/item/ship_weapon/ammunition/railgun_ammo,
-/obj/item/ship_weapon/ammunition/railgun_ammo,
-/obj/item/ship_weapon/ammunition/railgun_ammo,
-/obj/item/ship_weapon/ammunition/railgun_ammo,
-/obj/item/ship_weapon/ammunition/railgun_ammo,
-/obj/item/ship_weapon/ammunition/railgun_ammo,
-/obj/item/ship_weapon/ammunition/railgun_ammo,
-/obj/item/ship_weapon/ammunition/railgun_ammo,
-/obj/item/ship_weapon/ammunition/railgun_ammo,
-/obj/item/ship_weapon/ammunition/railgun_ammo,
-/obj/item/ship_weapon/ammunition/railgun_ammo,
-/obj/item/ship_weapon/ammunition/railgun_ammo,
-/obj/item/ship_weapon/ammunition/railgun_ammo,
-/obj/item/ship_weapon/ammunition/railgun_ammo,
-/obj/item/ship_weapon/ammunition/railgun_ammo,
-/obj/machinery/ammo_sorter/upgraded{
-	name = "Railgun Slug Rack II"
+/obj/machinery/ship_weapon/energy/beam,
+/obj/structure/cable/yellow{
+	icon_state = "0-8"
 	},
+/obj/structure/fluff/support_beam,
+/obj/structure/window/reinforced/spawner,
+/obj/structure/window/reinforced/spawner/north,
 /turf/open/floor/plasteel/dark,
 /area/nsv/weapons/fore{
 	lighting_colour_bulb = "#FF3232";
@@ -12708,12 +13237,16 @@
 /turf/open/floor/plating/rusty_techgrid,
 /area/quartermaster/storage)
 "Nw" = (
-/obj/machinery/door/airlock/ship/hatch{
-	name = "Magazine";
-	req_one_access_txt = "69"
+/obj/structure/disposalpipe/segment{
+	dir = 5
 	},
-/obj/machinery/door/firedoor/border_only/directional/south,
-/obj/machinery/door/firedoor/border_only/directional/north,
+/obj/structure/cable/yellow{
+	icon_state = "4-8"
+	},
+/obj/structure/munitions_trolley,
+/obj/structure/fluff/support_beam{
+	dir = 1
+	},
 /turf/open/floor/plating/rusty_techgrid,
 /area/nsv/weapons/fore{
 	lighting_colour_bulb = "#FF3232";
@@ -12785,10 +13318,18 @@
 	lighting_colour_tube = "#FF3232"
 	})
 "NE" = (
-/obj/machinery/conveyor{
-	id = "railgun_conveyor"
+/obj/structure/disposalpipe/segment{
+	dir = 10
 	},
-/obj/structure/plasticflaps/opaque,
+/obj/structure/cable/yellow{
+	icon_state = "2-4"
+	},
+/obj/structure/cable/yellow{
+	icon_state = "1-2"
+	},
+/obj/structure/cable/yellow{
+	icon_state = "2-8"
+	},
 /turf/open/floor/plasteel/dark/side{
 	dir = 9
 	},
@@ -12838,8 +13379,8 @@
 /turf/open/floor/plasteel/white,
 /area/maintenance/department/medical)
 "NI" = (
-/obj/machinery/conveyor{
-	id = "railgun_conveyor"
+/obj/structure/cable/yellow{
+	icon_state = "1-2"
 	},
 /turf/open/floor/plasteel/dark,
 /area/nsv/weapons/fore{
@@ -12867,6 +13408,9 @@
 /obj/effect/turf_decal/guideline/guideline_in_arrow_con_alt/brown{
 	color = "#FF7F00";
 	dir = 6
+	},
+/obj/structure/cable/yellow{
+	icon_state = "4-8"
 	},
 /turf/open/floor/monofloor,
 /area/nsv/weapons/access_corridor{
@@ -12948,16 +13492,16 @@
 /area/engine/atmos/port_atmos)
 "NV" = (
 /obj/machinery/vending/wardrobe/muni_wardrobe,
+/obj/structure/cable/yellow{
+	icon_state = "4-8"
+	},
 /turf/open/floor/plasteel/dark/side{
 	dir = 8
 	},
 /area/nsv/weapons)
 "NW" = (
-/obj/structure/cable/yellow{
-	icon_state = "1-4"
-	},
-/turf/open/floor/plasteel/dark/side{
-	dir = 10
+/turf/open/floor/monofloor/corner{
+	dir = 4
 	},
 /area/nsv/weapons/starboard{
 	lighting_colour_bulb = "#FF3232";
@@ -13004,6 +13548,7 @@
 	icon_state = "1-2"
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
+/obj/structure/disposalpipe/segment,
 /turf/open/floor/plating/rusty_techgrid,
 /area/nsv/weapons/fore{
 	lighting_colour_bulb = "#FF3232";
@@ -13070,14 +13615,12 @@
 /turf/open/floor/plating/rusty_techgrid,
 /area/medical/surgery/aux)
 "On" = (
-/turf/open/floor/plasteel/dark/side{
-	dir = 8
+/obj/structure/fluff/support_beam{
+	dir = 4
 	},
-/area/nsv/weapons/starboard{
-	lighting_colour_bulb = "#FF3232";
-	lighting_colour_night = "#FF3232";
-	lighting_colour_tube = "#FF3232"
-	})
+/obj/structure/disposalpipe/segment,
+/turf/open/floor/plating,
+/area/maintenance/nsv/weapons)
 "Or" = (
 /obj/machinery/atmospherics/pipe/manifold/orange/visible/layer2,
 /obj/machinery/atmospherics/pipe/manifold/orange/visible/layer4,
@@ -13137,6 +13680,19 @@
 	},
 /turf/open/floor/plating/rusty_techgrid,
 /area/engine/supermatter)
+"Oy" = (
+/obj/machinery/atmospherics/pipe/simple/supply/visible/layer2,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
+/obj/machinery/door/firedoor/border_only/directional/north,
+/obj/machinery/door/firedoor/border_only/directional/south,
+/obj/structure/disposalpipe/segment,
+/obj/machinery/door/airlock/ship/hatch{
+	name = "Munitions";
+	req_one_access_txt = "31;69"
+	},
+/obj/effect/landmark/zebra_interlock_point,
+/turf/open/floor/plating/rusty_techgrid,
+/area/nsv/weapons)
 "Oz" = (
 /obj/machinery/door/airlock/ship/external/glass{
 	dir = 4;
@@ -13184,22 +13740,32 @@
 	},
 /turf/open/floor/plating/rusty_techgrid,
 /area/engine/atmos/starboard_atmos)
+"OF" = (
+/obj/structure/cable/white{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/visible/layer2,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
+/obj/structure/disposalpipe/segment{
+	dir = 6
+	},
+/turf/open/floor/plating/rusty_techgrid,
+/area/nsv/weapons/fore{
+	lighting_colour_bulb = "#FF3232";
+	lighting_colour_night = "#FF3232";
+	lighting_colour_tube = "#FF3232"
+	})
 "OG" = (
-/obj/structure/rack,
 /obj/structure/cable/white{
 	icon_state = "0-5"
 	},
 /obj/machinery/power/apc/auto_name/west,
-/obj/item/ammo_box/magazine/nsv/pdc{
-	pixel_y = 8
+/obj/structure/fluff/support_beam{
+	dir = 1
 	},
-/obj/item/ammo_box/magazine/nsv/pdc{
-	pixel_y = 4
+/turf/open/floor/plasteel/dark/side{
+	dir = 1
 	},
-/obj/item/ammo_box/magazine/nsv/pdc,
-/obj/structure/window/reinforced/spawner/north,
-/obj/structure/window/reinforced/spawner,
-/turf/open/floor/plating/rusty_techgrid,
 /area/nsv/weapons/starboard{
 	lighting_colour_bulb = "#FF3232";
 	lighting_colour_night = "#FF3232";
@@ -13221,9 +13787,11 @@
 /turf/open/floor/plating/rusty_techgrid,
 /area/maintenance/nsv/deck2/starboard)
 "OM" = (
-/obj/machinery/photocopier,
-/turf/open/floor/plasteel/ridged/steel,
-/area/maintenance/nsv/weapons)
+/obj/machinery/missile_builder/welder{
+	dir = 8
+	},
+/turf/open/floor/engine,
+/area/nsv/weapons)
 "ON" = (
 /obj/machinery/atmospherics/components/unary/portables_connector/visible/layer4{
 	dir = 8
@@ -13242,6 +13810,22 @@
 	dir = 1
 	},
 /area/engine/supermatter)
+"OQ" = (
+/obj/effect/turf_decal/guideline/guideline_out/blue{
+	dir = 8
+	},
+/obj/effect/turf_decal/guideline/guideline_in/red{
+	dir = 8
+	},
+/obj/structure/disposalpipe/segment,
+/turf/open/floor/monofloor{
+	dir = 4
+	},
+/area/hallway/nsv/deck2/frame1/port{
+	lighting_colour_bulb = "#c1e1ff";
+	lighting_colour_night = "#c1e1ff";
+	lighting_colour_tube = "#c1e1ff"
+	})
 "OR" = (
 /obj/machinery/disposal/bin,
 /obj/structure/disposalpipe/trunk{
@@ -13252,7 +13836,6 @@
 /area/crew_quarters/kitchen)
 "OS" = (
 /obj/machinery/atmospherics/pipe/manifold/green/visible,
-/obj/item/radio/intercom/directional/south,
 /turf/open/floor/plating,
 /area/engine/atmos/port_atmos)
 "OU" = (
@@ -13302,24 +13885,15 @@
 /turf/open/space/basic,
 /area/space/nearstation)
 "Pa" = (
-/obj/structure/rack,
 /obj/machinery/firealarm/directional/west,
 /obj/machinery/light{
 	color = "#FF3232";
 	dir = 8
 	},
-/obj/item/ammo_box/magazine/nsv/pdc{
-	pixel_y = 8
+/obj/structure/fluff/support_beam{
+	dir = 1
 	},
-/obj/item/ammo_box/magazine/nsv/pdc{
-	pixel_y = 4
-	},
-/obj/item/ammo_box/magazine/nsv/pdc,
-/obj/structure/window/reinforced/spawner/north,
-/obj/structure/window/reinforced/spawner,
-/turf/open/floor/plasteel/dark/side{
-	dir = 4
-	},
+/turf/open/floor/plasteel/dark/side,
 /area/nsv/weapons/starboard{
 	lighting_colour_bulb = "#FF3232";
 	lighting_colour_night = "#FF3232";
@@ -13345,6 +13919,17 @@
 /obj/structure/disposalpipe/segment,
 /turf/open/floor/plating/rusty_techgrid,
 /area/maintenance/nsv/deck2/starboard)
+"Pd" = (
+/obj/machinery/ship_weapon/torpedo_launcher/east,
+/obj/machinery/computer/ship/munitions_computer/west{
+	pixel_x = -8
+	},
+/turf/open/floor/plasteel/dark/side,
+/area/nsv/weapons/fore{
+	lighting_colour_bulb = "#FF3232";
+	lighting_colour_night = "#FF3232";
+	lighting_colour_tube = "#FF3232"
+	})
 "Pg" = (
 /obj/effect/landmark/start/medical_doctor,
 /turf/open/floor/plasteel/white/side,
@@ -13364,10 +13949,13 @@
 /obj/machinery/light{
 	dir = 4
 	},
+/obj/structure/cable/yellow{
+	icon_state = "9-10"
+	},
 /turf/open/floor/plating/rusty_techgrid,
 /area/engine/stormdrive)
 "Pl" = (
-/obj/structure/closet/bombcloset,
+/obj/machinery/vending/wardrobe/muni_wardrobe,
 /turf/open/floor/plasteel/dark/side{
 	dir = 4
 	},
@@ -13540,14 +14128,7 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
-/obj/machinery/door/airlock/ship/hatch{
-	dir = 4;
-	name = "Fore Weapons Bay";
-	req_one_access_txt = "69"
-	},
-/obj/machinery/door/firedoor/border_only/directional/east,
-/obj/machinery/door/firedoor/border_only/directional/west,
-/turf/open/floor/plating/rusty_techgrid,
+/turf/closed/wall/r_wall/ship,
 /area/nsv/weapons/fore{
 	lighting_colour_bulb = "#FF3232";
 	lighting_colour_night = "#FF3232";
@@ -13566,7 +14147,7 @@
 /obj/structure/cable/white{
 	icon_state = "6-8"
 	},
-/turf/open/floor/plating/rusty_techgrid,
+/turf/closed/wall/r_wall/ship,
 /area/nsv/weapons/fore{
 	lighting_colour_bulb = "#FF3232";
 	lighting_colour_night = "#FF3232";
@@ -13680,9 +14261,39 @@
 	},
 /turf/open/floor/plating/rusty_techgrid,
 /area/medical/nsv)
+"PX" = (
+/obj/machinery/ship_weapon/torpedo_launcher/east,
+/obj/machinery/computer/ship/munitions_computer/west{
+	pixel_x = -8
+	},
+/turf/open/floor/plasteel/dark/side{
+	dir = 1
+	},
+/area/nsv/weapons/fore{
+	lighting_colour_bulb = "#FF3232";
+	lighting_colour_night = "#FF3232";
+	lighting_colour_tube = "#FF3232"
+	})
 "PY" = (
 /turf/closed/wall/r_wall/ship,
 /area/engine/supermatter)
+"Qa" = (
+/obj/machinery/door/airlock/ship/hatch{
+	dir = 4;
+	name = "Starboard Weapons Bay";
+	req_access_txt = "69;12"
+	},
+/obj/machinery/door/firedoor/border_only/directional/west,
+/obj/machinery/door/firedoor/border_only/directional/east,
+/obj/effect/landmark/zebra_interlock_point,
+/turf/open/floor/plasteel/dark/side{
+	dir = 4
+	},
+/area/hallway/nsv/deck2/frame1/starboard{
+	lighting_colour_bulb = "#c1e1ff";
+	lighting_colour_night = "#c1e1ff";
+	lighting_colour_tube = "#c1e1ff"
+	})
 "Qb" = (
 /obj/structure/grille,
 /turf/open/floor/plating,
@@ -13701,6 +14312,14 @@
 	},
 /turf/open/floor/plating/rusty_techgrid,
 /area/engine/supermatter)
+"Qd" = (
+/obj/structure/fluff/support_beam{
+	dir = 4
+	},
+/obj/structure/closet/crate/coffin/dio_clown,
+/obj/structure/disposalpipe/segment,
+/turf/open/floor/plating,
+/area/maintenance/nsv/weapons)
 "Qe" = (
 /obj/structure/disposalpipe/segment,
 /obj/structure/lattice/catwalk/over/ship,
@@ -13728,10 +14347,9 @@
 	},
 /area/medical/nsv)
 "Qk" = (
-/obj/structure/cable/yellow{
-	icon_state = "4-8"
+/turf/open/floor/monofloor{
+	dir = 1
 	},
-/turf/open/floor/engine,
 /area/nsv/weapons/starboard{
 	lighting_colour_bulb = "#FF3232";
 	lighting_colour_night = "#FF3232";
@@ -13750,10 +14368,14 @@
 /turf/open/floor/plating/rusty_techgrid,
 /area/medical/nsv)
 "Qr" = (
-/obj/structure/cable/white{
-	icon_state = "4-8"
+/obj/machinery/light{
+	color = "#c1e1ff"
 	},
-/turf/open/floor/plating/rusty_techgrid,
+/obj/effect/landmark/zebra_interlock_point,
+/obj/machinery/door/firedoor/border_only/directional/west,
+/turf/open/floor/plasteel/dark/side{
+	dir = 1
+	},
 /area/nsv/weapons/fore{
 	lighting_colour_bulb = "#FF3232";
 	lighting_colour_night = "#FF3232";
@@ -14036,13 +14658,7 @@
 /turf/closed/wall/ship,
 /area/janitor)
 "Rh" = (
-/obj/machinery/airalarm/directional/south,
-/obj/machinery/camera/autoname{
-	dir = 1
-	},
-/turf/open/floor/plasteel/dark/side{
-	dir = 1
-	},
+/turf/open/floor/plating/rusty_techgrid,
 /area/nsv/weapons)
 "Ri" = (
 /obj/structure/sign/departments/medbay/alt2{
@@ -14064,14 +14680,11 @@
 	},
 /area/nsv/weapons)
 "Rk" = (
-/obj/machinery/conveyor/slow{
-	id = "loader_2"
+/obj/machinery/light{
+	color = "#FF3232";
+	dir = 1
 	},
-/obj/machinery/conveyor/slow{
-	dir = 4;
-	id = "magazine_conveyor"
-	},
-/turf/open/floor/plasteel/dark/side,
+/turf/open/floor/plating/rusty_techgrid,
 /area/nsv/weapons/fore{
 	lighting_colour_bulb = "#FF3232";
 	lighting_colour_night = "#FF3232";
@@ -14080,6 +14693,9 @@
 "Rl" = (
 /obj/effect/turf_decal/guideline/guideline_out_T/blue,
 /obj/effect/turf_decal/guideline/guideline_in_arrow_con_alt/red,
+/obj/structure/disposalpipe/segment{
+	dir = 10
+	},
 /turf/open/floor/monofloor{
 	dir = 1
 	},
@@ -14160,6 +14776,7 @@
 	color = "#FF7F00";
 	dir = 6
 	},
+/obj/structure/disposalpipe/segment,
 /turf/open/floor/monofloor/corner{
 	dir = 6
 	},
@@ -14170,6 +14787,13 @@
 	})
 "Ry" = (
 /obj/machinery/camera/autoname,
+/obj/machinery/ship_weapon/energy/laser_pd{
+	gun_id = 1
+	},
+/obj/structure/cable/yellow{
+	icon_state = "0-8"
+	},
+/obj/structure/fluff/support_beam,
 /turf/open/floor/plasteel/dark/corner,
 /area/nsv/weapons/fore{
 	lighting_colour_bulb = "#FF3232";
@@ -14180,6 +14804,7 @@
 /obj/effect/turf_decal/tile/orange{
 	dir = 4
 	},
+/obj/effect/turf_decal/tile/red,
 /turf/open/floor/plasteel/dark/corner{
 	dir = 8
 	},
@@ -14334,6 +14959,9 @@
 	dir = 4
 	},
 /area/engine/stormdrive)
+"RY" = (
+/turf/open/floor/engine,
+/area/nsv/weapons)
 "RZ" = (
 /obj/machinery/light{
 	color = "#c1e1ff";
@@ -14389,6 +15017,11 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 8
 	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/obj/structure/window/reinforced/spawner,
+/obj/structure/window/reinforced/spawner/north,
 /turf/open/floor/plating/rusty_techgrid,
 /area/quartermaster/storage)
 "Sg" = (
@@ -14532,6 +15165,9 @@
 /obj/machinery/atmospherics/pipe/simple/purple/visible/layer2{
 	dir = 9
 	},
+/obj/structure/cable/yellow{
+	icon_state = "6-10"
+	},
 /turf/open/floor/plating/rusty_techgrid,
 /area/engine/atmos/port_atmos)
 "SG" = (
@@ -14621,8 +15257,12 @@
 	lighting_colour_tube = "#FF3232"
 	})
 "SU" = (
-/obj/machinery/conveyor{
-	id = "railgun_conveyor"
+/obj/structure/disposalpipe/segment,
+/obj/structure/cable/yellow{
+	icon_state = "1-2"
+	},
+/obj/structure/fluff/support_beam{
+	dir = 4
 	},
 /turf/open/floor/plating/rusty_techgrid,
 /area/nsv/weapons/fore{
@@ -14711,19 +15351,12 @@
 /turf/open/space/basic,
 /area/space/nearstation)
 "Tl" = (
-/obj/structure/rack,
 /obj/machinery/airalarm/directional/west,
-/obj/item/ammo_box/magazine/nsv/pdc{
-	pixel_y = 8
+/obj/structure/fluff/support_beam{
+	dir = 1
 	},
-/obj/item/ammo_box/magazine/nsv/pdc{
-	pixel_y = 4
-	},
-/obj/item/ammo_box/magazine/nsv/pdc,
-/obj/structure/window/reinforced/spawner/north,
-/obj/structure/window/reinforced/spawner,
 /turf/open/floor/plasteel/dark/side{
-	dir = 4
+	dir = 1
 	},
 /area/nsv/weapons/starboard{
 	lighting_colour_bulb = "#FF3232";
@@ -14763,7 +15396,7 @@
 /turf/open/floor/plating/rusty_techgrid,
 /area/medical/surgery/aux)
 "Tr" = (
-/obj/machinery/ship_weapon/pdc_mount/north,
+/obj/machinery/ship_weapon/vls,
 /turf/open/floor/engine,
 /area/nsv/weapons/starboard{
 	lighting_colour_bulb = "#FF3232";
@@ -14776,6 +15409,7 @@
 	dir = 8;
 	id = "SM_EJECT"
 	},
+/obj/machinery/power/supermatter_crystal/engine,
 /turf/open/floor/engine/vacuum{
 	initial_gas_mix = "n2=10;TEMP=50"
 	},
@@ -14886,6 +15520,7 @@
 /obj/effect/turf_decal/guideline/guideline_out/blue{
 	dir = 4
 	},
+/obj/structure/disposalpipe/segment,
 /turf/open/floor/monofloor{
 	dir = 4
 	},
@@ -14946,6 +15581,16 @@
 	},
 /turf/open/floor/plating/rusty_techgrid,
 /area/security/main)
+"TP" = (
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/turf/closed/wall/ship,
+/area/nsv/weapons/access_corridor{
+	lighting_colour_bulb = "#c1e1ff";
+	lighting_colour_night = "#c1e1ff";
+	lighting_colour_tube = "#c1e1ff"
+	})
 "TQ" = (
 /turf/open/floor/plating,
 /area/maintenance/nsv/deck2/starboard)
@@ -15036,15 +15681,13 @@
 /turf/open/floor/monotile/steel,
 /area/quartermaster/storage)
 "Ue" = (
-/obj/structure/cable/yellow{
-	icon_state = "4-10"
+/obj/machinery/door/firedoor/border_only/directional/north,
+/obj/machinery/door/firedoor/border_only/directional/south,
+/obj/effect/landmark/zebra_interlock_point,
+/turf/open/floor/plasteel/dark/side{
+	dir = 1
 	},
-/turf/open/floor/plating/rusty_techgrid,
-/area/nsv/weapons/fore{
-	lighting_colour_bulb = "#FF3232";
-	lighting_colour_night = "#FF3232";
-	lighting_colour_tube = "#FF3232"
-	})
+/area/maintenance/nsv/weapons)
 "Uf" = (
 /obj/machinery/atmospherics/pipe/simple/dark/visible{
 	dir = 4
@@ -15072,6 +15715,18 @@
 	},
 /turf/open/floor/durasteel,
 /area/engine/atmos/starboard_atmos)
+"Ui" = (
+/obj/structure/disposalpipe/segment,
+/obj/structure/munitions_trolley,
+/obj/structure/fluff/support_beam{
+	dir = 1
+	},
+/turf/open/floor/plating/rusty_techgrid,
+/area/nsv/weapons/fore{
+	lighting_colour_bulb = "#FF3232";
+	lighting_colour_night = "#FF3232";
+	lighting_colour_tube = "#FF3232"
+	})
 "Uj" = (
 /obj/machinery/atmospherics/components/unary/outlet_injector/atmos{
 	dir = 1
@@ -15254,7 +15909,10 @@
 /obj/machinery/atmospherics/pipe/manifold/supply/visible/layer2{
 	dir = 8
 	},
-/turf/open/floor/plating/rusty_techgrid,
+/obj/structure/disposalpipe/segment,
+/turf/open/floor/plasteel/dark/side{
+	dir = 1
+	},
 /area/nsv/weapons/starboard{
 	lighting_colour_bulb = "#FF3232";
 	lighting_colour_night = "#FF3232";
@@ -15477,8 +16135,12 @@
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
 	dir = 8
 	},
-/obj/machinery/ship_weapon/pdc_mount/north,
-/turf/open/floor/engine,
+/obj/machinery/computer/ship/munitions_computer/west{
+	pixel_x = -8
+	},
+/turf/open/floor/monofloor{
+	dir = 8
+	},
 /area/nsv/weapons/starboard{
 	lighting_colour_bulb = "#FF3232";
 	lighting_colour_night = "#FF3232";
@@ -15619,13 +16281,33 @@
 /area/engine/stormdrive)
 "VA" = (
 /obj/structure/table/reinforced,
-/obj/item/disk/design_disk/hybrid_rail_slugs{
-	pixel_x = 5;
-	pixel_y = 2
-	},
 /obj/machinery/power/apc/auto_name/west,
 /obj/structure/cable/white{
 	icon_state = "0-4"
+	},
+/obj/item/reagent_containers/glass/bottle{
+	list_reagents = list(/datum/reagent/oil=30);
+	name = "oil bottle";
+	pixel_x = -3;
+	pixel_y = -2
+	},
+/obj/item/reagent_containers/glass/bottle{
+	list_reagents = list(/datum/reagent/oil=30);
+	name = "oil bottle";
+	pixel_x = 1;
+	pixel_y = 4
+	},
+/obj/item/reagent_containers/glass/bottle{
+	list_reagents = list(/datum/reagent/oil=30);
+	name = "oil bottle";
+	pixel_x = -3;
+	pixel_y = -2
+	},
+/obj/item/reagent_containers/glass/bottle{
+	list_reagents = list(/datum/reagent/oil=30);
+	name = "oil bottle";
+	pixel_x = 1;
+	pixel_y = 4
 	},
 /turf/open/floor/plating/rusty_techgrid,
 /area/nsv/weapons/fore{
@@ -15640,9 +16322,11 @@
 /turf/open/floor/plating/rusty_techgrid,
 /area/maintenance/nsv/starboard_substation)
 "VE" = (
-/obj/structure/chair/office,
-/turf/open/floor/plating,
-/area/maintenance/nsv/weapons)
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/turf/open/floor/engine,
+/area/nsv/weapons)
 "VF" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -15650,9 +16334,12 @@
 /turf/open/floor/plating/rusty_techgrid,
 /area/medical/morgue)
 "VH" = (
-/obj/machinery/conveyor{
-	dir = 4;
-	id = "railgun_conveyor"
+/obj/structure/disposalpipe/segment,
+/obj/structure/cable/yellow{
+	icon_state = "1-2"
+	},
+/obj/structure/fluff/support_beam{
+	dir = 4
 	},
 /turf/open/floor/plasteel/dark/side{
 	dir = 8
@@ -15702,8 +16389,9 @@
 	},
 /area/engine/stormdrive)
 "VN" = (
-/turf/open/floor/plating,
-/area/maintenance/nsv/weapons)
+/obj/structure/fluff/support_beam,
+/turf/open/floor/engine,
+/area/nsv/weapons)
 "VP" = (
 /obj/machinery/atmospherics/pipe/simple/dark/visible,
 /obj/structure/cable/white{
@@ -15730,6 +16418,7 @@
 /obj/structure/cable/white{
 	icon_state = "4-9"
 	},
+/obj/structure/disposalpipe/segment,
 /turf/open/floor/plating/rusty_techgrid,
 /area/nsv/weapons/access_corridor{
 	lighting_colour_bulb = "#c1e1ff";
@@ -15964,6 +16653,8 @@
 /turf/open/space/basic,
 /area/space/nearstation)
 "WD" = (
+/obj/effect/landmark/zebra_interlock_point,
+/obj/machinery/door/firedoor/border_only/directional/east,
 /turf/open/floor/plasteel/dark/corner{
 	dir = 4
 	},
@@ -16025,6 +16716,12 @@
 /obj/effect/landmark/event_spawn,
 /turf/open/floor/plasteel/dark,
 /area/security)
+"WN" = (
+/obj/structure/cable/yellow{
+	icon_state = "5-9"
+	},
+/turf/closed/wall/ship,
+/area/engine/atmos/port_atmos)
 "WQ" = (
 /obj/structure/cable/yellow{
 	icon_state = "1-2"
@@ -16140,8 +16837,11 @@
 	lighting_colour_tube = "#c1e1ff"
 	})
 "Xk" = (
-/turf/open/floor/plasteel/dark/side{
-	dir = 1
+/obj/machinery/computer/ship/munitions_computer/west{
+	pixel_x = -8
+	},
+/turf/open/floor/monofloor/corner{
+	dir = 8
 	},
 /area/nsv/weapons/starboard{
 	lighting_colour_bulb = "#FF3232";
@@ -16152,16 +16852,11 @@
 /obj/structure/disposalpipe/segment{
 	dir = 10
 	},
-/obj/structure/cable/white{
-	icon_state = "2-4"
-	},
-/turf/open/floor/plating/rusty_techgrid,
-/area/maintenance/nsv/weapons)
+/turf/closed/wall/ship,
+/area/nsv/weapons)
 "Xm" = (
-/obj/effect/turf_decal/tile/orange,
-/turf/open/floor/plasteel/dark/corner{
-	dir = 1
-	},
+/obj/machinery/ship_weapon/vls,
+/turf/open/floor/plasteel/ridged/steel,
 /area/nsv/weapons/starboard{
 	lighting_colour_bulb = "#FF3232";
 	lighting_colour_night = "#FF3232";
@@ -16238,8 +16933,15 @@
 	},
 /area/security)
 "XB" = (
-/obj/machinery/conveyor_switch/oneway{
-	id = "railgun_conveyor"
+/obj/structure/disposalpipe/segment,
+/obj/structure/cable/yellow{
+	icon_state = "1-2"
+	},
+/obj/structure/cable/yellow{
+	icon_state = "1-4"
+	},
+/obj/structure/fluff/support_beam{
+	dir = 4
 	},
 /turf/open/floor/plasteel/dark/side{
 	dir = 8
@@ -16274,6 +16976,8 @@
 /obj/machinery/camera/autoname{
 	dir = 8
 	},
+/obj/effect/turf_decal/tile/red,
+/obj/effect/turf_decal/tile/red,
 /turf/open/floor/plasteel/dark/side{
 	dir = 8
 	},
@@ -16372,6 +17076,14 @@
 	},
 /turf/open/floor/plating/rusty_techgrid,
 /area/engine/supermatter)
+"XO" = (
+/obj/effect/spawner/lootdrop/grille_or_trash,
+/obj/structure/cable/yellow{
+	icon_state = "4-8"
+	},
+/obj/structure/disposalpipe/segment,
+/turf/open/floor/plating,
+/area/maintenance/nsv/weapons)
 "XQ" = (
 /turf/open/floor/monofloor/corner{
 	dir = 6
@@ -16446,6 +17158,7 @@
 	dir = 8
 	},
 /obj/machinery/airalarm/directional/east,
+/obj/structure/disposalpipe/segment,
 /turf/open/floor/monofloor{
 	dir = 4
 	},
@@ -16521,11 +17234,24 @@
 /turf/open/floor/plating/rusty_techgrid,
 /area/engine/stormdrive)
 "Yh" = (
-/obj/structure/fluff/support_beam{
-	dir = 4
+/obj/item/ship_weapon/ammunition/missile{
+	pixel_y = 10
 	},
-/turf/open/floor/plating,
-/area/maintenance/nsv/weapons)
+/obj/item/ship_weapon/ammunition/missile{
+	pixel_y = 6
+	},
+/obj/item/ship_weapon/ammunition/missile{
+	pixel_y = 4
+	},
+/obj/item/ship_weapon/ammunition/missile{
+	pixel_y = 2
+	},
+/obj/item/ship_weapon/ammunition/missile{
+	pixel_y = 8
+	},
+/obj/item/ship_weapon/ammunition/missile,
+/turf/open/floor/holofloor,
+/area/nsv/weapons)
 "Yi" = (
 /obj/effect/turf_decal/stripes/red/line{
 	dir = 5
@@ -16570,11 +17296,20 @@
 /turf/open/floor/plating/rusty_techgrid,
 /area/maintenance/nsv/deck2/starboard)
 "Yo" = (
-/obj/machinery/ship_weapon/pdc_mount/north,
+/obj/machinery/light{
+	dir = 4
+	},
+/obj/item/ship_weapon/ammunition/torpedo,
+/obj/item/ship_weapon/ammunition/torpedo{
+	pixel_y = 4
+	},
+/obj/item/ship_weapon/ammunition/torpedo{
+	pixel_y = 4
+	},
 /turf/open/floor/plasteel/dark/side{
 	dir = 8
 	},
-/area/nsv/weapons/starboard{
+/area/nsv/weapons/fore{
 	lighting_colour_bulb = "#FF3232";
 	lighting_colour_night = "#FF3232";
 	lighting_colour_tube = "#FF3232"
@@ -16603,14 +17338,8 @@
 	})
 "Ys" = (
 /obj/structure/disposalpipe/segment,
-/obj/structure/cable/white{
-	icon_state = "1-2"
-	},
-/obj/structure/fluff/support_beam{
-	dir = 1
-	},
-/turf/open/floor/plating/rusty_techgrid,
-/area/maintenance/nsv/weapons)
+/turf/closed/wall/ship,
+/area/nsv/weapons)
 "Yt" = (
 /obj/effect/turf_decal/stripes/red/line{
 	dir = 9
@@ -16628,7 +17357,12 @@
 /turf/open/floor/plating/rusty_techgrid,
 /area/crew_quarters/theatre)
 "Yv" = (
-/turf/open/floor/plasteel/ridged/steel,
+/obj/machinery/computer/ship/munitions_computer/west{
+	dir = 4
+	},
+/turf/open/floor/monofloor{
+	dir = 4
+	},
 /area/nsv/weapons/starboard{
 	lighting_colour_bulb = "#FF3232";
 	lighting_colour_night = "#FF3232";
@@ -16758,7 +17492,8 @@
 	icon_state = "1-2"
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
-/turf/open/floor/plating/rusty_techgrid,
+/obj/structure/disposalpipe/segment,
+/turf/open/floor/plasteel/dark/side,
 /area/nsv/weapons/starboard{
 	lighting_colour_bulb = "#FF3232";
 	lighting_colour_night = "#FF3232";
@@ -16791,6 +17526,7 @@
 /obj/structure/cable/white{
 	icon_state = "0-5"
 	},
+/obj/structure/extinguisher_cabinet/west,
 /turf/open/floor/plating/rusty_techgrid,
 /area/nsv/weapons/fore{
 	lighting_colour_bulb = "#FF3232";
@@ -16805,8 +17541,8 @@
 	lighting_colour_tube = "#FF3232"
 	})
 "YW" = (
-/obj/machinery/door/airlock/ship/external/glass{
-	name = "Stormdrive Engine Room";
+/obj/machinery/door/airlock/ship/engineering{
+	name = "Port Substation";
 	req_one_access_txt = "10;24"
 	},
 /turf/open/floor/plating,
@@ -16921,6 +17657,9 @@
 /obj/effect/turf_decal/guideline/guideline_in/brown{
 	color = "#FF7F00";
 	dir = 1
+	},
+/obj/structure/cable/yellow{
+	icon_state = "4-8"
 	},
 /turf/open/floor/monofloor,
 /area/nsv/weapons/access_corridor{
@@ -17252,6 +17991,11 @@
 /obj/machinery/door/firedoor/border_only/directional/east,
 /turf/open/floor/plating/rusty_techgrid,
 /area/engine/atmos/starboard_atmos)
+"ZX" = (
+/obj/structure/table,
+/obj/structure/disposalpipe/segment,
+/turf/open/floor/plating,
+/area/maintenance/nsv/weapons)
 "ZY" = (
 /obj/structure/chair{
 	dir = 8
@@ -46937,7 +47681,7 @@ zW
 Eb
 Eq
 Ga
-PG
+Gd
 eg
 GO
 RX
@@ -47194,8 +47938,8 @@ CM
 aI
 Et
 Gd
-PG
-eg
+Gd
+MN
 GO
 VM
 IJ
@@ -47451,7 +48195,7 @@ er
 Bj
 Eu
 Ge
-GN
+Ge
 Iw
 GO
 Xh
@@ -47708,8 +48452,8 @@ Do
 Ln
 Ev
 ln
-GO
-Ix
+Aw
+Wu
 GO
 Lh
 Ca
@@ -47965,7 +48709,7 @@ in
 Af
 Ex
 OS
-GO
+JG
 Wu
 YW
 Qf
@@ -48222,8 +48966,8 @@ yu
 sT
 Ez
 UZ
-GO
-GO
+zV
+sv
 GO
 Lk
 Mk
@@ -48984,7 +49728,7 @@ vW
 rm
 ku
 Rp
-wY
+dT
 PG
 Jv
 CL
@@ -49251,7 +49995,7 @@ eJ
 Ff
 PG
 GX
-PG
+WN
 GO
 Lu
 ML
@@ -50005,7 +50749,7 @@ qc
 pJ
 qM
 Dh
-Vh
+lm
 Vh
 Vh
 Vh
@@ -50263,14 +51007,14 @@ rO
 qM
 Fd
 tl
-VS
+Hn
 mn
 XW
 AO
-xS
+OQ
 El
 xX
-xS
+OQ
 bo
 ks
 BR
@@ -50279,7 +51023,7 @@ Ee
 FQ
 Gc
 Hm
-YG
+KT
 Kr
 Nh
 IA
@@ -50790,7 +51534,7 @@ UO
 IL
 bY
 fR
-YG
+TP
 xL
 HG
 YG
@@ -51047,7 +51791,7 @@ Tf
 tt
 Zq
 rs
-YG
+TP
 oq
 NM
 YG
@@ -51056,7 +51800,7 @@ ZM
 Yc
 VW
 QR
-QX
+Ix
 QX
 QX
 rj
@@ -51304,7 +52048,7 @@ zu
 Km
 YE
 rs
-YG
+TP
 VY
 Zh
 VW
@@ -51313,16 +52057,16 @@ VW
 VW
 VW
 Rc
-VW
-VW
-VN
+Gb
+Gb
+sF
 Xl
 Ys
-KK
-Cg
-KK
 Ys
-KK
+Cg
+Ys
+Ys
+Ys
 ka
 Mv
 Yr
@@ -51561,26 +52305,26 @@ AH
 VS
 bI
 rs
-YG
+TP
 Gl
 kW
 KV
-QX
-QX
-QX
+wP
+wP
+kQ
 QX
 XU
 eU
-VW
-VN
+bp
 gW
-jv
-VN
-VN
+gW
+gW
+gW
+gW
 kV
 Yh
-VN
-Rt
+Gb
+ch
 Mv
 Yr
 Zf
@@ -51818,30 +52562,30 @@ fR
 fR
 fR
 fR
-YG
+ae
 Go
 VQ
-VW
-PD
-Yh
-Jm
-Yh
-za
-VW
-VW
+si
+EV
+On
+XO
+Qd
+ZX
+wy
+lu
 tY
-VW
-VW
-VW
+tY
+tY
+tY
 rK
-VW
-VW
-VW
-Rt
+Bw
+sm
+Gb
+iB
 Mv
 Mv
-Mv
-Mv
+Qa
+Qa
 Mv
 Mv
 KI
@@ -52081,19 +52825,19 @@ rz
 Gb
 Gb
 Gb
+Jn
 Gb
 Gb
-Gb
-re
-VN
-VN
-KT
-VW
+LS
+KK
+iC
 qK
-VN
+qK
+qK
+qK
 wa
-aU
-VW
+sm
+Gb
 wj
 eM
 lq
@@ -52338,22 +53082,22 @@ kY
 Gb
 KF
 bn
-bn
+zC
 Pl
 sQ
-re
-VN
-VN
-VN
-VW
+LS
+KM
+LH
+AF
+Js
 OM
 lp
 VE
 sm
-VW
-Yh
+GN
+hc
 fW
-re
+Ue
 qx
 CO
 VW
@@ -52598,18 +53342,18 @@ Jd
 MQ
 Pt
 Rh
-re
+AX
+KM
+Jj
 VN
-VN
-VN
-VW
+Ar
 Jr
 rT
 yw
-VW
-VW
-VW
-Rt
+RY
+Gb
+hc
+fW
 re
 VW
 VW
@@ -52855,16 +53599,16 @@ ad
 bd
 PB
 GF
-re
-VN
-VN
-VN
-VW
+LS
+iK
+oE
+aU
+fo
 EO
 lT
 Az
 Hs
-uY
+Oy
 uY
 zj
 re
@@ -53112,18 +53856,18 @@ Jg
 NV
 PC
 Rj
-re
-VN
-VN
-VN
-VW
+LS
+AK
+Fw
+Fw
+Fw
 Fw
 nb
 Gj
-VW
-hc
+jv
+Gb
 GD
-ch
+xp
 re
 WB
 KI
@@ -53366,7 +54110,7 @@ yg
 yg
 Ik
 NB
-yg
+gT
 PH
 vH
 yg
@@ -53374,7 +54118,7 @@ yg
 yg
 yg
 yg
-yg
+Ec
 yg
 ep
 KZ
@@ -53617,12 +54361,12 @@ gi
 gi
 KI
 KI
-KI
 WB
 yg
+bz
 Jh
 KG
-Lv
+Ui
 Nw
 PI
 gF
@@ -53874,20 +54618,20 @@ gi
 gi
 KI
 KI
-KI
 WB
 yg
-Fq
-KH
-LH
-yg
+Rk
+PF
+LJ
+LJ
+yn
 BS
 uy
 PL
 UG
 yO
 Dy
-PL
+OF
 Oc
 qY
 Jy
@@ -54129,19 +54873,19 @@ gi
 gi
 gi
 gi
-gi
-gi
+KI
 KI
 WB
 yg
-Rk
+Fq
+PF
 Hv
 NI
 NE
 kA
-kA
+XB
 SU
-kA
+qA
 VH
 XB
 yF
@@ -54149,7 +54893,7 @@ jL
 vJ
 NW
 gh
-KZ
+lL
 Vi
 Xk
 KZ
@@ -54386,28 +55130,28 @@ gi
 gi
 gi
 gi
-gi
-gi
+KI
 KI
 WB
 yg
-Jn
+Fq
+PF
 oM
 LJ
-yg
+tK
 yg
 Ry
 Lv
 GJ
-Ar
+yg
 Ia
-wP
+Lv
 WD
 yg
 pE
-On
-KZ
-Yo
+Tr
+Tr
+Tr
 Xm
 KZ
 WB
@@ -54643,29 +55387,29 @@ gi
 gi
 gi
 gi
-gi
 KI
 KI
 WB
 yg
-Hn
+jK
+PF
 Ni
-LL
+LJ
+CA
 yg
 yg
-KM
-Ue
-YV
-Mq
-YV
+yg
+Ft
+yg
+yg
+yg
 Qr
-MT
 yg
 Qk
-Yv
-KZ
 Tr
-Yv
+Tr
+Tr
+Xm
 KZ
 WB
 KI
@@ -54900,28 +55644,28 @@ gi
 gi
 gi
 gi
-gi
 KI
 KI
 yg
 yg
+Fq
 Jo
 tM
-bp
+vg
+LD
 yg
-yg
-PF
-pM
+KH
+pt
 YV
-YV
-YV
+LL
+LL
 pM
 MT
 yg
 jz
 Yv
-KZ
-Tr
+Yv
+Yv
 pC
 KZ
 KZ
@@ -55157,10 +55901,10 @@ gi
 gi
 gi
 gi
-gi
 KI
 KI
 KI
+yg
 yg
 yg
 yg
@@ -55415,7 +56159,6 @@ gi
 gi
 gi
 gi
-gi
 KI
 KI
 KI
@@ -55423,14 +56166,15 @@ yg
 WB
 WB
 WB
+WB
 yg
-PF
+Pd
 YV
+qV
 YV
+qV
 YV
-YV
-YV
-MT
+PX
 yg
 WB
 WB
@@ -55681,13 +56425,13 @@ KI
 KI
 KI
 yg
-PF
+qJ
 YV
+Mq
 YV
+Mq
 YV
-YV
-YV
-MT
+ro
 yg
 KI
 KI
@@ -55939,11 +56683,11 @@ KI
 KI
 yg
 Rz
-vg
-vg
+Yo
+Id
 gj
 XE
-vg
+sq
 Fs
 yg
 KI
