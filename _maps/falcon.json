@@ -1,0 +1,29 @@
+{
+	"map_name": "SGV Falcon",
+	"map_link": "Falcon",
+    "map_path": "map_files/Falcon",
+    "map_file": ["Falcon2.dmm", "Falcon1.dmm"],
+	"traits": [{"Up": 1, "Linkage": "Cross"}, {"Down": -1, "Linkage": "Cross"}],
+	"space_ruin_levels": -1,
+	"space_empty_levels": 0,
+	"shuttles": {
+		"cargo": "cargo_shrike",
+		"ferry": "ferry_kilo",
+	    "emergency": "emergency_void"},
+    "mine_disable": 1,
+    "ship_type": "/obj/structure/overmap/nanotrasen/canoner/starter",
+	"starmap_path": "config/starmap/starmap.json",
+
+	"map_description": " Falcon is a heavily modified shrike by TerraGov shipyards created for hardest battles and hottest conflicts with most high technology",
+	"manufacturer": "TGNa Shipyards",
+	"mapper": "IFF_Falcon",
+	"commission_date": "May 23, 2261",
+	"strengths": ["Top firepower", "Fast and small", "Have many fighters"],
+	"weaknesses": ["Experimental and unstable tech", "Dangerously SM on board", "Have missing emergensy shuttle"],
+	"equipment": [
+		"2 Phaser cannons",
+		"1 class V stormdrive",
+		"1 supermatter crystal",
+		"1 thermoelectric generator"
+	]
+}

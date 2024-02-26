@@ -369,7 +369,7 @@ Been a mess since 2018, we'll fix it someday (probably)
 	armor = list("melee" = 60, "bullet" = 60, "laser" = 60, "energy" = 30, "bomb" = 30, "bio" = 100, "rad" = 90, "fire" = 90, "acid" = 80, "overmap_light" = 10, "overmap_medium" = 5, "overmap_heavy" = 90)
 	sprite_size = 32
 	damage_states = FALSE //temp
-	max_integrity = 200 //Really really squishy!
+	max_integrity = 300 //Really really squishy!
 	max_angular_acceleration = 200
 	speed_limit = 10
 	pixel_w = -16
@@ -429,14 +429,14 @@ Been a mess since 2018, we'll fix it someday (probably)
 	armor = list("melee" = 80, "bullet" = 80, "laser" = 80, "energy" = 50, "bomb" = 50, "bio" = 100, "rad" = 90, "fire" = 90, "acid" = 80, "overmap_light" = 25, "overmap_medium" = 20, "overmap_heavy" = 90)
 	sprite_size = 32
 	damage_states = FALSE //TEMP
-	max_integrity = 300 //Not so squishy!
+	max_integrity = 500 //Not so squishy!
 	pixel_w = -16
 	pixel_z = -20
 	speed_limit = 8
 	forward_maxthrust = 8
 	backward_maxthrust = 8
 	side_maxthrust = 7.75
-	max_angular_acceleration = 80
+	max_angular_acceleration = 120
 	components = list(/obj/item/fighter_component/fuel_tank,
 						/obj/item/fighter_component/avionics,
 						/obj/item/fighter_component/apu,
@@ -1029,6 +1029,15 @@ due_to_damage: If the removal was caused voluntarily (FALSE), or if it was cause
 	weight = 1.25
 	obj_integrity = 300
 	max_integrity = 300
+
+obj/item/fighter_component/armour_plating/tier4
+	name = "active heavy armour plates"
+	desc = "High tech"
+	icon_state = "armour_tier2"
+	tier = 4
+	weight = 2
+	obj_integrity = 600
+	max_integrity = 600
 
 /obj/item/fighter_component/canopy
 	name = "glass canopy"
