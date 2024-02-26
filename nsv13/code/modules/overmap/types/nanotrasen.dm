@@ -18,6 +18,20 @@
 	icon_state = "default"
 	faction = "nanotrasen"
 
+/obj/structure/overmap/nanotrasen/canoner
+	name = "Falcon class canoneer vessel"
+	icon = 'nsv13/icons/overmap/new/nanotrasen/frigate.dmi'
+	icon_state = "shrike"
+	mass = MASS_SMALL
+	sprite_size = 48
+	damage_states = FALSE
+	bound_height = 32
+	bound_width = 32
+	obj_integrity = 450
+	max_integrity = 450
+	integrity_failure = 450
+	armor = list("overmap_light" = 90, "overmap_medium" = 60, "overmap_heavy" = 35)
+
 /obj/structure/overmap/nanotrasen/custom
 	name = "vulture class custom fighter"
 	icon = 'nsv13/icons/overmap/new/nanotrasen/frigate.dmi'
@@ -30,7 +44,7 @@
 	obj_integrity = 350
 	max_integrity = 350
 	integrity_failure = 350
-	armor = list("overmap_light" = 40, "overmap_medium" = 25, "overmap_heavy" = 35)
+	armor = list("overmap_light" = 40, "overmap_medium" = 25, "overmap_heavy" = 30)
 
 /obj/structure/overmap/nanotrasen/light_cruiser
 	name = "raptor class light frigate"
@@ -207,21 +221,29 @@
 	armor = list("overmap_light" = 95, "overmap_medium" = 50, "overmap_heavy" = 10)
 	overmap_deletion_traits = DAMAGE_STARTS_COUNTDOWN
 
+/obj/structure/overmap/nanotrasen/canoner/starter //assigned to Falcon
+	role = MAIN_OVERMAP
+	obj_integrity = 1400
+	max_integrity = 1400 //Max health
+	integrity_failure = 1400
+	starting_system = "Staging" //Required for all player ships
+	armor = list("overmap_light" = 95, "overmap_medium" = 60, "overmap_heavy" = 15)
+	overmap_deletion_traits = DAMAGE_STARTS_COUNTDOWN
 
 /obj/structure/overmap/nanotrasen/frigate/starter //Currently assigned to Jeppison and Atlas
 	role = MAIN_OVERMAP
-	obj_integrity = 1350
-	max_integrity = 1350
-	integrity_failure = 1350
+	obj_integrity = 1300
+	max_integrity = 1300
+	integrity_failure = 1300
 	starting_system = "Staging" //Required for all player ships
 	armor = list("overmap_light" = 95, "overmap_medium" = 50, "overmap_heavy" = 10)
 	overmap_deletion_traits = DAMAGE_STARTS_COUNTDOWN
 
 /obj/structure/overmap/nanotrasen/patrol_cruiser/starter //Currently assigned to the Snake
 	role = MAIN_OVERMAP
-	obj_integrity = 1500
-	max_integrity = 1500
-	integrity_failure = 1500
+	obj_integrity = 1600
+	max_integrity = 1600
+	integrity_failure = 1600
 	bound_width = 64
 	bound_height = 64
 	starting_system = "Staging" //Required for all player ships
@@ -233,9 +255,9 @@
 	icon = 'nsv13/icons/overmap/new/nanotrasen/heavy_cruiser.dmi'
 	icon_state = "heavy_cruiser"
 	role = MAIN_OVERMAP
-	obj_integrity = 1800
-	max_integrity = 1800
-	integrity_failure = 1800
+	obj_integrity = 2000
+	max_integrity = 2000
+	integrity_failure = 2000
 	starting_system = "Staging" //Required for all player ships
 	armor = list("overmap_light" = 95, "overmap_medium" = 60, "overmap_heavy" = 20)
 	overmap_deletion_traits = DAMAGE_STARTS_COUNTDOWN
@@ -249,27 +271,27 @@
 
 /obj/structure/overmap/nanotrasen/carrier/starter //NOT CURRENTLY ASSIGNED
 	role = MAIN_OVERMAP
-	obj_integrity = 2000
-	max_integrity = 2000
-	integrity_failure = 2000
+	obj_integrity = 1800
+	max_integrity = 1800
+	integrity_failure = 1800
 	starting_system = "Staging" //Required for all player ships
 	armor = list("overmap_light" = 95, "overmap_medium" = 65, "overmap_heavy" = 20)
 	overmap_deletion_traits = DAMAGE_STARTS_COUNTDOWN
 
 /obj/structure/overmap/nanotrasen/battlecruiser/starter //Currently assigned to Tycoon and Gladius
 	role = MAIN_OVERMAP
-	obj_integrity = 2000
-	max_integrity = 2000
-	integrity_failure = 2000
+	obj_integrity = 2500
+	max_integrity = 2500
+	integrity_failure = 2500
 	starting_system = "Staging" //Required for all player ships
 	armor = list("overmap_light" = 95, "overmap_medium" = 60, "overmap_heavy" = 20)
 	overmap_deletion_traits = DAMAGE_STARTS_COUNTDOWN
 
 /obj/structure/overmap/nanotrasen/battleship/starter //Galactica
 	role = MAIN_OVERMAP //Player controlled variant
-	obj_integrity = 2300
-	max_integrity = 2300
-	integrity_failure = 2300
+	obj_integrity = 3000
+	max_integrity = 3000
+	integrity_failure = 3000
 	starting_system = "Staging" //Required for all player ships
 	armor = list("overmap_light" = 95, "overmap_medium" = 75, "overmap_heavy" = 25)
 	overmap_deletion_traits = DAMAGE_STARTS_COUNTDOWN
