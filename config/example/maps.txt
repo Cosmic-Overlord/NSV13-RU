@@ -19,8 +19,11 @@ map tycoon
 	votable
 endmap
 
+map vulture
+	votable
+endmap
+
 map atlas
-	minplayers 6
 	votable
 endmap
 
@@ -35,6 +38,7 @@ map aetherwhisp
 endmap
 
 map eclipce
+	minplayers 1
 	votable
 endmap
 
@@ -49,6 +53,7 @@ map gladius
 endmap
 
 map hammerhead
+	minplayers 17
 	votable
 endmap
 
@@ -58,7 +63,6 @@ map serendipity
 endmap
 
 map snake
-	minplayers 12
 	votable
 endmap
 
