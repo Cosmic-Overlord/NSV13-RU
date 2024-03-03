@@ -53,6 +53,64 @@
 	crate_type = /obj/structure/closet/crate/wooden
 	crate_name = "Captain Plasmasalt's finest gunpowder"
 
+/datum/supply_pack/munitions/aa_munitions
+	name = "50Cal boxes"
+	desc = "Pair of 50cal round boxes"
+	cost = 5000
+	contains = list(/obj/item/ammo_box/magazine/nsv/anti_air,
+					/obj/item/ammo_box/magazine/nsv/anti_air)
+	crate_name = "Minigun ammo crate"
+
+/datum/supply_pack/munitions/minigun_goida
+	name = "Goida light minigun"
+	desc = "1st goida series gun for sabre"
+	cost = 10000
+	contains = list(/obj/item/fighter_component/primary/utility/goida)
+	crate_name = "Sabre mounting minigun"
+
+/datum/supply_pack/munitions/high_tech_plates
+	name = "Reactive armor plates"
+	desc = "Heavy reactive armor plates developed for light and medium fighter class vessels"
+	cost = 90000
+	contains = list(/obj/item/fighter_component/armour_plating/tier4)
+	crate_name = "High tech reactive plates"
+
+/datum/supply_pack/munitions/gunpowders
+	name = "Powder bags (x29)"
+	desc = "Naval Gunpowder bags for use in artillery weapons, WARNING: Volatile."
+	cost = 3500
+	contains = list(/obj/item/powder_bag,
+					/obj/item/powder_bag,
+					/obj/item/powder_bag,
+					/obj/item/powder_bag,
+					/obj/item/powder_bag,
+					/obj/item/powder_bag,
+					/obj/item/powder_bag,
+					/obj/item/powder_bag,
+					/obj/item/powder_bag,
+					/obj/item/powder_bag,
+					/obj/item/powder_bag,
+					/obj/item/powder_bag,
+					/obj/item/powder_bag,
+					/obj/item/powder_bag,
+					/obj/item/powder_bag,
+					/obj/item/powder_bag,
+					/obj/item/powder_bag,
+					/obj/item/powder_bag,
+				    /obj/item/powder_bag,
+				    /obj/item/powder_bag,
+					/obj/item/powder_bag,
+					/obj/item/powder_bag,
+					/obj/item/powder_bag,
+					/obj/item/powder_bag,
+					/obj/item/powder_bag,
+					/obj/item/powder_bag,
+					/obj/item/powder_bag,
+					/obj/item/powder_bag,
+					/obj/item/powder_bag)
+	crate_type = /obj/structure/closet/crate/wooden
+	crate_name = "Captain Plasmasalt's finest gunpowder"
+
 /datum/supply_pack/munitions/pdc_ammo
 	name = "PDC mount rounds (x5)"
 	desc = "5 boxes of PDC rounds, ideal for repelling torpedoes and missiles."
