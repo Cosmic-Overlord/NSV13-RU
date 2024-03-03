@@ -56,10 +56,3 @@
 	mine_range = 7 // 13 total range, 6 without rocks so people don't try to do the funny with it
 
 
-obj/item/fighter_component/primary/utility
-	name = "50CAL Goida Cannon"
-	slot = HARDPOINT_SLOT_UTILITY_PRIMARY
-	icon_state = "lightcannon"
-	accepted_ammo = /obj/item/ammo_box/magazine/nsv/pdc
-	burst_size = 2
-	fire_delay = 0.25 SECONDS

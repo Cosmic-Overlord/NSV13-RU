@@ -1722,14 +1722,36 @@ Utility modules can be either one of these types, just ensure you set its slot t
 	slot = HARDPOINT_SLOT_UTILITY_PRIMARY
 	allowed_roles = OVERMAP_USER_ROLE_PILOT | OVERMAP_USER_ROLE_GUNNER
 
-/obj/item/fighter_component/primary/utility/fire(obj/structure/overmap/target)
-	return FALSE
 
 /obj/item/fighter_component/secondary/utility
 	name = "Utility Module"
 	slot = HARDPOINT_SLOT_UTILITY_SECONDARY
 	power_usage = 200
 	allowed_roles = OVERMAP_USER_ROLE_PILOT | OVERMAP_USER_ROLE_GUNNER
+
+/obj/item/fighter_component/primary/utility/fire(obj/structure/overmap/target)
+	var/obj/structure/overmap/small_craft/P = loc
+	if(!istype(P))
+		return FALSE
+
+	var/datum/ship_weapon/SW = P.weapon_types[fire_mode]
+	SW.fire_fx_only(target, lateral = TRUE)
+
+	return FALSE
+
+/////	utility fighters weapons go here
+
+
+/obj/item/fighter_component/primary/utility/goida
+	name = "50Cal GOIDA light minigun"
+	icon_state = "minigun"
+	accepted_ammo = /obj/item/ammo_box/magazine/nsv/anti_air
+	burst_size = 2
+	fire_delay = 0.1 SECONDS
+
+/////
+
+
 
 /obj/structure/overmap/small_craft/proc/update_visuals()
 	if(canopy)
