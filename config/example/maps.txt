@@ -20,14 +20,17 @@ map tycoon
 endmap
 
 map vulture
+	minplayers 1
 	votable
 endmap
 
 map atlas
+	minplayers 1
 	votable
 endmap
 
 map falcon
+	minplayers 1
 	votable
 endmap
 
@@ -48,12 +51,12 @@ map galactica
 endmap
 
 map gladius
-	minplayers 17
+	minplayers 20
 	votable
 endmap
 
 map hammerhead
-	minplayers 17
+	minplayers 20
 	votable
 endmap
 

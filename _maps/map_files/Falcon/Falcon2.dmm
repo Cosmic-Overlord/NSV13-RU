@@ -805,7 +805,6 @@
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
 	dir = 1
 	},
-/obj/machinery/portable_atmospherics/canister/carbon_dioxide,
 /turf/open/floor/monofloor,
 /area/engine/stormdrive)
 "cr" = (
@@ -1010,8 +1009,10 @@
 	pixel_x = -22;
 	req_one_access_txt = "10;24"
 	},
-/obj/machinery/atmospherics/pipe/heat_exchanging/simple,
-/turf/open/floor/engine,
+/obj/structure/lattice/catwalk,
+/obj/machinery/power/tesla_coil,
+/obj/structure/cable/yellow,
+/turf/open/space/basic,
 /area/engine/stormdrive)
 "cV" = (
 /obj/structure/cable{
@@ -1221,10 +1222,11 @@
 /turf/open/floor/monotile/steel,
 /area/crew_quarters/bar/mess_hall)
 "dw" = (
-/obj/machinery/atmospherics/pipe/heat_exchanging/manifold{
-	dir = 8
+/obj/structure/lattice,
+/obj/structure/cable/yellow{
+	icon_state = "2-8"
 	},
-/turf/open/floor/engine,
+/turf/open/space/basic,
 /area/engine/stormdrive)
 "dA" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4,
@@ -1514,11 +1516,12 @@
 /obj/structure/cable/yellow{
 	icon_state = "4-8"
 	},
-/obj/machinery/atmospherics/pipe/simple/brown{
+/obj/machinery/atmospherics/components/unary/outlet_injector/on{
 	dir = 4
 	},
-/obj/machinery/meter,
-/obj/machinery/atmospherics/pipe/heat_exchanging/simple,
+/obj/structure/cable/yellow{
+	icon_state = "2-8"
+	},
 /turf/open/floor/plating/rusty_techgrid,
 /area/engine/stormdrive)
 "ev" = (
@@ -2034,12 +2037,6 @@
 	},
 /turf/open/floor/plasteel/dark/side,
 /area/maintenance/nsv/weapons)
-"fZ" = (
-/obj/machinery/atmospherics/pipe/heat_exchanging/simple{
-	dir = 9
-	},
-/turf/open/floor/engine,
-/area/engine/stormdrive)
 "ga" = (
 /obj/structure/disposalpipe/segment,
 /obj/machinery/firealarm/directional/west,
@@ -2060,7 +2057,6 @@
 /obj/effect/turf_decal/caution{
 	dir = 1
 	},
-/obj/machinery/atmospherics/pipe/simple/brown,
 /obj/structure/fluff/support_beam,
 /turf/open/floor/plating/rusty_techgrid,
 /area/maintenance/nsv/port_substation)
@@ -4078,9 +4074,9 @@
 /turf/open/floor/plating/rusty_techgrid,
 /area/quartermaster/sorting)
 "mB" = (
-/obj/machinery/atmospherics/pipe/heat_exchanging/simple,
-/turf/open/floor/engine,
-/area/engine/stormdrive)
+/obj/machinery/hydroponics/constructable,
+/turf/open/floor/monotile/dark,
+/area/hydroponics)
 "mE" = (
 /obj/structure/disposalpipe/trunk/multiz,
 /turf/open/floor/plating/rusty_techgrid,
@@ -4327,10 +4323,15 @@
 	lighting_colour_tube = "#FF3232"
 	})
 "nq" = (
-/obj/machinery/atmospherics/pipe/heat_exchanging/simple{
-	dir = 4
+/obj/structure/lattice/catwalk,
+/obj/structure/cable/yellow{
+	icon_state = "4-8"
 	},
-/turf/open/floor/engine,
+/obj/structure/cable/yellow{
+	icon_state = "0-8"
+	},
+/obj/machinery/power/tesla_coil,
+/turf/open/space/basic,
 /area/engine/stormdrive)
 "nr" = (
 /obj/machinery/door/airlock/ship/maintenance{
@@ -4846,9 +4847,7 @@
 	},
 /obj/machinery/door/firedoor/border_only/directional/east,
 /obj/machinery/door/firedoor/border_only/directional/west,
-/obj/machinery/atmospherics/pipe/simple/brown{
-	dir = 4
-	},
+/obj/structure/fans/tiny/invisible,
 /turf/open/floor/plating/rusty_techgrid,
 /area/engine/stormdrive)
 "ph" = (
@@ -5233,7 +5232,9 @@
 	icon_state = "4-8"
 	},
 /obj/machinery/meter,
-/obj/machinery/atmospherics/pipe/heat_exchanging/simple,
+/obj/structure/cable/yellow{
+	icon_state = "1-2"
+	},
 /turf/open/floor/plating/rusty_techgrid,
 /area/engine/stormdrive)
 "qq" = (
@@ -5717,6 +5718,17 @@
 /obj/structure/lattice/catwalk/over/ship,
 /turf/open/floor/plating/rusty_techgrid,
 /area/engine/shield_generator)
+"rG" = (
+/obj/structure/lattice/catwalk,
+/obj/machinery/power/tesla_coil,
+/obj/structure/cable/yellow{
+	icon_state = "1-2"
+	},
+/obj/structure/cable/yellow{
+	icon_state = "0-2"
+	},
+/turf/open/space/basic,
+/area/engine/stormdrive)
 "rH" = (
 /obj/structure/window/reinforced/spawner,
 /obj/structure/window/reinforced/spawner/east,
@@ -6732,6 +6744,12 @@
 /obj/structure/table/reinforced,
 /turf/open/floor/plasteel/checker,
 /area/crew_quarters/kitchen)
+"ux" = (
+/obj/structure/cable/yellow{
+	icon_state = "4-8"
+	},
+/turf/open/floor/engine,
+/area/engine/stormdrive)
 "uy" = (
 /obj/structure/disposalpipe/segment,
 /obj/structure/cable/white{
@@ -7279,13 +7297,12 @@
 /turf/open/floor/plasteel/techmaint,
 /area/science/lab)
 "wt" = (
-/obj/machinery/atmospherics/components/binary/pump/on{
-	dir = 8;
-	name = "Stormdrive Fuel Pump";
-	target_pressure = 600
-	},
 /obj/structure/cable/yellow{
 	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/components/binary/pump{
+	dir = 8;
+	name = "Engine Mix to Engine"
 	},
 /turf/open/floor/plating/rusty_techgrid,
 /area/engine/stormdrive)
@@ -7594,13 +7611,11 @@
 /turf/open/floor/plasteel/dark/side,
 /area/nsv/weapons)
 "xr" = (
-/obj/machinery/atmospherics/pipe/heat_exchanging/junction{
-	dir = 1
-	},
 /obj/machinery/door/poddoor/ship{
 	id = "stormdrive_blastdoors"
 	},
 /obj/effect/turf_decal/caution/stand_clear,
+/obj/structure/fans/tiny/invisible,
 /turf/open/floor/plating/rusty_techgrid,
 /area/engine/stormdrive)
 "xs" = (
@@ -8749,12 +8764,16 @@
 /obj/machinery/portable_atmospherics/canister/pluoxium,
 /turf/open/floor/mineral/plastitanium/airless,
 /area/engine/atmos/port_atmos)
-"An" = (
-/obj/machinery/atmospherics/components/unary/portables_connector{
-	dir = 1
+"Am" = (
+/obj/structure/lattice/catwalk,
+/obj/structure/cable/yellow{
+	icon_state = "1-2"
 	},
-/obj/machinery/portable_atmospherics/canister/carbon_dioxide,
-/turf/open/floor/plating/rusty_techgrid,
+/obj/structure/cable/yellow{
+	icon_state = "0-2"
+	},
+/obj/machinery/power/tesla_coil,
+/turf/open/space/basic,
 /area/engine/stormdrive)
 "Ao" = (
 /obj/structure/fluff/support_beam{
@@ -8869,13 +8888,6 @@
 	lighting_colour_night = "#c1e1ff";
 	lighting_colour_tube = "#c1e1ff"
 	})
-"AE" = (
-/obj/machinery/atmospherics/components/unary/thermomachine/freezer{
-	dir = 8;
-	piping_layer = 2
-	},
-/turf/open/floor/plating/rusty_techgrid,
-/area/engine/stormdrive)
 "AF" = (
 /obj/machinery/missile_builder/wirer{
 	dir = 8
@@ -9904,11 +9916,6 @@
 	lighting_colour_tube = "#c1e1ff"
 	})
 "DM" = (
-/obj/machinery/atmospherics/components/binary/passive_gate{
-	dir = 8;
-	name = "Stormdrive Waste to Space";
-	on = 1
-	},
 /obj/machinery/atmospherics/components/binary/passive_gate/layer4{
 	dir = 8;
 	name = "Scrubbers to Space";
@@ -9943,9 +9950,6 @@
 	dir = 8
 	},
 /obj/machinery/atmospherics/pipe/manifold4w/scrubbers/visible/layer4,
-/obj/machinery/atmospherics/pipe/simple/brown{
-	dir = 10
-	},
 /turf/open/floor/plating/rusty_techgrid,
 /area/maintenance/nsv/deck2/port)
 "DQ" = (
@@ -10181,7 +10185,6 @@
 /obj/machinery/atmospherics/pipe/simple/supply/visible/layer2,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
 /obj/structure/disposalpipe/segment,
-/obj/machinery/atmospherics/pipe/simple/brown,
 /obj/structure/fluff/support_beam{
 	dir = 4
 	},
@@ -10402,12 +10405,6 @@
 	},
 /turf/open/floor/plasteel/dark/side,
 /area/maintenance/nsv/weapons)
-"EX" = (
-/obj/machinery/atmospherics/pipe/heat_exchanging/simple{
-	dir = 10
-	},
-/turf/open/floor/engine,
-/area/engine/stormdrive)
 "EZ" = (
 /obj/structure/window/reinforced/spawner/north,
 /obj/structure/window/reinforced/spawner/east,
@@ -10711,7 +10708,6 @@
 /obj/machinery/atmospherics/pipe/simple/supply/visible/layer2,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
 /obj/structure/disposalpipe/segment,
-/obj/machinery/atmospherics/pipe/simple/brown,
 /turf/open/floor/plating/rusty_techgrid,
 /area/maintenance/nsv/port_substation)
 "FY" = (
@@ -10972,7 +10968,6 @@
 	dir = 4
 	},
 /obj/structure/disposalpipe/segment,
-/obj/machinery/atmospherics/pipe/simple/brown,
 /obj/item/radio/intercom/directional/east,
 /turf/open/floor/plating/rusty_techgrid,
 /area/maintenance/nsv/port_substation)
@@ -11081,6 +11076,7 @@
 	dir = 4
 	},
 /obj/effect/turf_decal/stripes/line,
+/obj/structure/fans/tiny/invisible,
 /turf/open/floor/plating,
 /area/engine/stormdrive)
 "Hf" = (
@@ -11452,7 +11448,6 @@
 /obj/structure/disposalpipe/sorting/mail/flip{
 	sortType = 6
 	},
-/obj/machinery/atmospherics/pipe/simple/brown,
 /obj/machinery/atmospherics/pipe/simple/green/visible{
 	dir = 4
 	},
@@ -11478,6 +11473,13 @@
 	},
 /turf/open/floor/plating,
 /area/maintenance/nsv/starboard_substation)
+"If" = (
+/obj/structure/lattice,
+/obj/structure/cable/yellow{
+	icon_state = "2-4"
+	},
+/turf/open/space/basic,
+/area/engine/stormdrive)
 "Ig" = (
 /obj/machinery/light,
 /turf/open/floor/engine,
@@ -11657,6 +11659,7 @@
 /obj/machinery/door/firedoor/border_only/directional/west,
 /obj/machinery/door/firedoor/border_only/directional/east,
 /obj/effect/landmark/zebra_interlock_point,
+/obj/machinery/door/window/westright,
 /turf/open/floor/plating,
 /area/hydroponics)
 "IL" = (
@@ -12164,6 +12167,13 @@
 	},
 /turf/open/floor/durasteel,
 /area/engine/atmos/starboard_atmos)
+"JV" = (
+/obj/structure/lattice,
+/obj/structure/cable/yellow{
+	icon_state = "1-4"
+	},
+/turf/open/space/basic,
+/area/engine/stormdrive)
 "JW" = (
 /obj/structure/cable/yellow{
 	icon_state = "1-4"
@@ -12287,7 +12297,6 @@
 /obj/machinery/atmospherics/pipe/simple/supply/visible/layer2,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
 /obj/structure/disposalpipe/segment,
-/obj/machinery/atmospherics/pipe/simple/brown,
 /turf/open/floor/plating/rusty_techgrid,
 /area/maintenance/nsv/port_substation)
 "Kl" = (
@@ -12414,6 +12423,7 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
 	},
+/obj/structure/fans/tiny/invisible,
 /turf/open/floor/plating,
 /area/engine/stormdrive)
 "KF" = (
@@ -12540,10 +12550,6 @@
 "KQ" = (
 /turf/closed/wall/ship,
 /area/engine/supermatter)
-"KS" = (
-/obj/machinery/portable_atmospherics/canister/carbon_dioxide,
-/turf/open/floor/monofloor,
-/area/engine/stormdrive)
 "KT" = (
 /obj/structure/cable/yellow{
 	icon_state = "5-9"
@@ -12681,7 +12687,6 @@
 "Lh" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2,
 /obj/structure/extinguisher_cabinet/north,
-/obj/structure/table,
 /turf/open/floor/monofloor{
 	dir = 1
 	},
@@ -13270,7 +13275,6 @@
 /obj/machinery/atmospherics/pipe/simple/supply/visible/layer2,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
 /obj/structure/disposalpipe/segment,
-/obj/machinery/atmospherics/pipe/simple/brown,
 /obj/structure/fluff/support_beam,
 /turf/open/floor/plating/rusty_techgrid,
 /area/maintenance/nsv/port_substation)
@@ -13703,9 +13707,6 @@
 /obj/machinery/atmospherics/pipe/simple/orange/visible/layer4{
 	dir = 6
 	},
-/obj/machinery/atmospherics/pipe/simple/orange/visible/layer2{
-	dir = 6
-	},
 /obj/machinery/atmospherics/pipe/simple/green/visible{
 	dir = 6
 	},
@@ -13761,9 +13762,6 @@
 	})
 "NX" = (
 /obj/machinery/atmospherics/pipe/simple/green/visible{
-	dir = 4
-	},
-/obj/machinery/atmospherics/components/binary/volume_pump/on/layer2{
 	dir = 4
 	},
 /obj/machinery/atmospherics/components/binary/volume_pump/on/layer4{
@@ -13874,7 +13872,6 @@
 /turf/open/floor/plating,
 /area/maintenance/nsv/weapons)
 "Or" = (
-/obj/machinery/atmospherics/pipe/manifold/orange/visible/layer2,
 /obj/machinery/atmospherics/pipe/manifold/orange/visible/layer4,
 /obj/machinery/atmospherics/components/binary/pump/on{
 	dir = 4;
@@ -13930,10 +13927,6 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/green/visible{
 	dir = 4
-	},
-/obj/machinery/atmospherics/components/binary/pump/layer2{
-	dir = 8;
-	name = "Stormdrive Waste to Cooling Loop"
 	},
 /obj/structure/cable/white{
 	icon_state = "6-9"
@@ -13997,9 +13990,6 @@
 /turf/open/floor/plating/rusty_techgrid,
 /area/engine/shield_generator)
 "OD" = (
-/obj/machinery/atmospherics/pipe/simple/orange/visible/layer2{
-	dir = 10
-	},
 /obj/machinery/atmospherics/pipe/manifold/orange/visible/layer4{
 	dir = 1
 	},
@@ -14295,6 +14285,13 @@
 	dir = 1
 	},
 /area/security)
+"Ps" = (
+/obj/structure/lattice,
+/obj/structure/cable/yellow{
+	icon_state = "1-8"
+	},
+/turf/open/space/basic,
+/area/engine/stormdrive)
 "Pt" = (
 /obj/structure/cable/white{
 	icon_state = "1-4"
@@ -14390,12 +14387,6 @@
 /obj/structure/grille,
 /turf/open/floor/plating,
 /area/maintenance/nsv/weapons)
-"PE" = (
-/obj/machinery/atmospherics/pipe/heat_exchanging/simple{
-	dir = 6
-	},
-/turf/open/floor/engine,
-/area/engine/stormdrive)
 "PF" = (
 /turf/open/floor/plasteel/dark/side,
 /area/nsv/weapons/fore{
@@ -14678,9 +14669,6 @@
 "Qs" = (
 /obj/machinery/atmospherics/pipe/simple/orange/visible/layer4{
 	dir = 5
-	},
-/obj/machinery/atmospherics/pipe/simple/orange/visible/layer2{
-	dir = 1
 	},
 /obj/structure/cable/white{
 	icon_state = "2-9"
@@ -15257,14 +15245,6 @@
 /turf/open/floor/plasteel/white,
 /area/maintenance/department/medical)
 "RX" = (
-/obj/item/circuitboard/machine/thermomachine,
-/obj/item/storage/box/stockparts/basic{
-	pixel_x = -3;
-	pixel_y = 6
-	},
-/obj/item/stack/sheet/glass,
-/obj/item/stack/cable_coil/random,
-/obj/structure/closet/crate/engineering,
 /turf/open/floor/monofloor/corner{
 	dir = 4
 	},
@@ -15361,9 +15341,6 @@
 /turf/open/floor/plating/rusty_techgrid,
 /area/medical/nsv)
 "Sk" = (
-/obj/machinery/atmospherics/pipe/simple/orange/visible/layer2{
-	dir = 5
-	},
 /obj/structure/cable/white{
 	icon_state = "1-2"
 	},
@@ -15427,9 +15404,6 @@
 /turf/open/floor/durasteel,
 /area/engine/atmos/starboard_atmos)
 "Su" = (
-/obj/machinery/atmospherics/pipe/simple/orange/visible/layer2{
-	dir = 4
-	},
 /turf/open/floor/plating/rusty_techgrid,
 /area/engine/supermatter)
 "Sv" = (
@@ -15440,9 +15414,6 @@
 /turf/open/floor/engine,
 /area/engine/shield_generator)
 "Sy" = (
-/obj/machinery/atmospherics/pipe/layer_manifold{
-	dir = 4
-	},
 /obj/machinery/door/airlock/ship/engineering{
 	dir = 4;
 	name = "Supermatter Core";
@@ -15451,9 +15422,6 @@
 /turf/open/floor/plating/rusty_techgrid,
 /area/engine/supermatter)
 "Sz" = (
-/obj/machinery/atmospherics/pipe/simple/brown{
-	dir = 4
-	},
 /obj/structure/sign/warning/radiation{
 	pixel_y = 30
 	},
@@ -15492,7 +15460,6 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
 	},
-/obj/machinery/atmospherics/components/trinary/filter/flipped/on,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
 /turf/open/floor/plating/rusty_techgrid,
 /area/maintenance/nsv/port_substation)
@@ -15730,7 +15697,6 @@
 /obj/machinery/atmospherics/pipe/simple/supply/visible/layer2,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
 /obj/structure/disposalpipe/segment,
-/obj/machinery/atmospherics/pipe/simple/brown,
 /turf/open/floor/plating/rusty_techgrid,
 /area/maintenance/nsv/port_substation)
 "Tx" = (
@@ -16054,9 +16020,6 @@
 	icon_state = "2-4"
 	},
 /obj/structure/disposalpipe/segment,
-/obj/machinery/atmospherics/pipe/simple/brown{
-	dir = 5
-	},
 /obj/machinery/atmospherics/pipe/simple/dark/visible{
 	dir = 10
 	},
@@ -16606,6 +16569,7 @@
 /obj/effect/turf_decal/caution/stand_clear{
 	dir = 8
 	},
+/obj/structure/fans/tiny/invisible,
 /turf/open/floor/plating/rusty_techgrid,
 /area/engine/stormdrive)
 "VA" = (
@@ -16721,6 +16685,17 @@
 /obj/structure/fluff/support_beam,
 /turf/open/floor/engine,
 /area/nsv/weapons)
+"VO" = (
+/obj/structure/lattice/catwalk,
+/obj/machinery/power/tesla_coil,
+/obj/structure/cable/yellow{
+	icon_state = "4-8"
+	},
+/obj/structure/cable/yellow{
+	icon_state = "0-8"
+	},
+/turf/open/space/basic,
+/area/engine/stormdrive)
 "VP" = (
 /obj/machinery/atmospherics/pipe/simple/dark/visible,
 /obj/structure/cable/white{
@@ -18199,9 +18174,6 @@
 /obj/machinery/light{
 	dir = 8
 	},
-/obj/machinery/atmospherics/pipe/manifold/dark{
-	dir = 8
-	},
 /turf/open/floor/plating/rusty_techgrid,
 /area/engine/stormdrive)
 "ZF" = (
@@ -18296,9 +18268,6 @@
 /turf/open/floor/plating,
 /area/nsv/engine/engine_room/auxiliary)
 "ZN" = (
-/obj/machinery/atmospherics/pipe/simple/dark/visible{
-	dir = 10
-	},
 /turf/open/floor/plating/rusty_techgrid,
 /area/engine/stormdrive)
 "ZO" = (
@@ -48051,14 +48020,14 @@ GO
 RX
 Mj
 Uq
-PE
+If
 cU
 eu
-mB
-dw
+rG
+JV
 xr
 ZE
-AE
+ZN
 GO
 Wc
 zE
@@ -48308,14 +48277,14 @@ GO
 VM
 IJ
 Vq
-nq
+VO
 gJ
 Jc
 cI
-nq
+VO
 Vq
 ZN
-An
+ZN
 GO
 UN
 Tz
@@ -48565,14 +48534,14 @@ GO
 Xh
 IJ
 Vq
-nq
+ux
 cr
 Uw
 Vj
-nq
+ux
 Vq
 QV
-KS
+IJ
 GO
 Uh
 Ss
@@ -48822,7 +48791,7 @@ GO
 Lh
 Ca
 Vq
-nq
+VO
 vZ
 rp
 Kc
@@ -49079,11 +49048,11 @@ YW
 Qf
 zM
 Uq
-EX
-mB
+dw
+rG
 qp
-mB
-fZ
+Am
+Ps
 Uq
 ZF
 Hq
@@ -52129,7 +52098,7 @@ db
 bm
 FJ
 iU
-iU
+mB
 bF
 jW
 bF
@@ -55480,8 +55449,8 @@ SG
 SG
 SG
 SG
-KI
-KI
+BX
+BX
 KI
 Cj
 KI
@@ -55738,7 +55707,7 @@ KI
 KI
 KI
 KI
-KI
+Cj
 KI
 KI
 KI
@@ -55788,7 +55757,7 @@ KI
 KI
 KI
 KI
-KI
+Cj
 KI
 KI
 KI
