@@ -939,6 +939,7 @@
 	c_tag = "Armoury Port";
 	dir = 6
 	},
+/obj/item/gun/ballistic/automatic/l6_saw/unrestricted,
 /turf/open/floor/plasteel/dark,
 /area/ai_monitored/security/armory)
 "dK" = (
@@ -1084,6 +1085,10 @@
 	lighting_colour_night = "#c1e1ff";
 	lighting_colour_tube = "#c1e1ff"
 	})
+"el" = (
+/obj/item/fighter_component/armour_plating/tier3,
+/turf/open/floor/engine/airless,
+/area/space/nearstation)
 "eo" = (
 /obj/machinery/atmospherics/pipe/manifold4w,
 /turf/open/floor/glass/reinforced,
@@ -1501,6 +1506,10 @@
 	lighting_colour_night = "#c1e1ff";
 	lighting_colour_tube = "#c1e1ff"
 	})
+"ga" = (
+/obj/item/fighter_component/armour_plating/tier4,
+/turf/open/floor/engine/airless,
+/area/space/nearstation)
 "gb" = (
 /obj/structure/lattice/catwalk,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
@@ -1723,6 +1732,10 @@
 /obj/structure/rack,
 /obj/item/survivalcapsule/medical,
 /obj/item/storage/firstaid/tactical,
+/obj/item/ammo_box/magazine/nsv/anti_air,
+/obj/item/ammo_box/magazine/nsv/anti_air,
+/obj/item/ammo_box/magazine/nsv/anti_air,
+/obj/item/ammo_box/magazine/nsv/anti_air,
 /turf/open/floor/engine/airless,
 /area/space/nearstation)
 "gY" = (
@@ -1838,6 +1851,7 @@
 /obj/item/gun/ballistic/automatic/pistol/glock,
 /obj/item/gun/ballistic/automatic/pistol/glock,
 /obj/item/gun/ballistic/automatic/pistol/glock,
+/obj/item/gun/ballistic/automatic/ar,
 /turf/open/floor/plasteel/dark,
 /area/ai_monitored/security/armory)
 "hn" = (
@@ -2615,6 +2629,7 @@
 /obj/structure/closet/emcloset{
 	anchored = 1
 	},
+/obj/item/gun/magic/tentacle,
 /turf/open/floor/plating,
 /area/maintenance/nsv/deck1/starboard)
 "kX" = (
@@ -2702,6 +2717,10 @@
 	},
 /turf/open/floor/plating/rusty_techgrid,
 /area/quartermaster/miningdock)
+"lv" = (
+/obj/item/fighter_component/primary/utility/goida,
+/turf/open/floor/engine/airless,
+/area/space/nearstation)
 "lz" = (
 /obj/effect/turf_decal/guideline/guideline_out_arrow_con_alt/blue{
 	dir = 1
@@ -4311,6 +4330,16 @@
 	},
 /turf/open/floor/plating,
 /area/maintenance/department/cargo)
+"sg" = (
+/obj/structure/lattice/catwalk/over/ship,
+/obj/structure/rack,
+/obj/item/survivalcapsule/medical,
+/obj/item/storage/firstaid/tactical,
+/obj/item/fighter_component/ftl/tier2,
+/obj/item/fighter_component/armour_plating/tier2,
+/obj/item/fighter_component/armour_plating/tier2,
+/turf/open/floor/engine/airless,
+/area/space/nearstation)
 "si" = (
 /obj/machinery/light/small{
 	dir = 1
@@ -6047,10 +6076,9 @@
 	lighting_colour_tube = "#c1e1ff"
 	})
 "yN" = (
-/obj/structure/lattice,
-/obj/structure/lattice/catwalk,
-/turf/open/space/basic,
-/area/space/nearstation)
+/obj/item/gun/magic/bloodchill,
+/turf/open/floor/plating,
+/area/maintenance/nsv/deck1/starboard)
 "yO" = (
 /obj/structure/cable/green{
 	icon_state = "4-8"
@@ -11847,7 +11875,6 @@
 /area/nsv/hanger)
 "Uk" = (
 /obj/structure/lattice,
-/obj/structure/lattice/catwalk,
 /turf/open/space/basic,
 /area/space)
 "Um" = (
@@ -13129,6 +13156,9 @@
 /obj/item/gun/ballistic/shotgun/riot,
 /obj/effect/turf_decal/bot/left,
 /obj/item/gun/ballistic/shotgun/riot,
+/obj/item/gun/ballistic/automatic/c20r/unrestricted,
+/obj/item/gun/ballistic/automatic/m90/unrestricted,
+/obj/item/gun/ballistic/automatic/m90/unrestricted,
 /turf/open/floor/plasteel/dark,
 /area/ai_monitored/security/armory)
 "Yb" = (
@@ -45510,7 +45540,7 @@ ng
 ZV
 jf
 jf
-jf
+yN
 jf
 AD
 NX
@@ -49292,7 +49322,7 @@ IH
 IH
 IH
 Bh
-yN
+EM
 tQ
 bd
 tQ
@@ -49549,7 +49579,7 @@ IH
 IH
 IH
 Bh
-yN
+EM
 tQ
 tQ
 Ud
@@ -49805,8 +49835,8 @@ IH
 IH
 xf
 Uk
-yN
-yN
+EM
+EM
 tQ
 tQ
 Rm
@@ -50062,8 +50092,8 @@ IH
 IH
 IH
 IH
-yN
-yN
+EM
+EM
 tQ
 tQ
 Ud
@@ -50320,7 +50350,7 @@ IH
 IH
 IH
 Bh
-yN
+EM
 tQ
 tQ
 tQ
@@ -50577,7 +50607,7 @@ IH
 IH
 IH
 Bh
-yN
+EM
 tQ
 tQ
 Ud
@@ -50833,8 +50863,8 @@ IH
 IH
 xf
 Uk
-yN
-yN
+EM
+EM
 tQ
 tQ
 Rm
@@ -50911,7 +50941,7 @@ uG
 mo
 Zd
 VB
-gW
+sg
 gW
 XR
 XR
@@ -51090,8 +51120,8 @@ IH
 IH
 IH
 IH
-yN
-yN
+EM
+EM
 tQ
 tQ
 Ud
@@ -51348,7 +51378,7 @@ IH
 IH
 Bh
 Bh
-yN
+EM
 tQ
 bd
 tQ
@@ -51941,9 +51971,9 @@ Bh
 aU
 TA
 Wm
+lv
 uV
-uV
-uV
+ga
 Wm
 Wm
 cP
@@ -52712,9 +52742,9 @@ Ai
 TA
 TA
 Wm
+lv
 uV
-uV
-uV
+el
 Wm
 Wm
 cP
